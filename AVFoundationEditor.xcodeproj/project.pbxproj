@@ -937,11 +937,6 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "TapHarmonic, LLC";
-				TargetAttributes = {
-					C4289A8B16F92A9D00BA04A9 = {
-						DevelopmentTeam = GV36U76CUM;
-					};
-				};
 			};
 			buildConfigurationList = C4289A8716F92A9D00BA04A9 /* Build configuration list for PBXProject "AVFoundationEditor" */;
 			compatibilityVersion = "Xcode 3.2";

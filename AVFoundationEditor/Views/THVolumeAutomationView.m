@@ -38,7 +38,8 @@ CGFloat _THGetWidthForTimeRange(CMTimeRange timeRange, CGFloat scaleFactor) {
 
 - (CGFloat)xForTime:(CMTime)time {
 	CMTime xTime = CMTimeSubtract(self.duration, CMTimeSubtract(self.duration, time));
-	return CMTimeGetSeconds(xTime) * self.scaleFactor;
+	CGFloat seconds = xTime.timescale == 0 ? 0 : CMTimeGetSeconds(xTime);
+	return seconds * self.scaleFactor;
 }
 
 - (void)setDuration:(CMTime)duration {

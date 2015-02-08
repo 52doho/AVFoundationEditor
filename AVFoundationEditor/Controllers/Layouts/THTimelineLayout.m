@@ -270,9 +270,11 @@ typedef enum {
 - (void)handleDoubleTap:(UITapGestureRecognizer *)recognizer {
 	CGPoint location = [recognizer locationInView:self.collectionView];
 	NSIndexPath *indexPath = [self.collectionView indexPathForItemAtPoint:location];
-	id <UICollectionViewDelegateTimelineLayout> delegate = (id <UICollectionViewDelegateTimelineLayout>) self.collectionView.delegate;
-	[delegate collectionView:self.collectionView willDeleteItemAtIndexPath:indexPath];
-	[self.collectionView deleteItemsAtIndexPaths:@[indexPath]];
+	if (indexPath) {
+		id <UICollectionViewDelegateTimelineLayout> delegate = (id <UICollectionViewDelegateTimelineLayout>) self.collectionView.delegate;
+		[delegate collectionView:self.collectionView willDeleteItemAtIndexPath:indexPath];
+		[self.collectionView deleteItemsAtIndexPaths:@[indexPath]];
+	}
 }
 
 #pragma mark - Long Press Handler
