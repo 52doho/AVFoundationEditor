@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		07309A8D188A027D00C6BF36 /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07309A8C188A027D00C6BF36 /* Reveal.framework */; };
+		4E73D06A1A87C78700500741 /* 06_1920x1080.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4E73D0691A87C78700500741 /* 06_1920x1080.mp4 */; };
+		4E73D06C1A87C7F200500741 /* 07_640x640.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4E73D06B1A87C7F200500741 /* 07_640x640.mp4 */; };
 		C4145D8316F97A46002AFD67 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4145D8216F97A46002AFD67 /* AssetsLibrary.framework */; };
 		C4145D8B16F998D3002AFD67 /* tp_ff_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C4145D8516F998D3002AFD67 /* tp_ff_icon.png */; };
 		C4145D8C16F998D3002AFD67 /* tp_ff_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4145D8616F998D3002AFD67 /* tp_ff_icon@2x.png */; };
@@ -198,6 +200,8 @@
 
 /* Begin PBXFileReference section */
 		07309A8C188A027D00C6BF36 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
+		4E73D0691A87C78700500741 /* 06_1920x1080.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 06_1920x1080.mp4; sourceTree = "<group>"; };
+		4E73D06B1A87C7F200500741 /* 07_640x640.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 07_640x640.mp4; sourceTree = "<group>"; };
 		C4145D8216F97A46002AFD67 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		C4145D8516F998D3002AFD67 /* tp_ff_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tp_ff_icon.png; sourceTree = "<group>"; };
 		C4145D8616F998D3002AFD67 /* tp_ff_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tp_ff_icon@2x.png"; sourceTree = "<group>"; };
@@ -483,6 +487,8 @@
 				C48B7674189B8A580031CB3A /* 03_Car.mp4 */,
 				C4D8947A189A423E001A18B8 /* 04_Aerial.mp4 */,
 				C4C0AE0C171FE5A000EA1F39 /* 05_Close.mov */,
+				4E73D0691A87C78700500741 /* 06_1920x1080.mp4 */,
+				4E73D06B1A87C7F200500741 /* 07_640x640.mp4 */,
 			);
 			path = Video;
 			sourceTree = "<group>";
@@ -975,6 +981,8 @@
 				C423954E189031CF005A37FF /* tb_background.png in Resources */,
 				C4525E0A16F92BA90064B891 /* app_cell_background@2x.png in Resources */,
 				C4525E0B16F92BA90064B891 /* app_gray_background.png in Resources */,
+				4E73D06C1A87C7F200500741 /* 07_640x640.mp4 in Resources */,
+				4E73D06A1A87C78700500741 /* 06_1920x1080.mp4 in Resources */,
 				C4746FDD189758DA0027ED6A /* th_selector_ui_highlighted.png in Resources */,
 				C4525E0C16F92BA90064B891 /* app_gray_background@2x.png in Resources */,
 				C48B7679189B99720031CB3A /* 00_Swirl.mov in Resources */,
