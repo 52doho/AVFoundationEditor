@@ -25,6 +25,7 @@
 #import "THBasicCompositionBuilder.h"
 #import "THBasicComposition.h"
 #import "THAdvancedComposition.h"
+#import "THShared.h"
 
 @interface THBasicCompositionBuilder ()
 @property (nonatomic, strong) AVMutableComposition *composition;
