@@ -164,6 +164,7 @@
 		instructions.compositionInstruction.layerInstructions = @[fromLayerInstruction, toLayerInstruction];
 	}
 	composition.renderSize = OUTPUT_VIDEO_SIZE;
+	composition.frameDuration = CMTimeMake(1, OUTPUT_FRAME_RATE);
 	
 	return composition;
 }
@@ -174,6 +175,7 @@
 - (NSArray *)transitionInstructionsInVideoComposition:(AVVideoComposition *)videoComposition {
 	NSMutableArray *instructions = [NSMutableArray array];
 	int layerInstructionIndex = 1;
+	BOOL hasVideoTransition = (videoComposition.instructions.count == (self.timeline.videos.count * 2 - 1));
 	for (AVMutableVideoCompositionInstruction *instruction in videoComposition.instructions) {
 		if (instruction.layerInstructions.count == 2) {
 
@@ -185,6 +187,23 @@
 			[instructions addObject:transitionInstructions];
 
 			layerInstructionIndex = layerInstructionIndex == 1 ? 0 : 1;
+		}
+		
+		// update transform
+		int videoItemIndex = [videoComposition.instructions indexOfObject:instruction];
+		if (hasVideoTransition) {
+			videoItemIndex = (videoItemIndex + 1) / 2;
+		}
+		if (videoItemIndex < self.timeline.videos.count) {
+			THMediaItem *item = self.timeline.videos[videoItemIndex];
+			AVAssetTrack *assetTrack = [item.asset tracksWithMediaType:AVMediaTypeVideo][0];
+			CGSize size = assetTrack.naturalSize;
+			CGAffineTransform transform = [self _calculateTransformWithSize:size inSize:OUTPUT_VIDEO_SIZE];
+			
+			for (AVMutableVideoCompositionLayerInstruction *compositionLayerInstruction in instruction.layerInstructions) {
+				CGAffineTransform targetTransform = CGAffineTransformConcat(assetTrack.preferredTransform, transform);
+				[compositionLayerInstruction setTransform:targetTransform atTime:instruction.timeRange.start];
+			}
 		}
 	}
 
@@ -202,6 +221,23 @@
 		transitionInstructions.transition = self.timeline.transitions[i];
 	}
 	return instructions;
+}
+
+- (CGAffineTransform)_calculateTransformWithSize:(CGSize)size inSize:(CGSize)inSize {
+	CGFloat scaleX = inSize.width / size.width;
+	CGFloat scaleY = inSize.height / size.height;
+	CGFloat scale = MAX(scaleX, scaleY);
+	
+	CGFloat width = size.width * scale;
+	CGFloat height = size.height * scale;
+	
+	float dwidth = ((inSize.width - width) / 2.0f);
+	float dheight = ((inSize.height - height) / 2.0f);
+	
+	CGAffineTransform transform = CGAffineTransformMakeScale(scale, scale);
+	transform = CGAffineTransformTranslate(transform, dwidth, dheight);
+	
+	return transform;
 }
 
 - (AVAudioMix *)buildAudioMix {

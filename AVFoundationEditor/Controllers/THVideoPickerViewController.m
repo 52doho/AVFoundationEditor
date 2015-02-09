@@ -31,6 +31,10 @@ static CGFloat THVideoItemRowHeight = 64.0f;
 static NSString * const THVideoItemCellID = @"THVideoItemCell";
 
 @interface THVideoPickerViewController ()
+{
+	NSIndexPath *_lastSelectedIndexPath;
+}
+
 @property (strong, nonatomic) NSArray *videoItems;
 @property (nonatomic, assign) BOOL initialItemLoaded;
 @end
@@ -86,9 +90,20 @@ static NSString * const THVideoItemCellID = @"THVideoItemCell";
 	return [self.tableView indexPathForRowAtPoint:point];
 }
 
+- (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+	if ([indexPath compare:_lastSelectedIndexPath] != NSOrderedSame) {
+		THVideoItemTableViewCell *cell = (THVideoItemTableViewCell *)[tableView cellForRowAtIndexPath:_lastSelectedIndexPath];
+		cell.showOverlayView = NO;
+	}
+
+	return indexPath;
+}
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	THVideoItemTableViewCell *cell = (THVideoItemTableViewCell *)[tableView cellForRowAtIndexPath:indexPath];
 	cell.showOverlayView = !cell.showOverlayView;
+	
+	_lastSelectedIndexPath = indexPath;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {

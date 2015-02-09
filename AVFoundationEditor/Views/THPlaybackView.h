@@ -23,9 +23,12 @@
 //
 
 @class AVPlayer;
+@class AVPlayerLayer;
 
 @interface THPlaybackView : UIView
 
 @property (nonatomic, weak) AVPlayer *player;
+
+- (AVPlayerLayer *)playerLayer;
 
 @end

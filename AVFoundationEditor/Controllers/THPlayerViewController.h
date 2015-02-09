@@ -34,6 +34,7 @@
 @property (nonatomic, strong) IBOutlet THPlaybackView *playbackView;
 @property (nonatomic, weak) id <THPlaybackMediator> playbackMediator;
 @property (nonatomic, weak) IBOutlet UIButton *playButton;
+@property (weak, nonatomic) IBOutlet UINavigationBar *navigationBar;
 
 @property (nonatomic, strong) IBOutlet UIView *loadingView;
 @property (nonatomic, weak) IBOutlet THExportProgressView *exportProgressView;

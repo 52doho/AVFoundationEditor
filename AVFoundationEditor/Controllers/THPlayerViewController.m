@@ -59,6 +59,21 @@ static const NSString *PlayerItemStatusContext;
 	self.player = [AVPlayer playerWithPlayerItem:nil];
 	self.playbackView.player = self.player;
 	[self.view bringSubviewToFront:self.loadingView];
+	
+	UIBarButtonItem *settingsItem = _navigationBar.topItem.rightBarButtonItem;
+	UIBarButtonItem *videoGravityItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"app_video_gravity"] style:UIBarButtonItemStylePlain target:self action:@selector(_toggleVideoGravity)];
+	_navigationBar.topItem.rightBarButtonItems = @[settingsItem, videoGravityItem];
+}
+
+- (void)_toggleVideoGravity {
+	NSString *videoGravity = self.playbackView.playerLayer.videoGravity;
+	if ([videoGravity isEqualToString:AVLayerVideoGravityResizeAspectFill]) {
+		self.playbackView.playerLayer.videoGravity = AVLayerVideoGravityResizeAspect;
+	} else if ([videoGravity isEqualToString:AVLayerVideoGravityResizeAspect]) {
+		self.playbackView.playerLayer.videoGravity = AVLayerVideoGravityResize;
+	} else {
+		self.playbackView.playerLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
+	}
 }
 
 - (void)loadInitialPlayerItem:(AVPlayerItem *)playerItem {

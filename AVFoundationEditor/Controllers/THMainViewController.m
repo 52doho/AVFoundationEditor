@@ -116,14 +116,27 @@
 	__weak id weakSelf = self;
 	dispatch_after(popTime, dispatch_get_main_queue(), ^{
 		AVAssetExportSessionStatus status = [weakSelf exportSession].status;
-		if (status == AVAssetExportSessionStatusExporting) {
-			DDProgressView *progressView = [weakSelf playerViewController].exportProgressView.progressView;
-			[progressView setProgress:[weakSelf exportSession].progress];
-			[weakSelf monitorExportProgress];
-		} else if (status == AVAssetExportSessionStatusFailed) {
-			NSLog(@"Failed");
-		} else if (status == AVAssetExportSessionStatusCompleted) {
-			
+		switch (status) {
+			case AVAssetExportSessionStatusExporting:
+			{
+				DDProgressView *progressView = [weakSelf playerViewController].exportProgressView.progressView;
+				[progressView setProgress:[weakSelf exportSession].progress];
+				[weakSelf monitorExportProgress];
+				break;
+			}
+			case AVAssetExportSessionStatusFailed:
+			{
+				NSLog(@"Export Failed");
+				break;
+			}
+			case AVAssetExportSessionStatusUnknown:
+			case AVAssetExportSessionStatusWaiting:
+			{
+				[weakSelf monitorExportProgress];
+				break;
+			}
+			default:
+				break;
 		}
 	});
 }
