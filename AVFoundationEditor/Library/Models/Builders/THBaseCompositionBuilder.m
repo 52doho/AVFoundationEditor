@@ -20,4 +20,8 @@
 	return self;
 }
 
+- (id <THComposition>)buildComposition {
+	return nil; // over write me
+}
+
 @end

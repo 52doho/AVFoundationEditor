@@ -97,11 +97,6 @@
 	self.exportSession = [composition makeExportable];
 	self.exportSession.outputURL = [self exportURL];
 	self.exportSession.outputFileType = AVFileTypeMPEG4;
-//	if ([self.exportSession.videoComposition isKindOfClass:[AVMutableVideoComposition class]]) {
-//		AVMutableVideoComposition *composition = (AVMutableVideoComposition *)self.exportSession.videoComposition;
-//		composition.renderSize = ;
-//		composition.frameDuration = CMTimeMake(1, 30);
-//	}
 
 	[self.exportSession exportAsynchronouslyWithCompletionHandler:^ {
 		[self playerViewController].exporting = NO;
