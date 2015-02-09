@@ -96,9 +96,14 @@
 	self.exportSession.outputFileType = AVFileTypeMPEG4;
 
 	[self.exportSession exportAsynchronouslyWithCompletionHandler:^ {
-		dispatch_async(dispatch_get_main_queue(), ^{
-			[self writeExportedVideoToAssetsLibrary];
-		});
+		[self playerViewController].exporting = NO;
+		if (self.exportSession.error) {
+			[self _showError:self.exportSession.error];
+		} else {
+			dispatch_async(dispatch_get_main_queue(), ^{
+				[self writeExportedVideoToAssetsLibrary];
+			});
+		}
 	}];
 
 	self.playerViewController.exporting = YES;
@@ -118,7 +123,7 @@
 		} else if (status == AVAssetExportSessionStatusFailed) {
 			NSLog(@"Failed");
 		} else if (status == AVAssetExportSessionStatusCompleted) {
-			[weakSelf playerViewController].exporting = NO;
+			
 		}
 	});
 }
@@ -130,12 +135,7 @@
 		[library writeVideoAtPathToSavedPhotosAlbum:exportURL completionBlock:^(NSURL *assetURL, NSError *error){
 			dispatch_async(dispatch_get_main_queue(), ^{
 				if (error) {
-					UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:[error localizedDescription]
-																		message:[error localizedRecoverySuggestion]
-																	   delegate:nil
-															  cancelButtonTitle:@"OK"
-															  otherButtonTitles:nil];
-					[alertView show];
+					[self _showError:error];
 				}
 #if !TARGET_IPHONE_SIMULATOR
 				[[NSFileManager defaultManager] removeItemAtURL:exportURL error:nil];
@@ -154,10 +154,20 @@
 	do {
 		filePath = NSTemporaryDirectory();
 		NSString *numberString = count > 0 ? [NSString stringWithFormat:@"-%li", (unsigned long)count] : @"";
-		filePath = [filePath stringByAppendingPathComponent:[NSString stringWithFormat:@"Masterpiece-%@.m4v", numberString]];
+		filePath = [filePath stringByAppendingPathComponent:[NSString stringWithFormat:@"Masterpiece-%@.mp4", numberString]];
 		count++;
 	} while([[NSFileManager defaultManager] fileExistsAtPath:filePath]);
 	return [NSURL fileURLWithPath:filePath];
+}
+
+- (void)_showError:(NSError *)error {
+	if (error) {
+		[[[UIAlertView alloc] initWithTitle:[error localizedDescription]
+								   message:[error localizedRecoverySuggestion]
+								  delegate:nil
+						 cancelButtonTitle:@"OK"
+						 otherButtonTitles:nil] show];
+	}
 }
 
 @end

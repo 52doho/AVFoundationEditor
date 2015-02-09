@@ -31,10 +31,6 @@
 #import "THAdvancedComposition.h"
 #import "THTransitionInstructions.h"
 
-#define VIDEO_SIZE CGSizeMake(1280, 720)
-#define TITLE_LAYER_BOUNDS CGRectMake(0, 0, 1280, 720)
-#define TRANSITION_DURATION CMTimeMake(1, 1)
-
 @interface THAdvancedCompositionBuilder ()
 @property (nonatomic, strong) THTimeline *timeline;
 @property (nonatomic, strong) AVMutableComposition *composition;
@@ -95,13 +91,13 @@
 	}
 
 	// Add voice overs
-	[self addCompositionTrackOfType:AVMediaTypeAudio forMediaItems:self.timeline.voiceOvers];
+	[self addCompositionTrackOfType:AVMediaTypeAudio forMediaItems:self.timeline.voiceOvers maxCursorTime:cursorTime];
 
 	// Add music track
-	self.musicTrack = [self addCompositionTrackOfType:AVMediaTypeAudio forMediaItems:self.timeline.musicItems];
+	self.musicTrack = [self addCompositionTrackOfType:AVMediaTypeAudio forMediaItems:self.timeline.musicItems maxCursorTime:cursorTime];
 }
 
-- (AVMutableCompositionTrack *)addCompositionTrackOfType:(NSString *)mediaType forMediaItems:(NSArray *)mediaItems {
+- (AVMutableCompositionTrack *)addCompositionTrackOfType:(NSString *)mediaType forMediaItems:(NSArray *)mediaItems maxCursorTime:(CMTime)maxCursorTime {
 
 	AVMutableCompositionTrack *compositionTrack = nil;
 
@@ -116,11 +112,22 @@
 				cursorTime = item.startTimeInTimeline;
 			}
 
+			BOOL needStop = NO;
+			CMTime nextCursorTime = CMTimeAdd(cursorTime, item.timeRange.duration);
+			if (CMTIME_COMPARE_INLINE(nextCursorTime, >, maxCursorTime)) {
+				CMTime duration = CMTimeSubtract(maxCursorTime, item.timeRange.start);
+				item.timeRange = CMTimeRangeMake(item.timeRange.start, duration);
+				needStop = YES;
+			}
 			AVAssetTrack *assetTrack = [item.asset tracksWithMediaType:mediaType][0];
 			[compositionTrack insertTimeRange:item.timeRange ofTrack:assetTrack atTime:cursorTime error:nil];
 
 			// Move cursor to next item time
-			cursorTime = CMTimeAdd(cursorTime, item.timeRange.duration);
+			cursorTime = nextCursorTime;
+			
+			if (needStop) {
+				break;
+			}
 		}
 	}
 
@@ -129,7 +136,7 @@
 
 - (AVVideoComposition *)buildVideoComposition {
 	// Create the video composition using the magic method in iOS 6.
-	AVVideoComposition *composition = [AVMutableVideoComposition videoCompositionWithPropertiesOfAsset:self.composition];
+	AVMutableVideoComposition *composition = [AVMutableVideoComposition videoCompositionWithPropertiesOfAsset:self.composition];
 	NSArray *transitionInstructions = [self transitionInstructionsInVideoComposition:composition];
 	for (THTransitionInstructions *instructions in transitionInstructions) {
 
@@ -145,10 +152,10 @@
 			// Push
 			// Set a transform ramp on fromLayer from identity to all the way left of the screen.
 			[fromLayerInstruction setTransformRampFromStartTransform:CGAffineTransformIdentity
-													  toEndTransform:CGAffineTransformMakeTranslation(-VIDEO_SIZE.width, 0.0)
+													  toEndTransform:CGAffineTransformMakeTranslation(-OUTPUT_VIDEO_SIZE.width, 0.0)
 														   timeRange:timeRange];
 			// Set a transform ramp on toLayer from all the way right of the screen to identity.
-			[toLayerInstruction setTransformRampFromStartTransform:CGAffineTransformMakeTranslation(VIDEO_SIZE.width, 0.0)
+			[toLayerInstruction setTransformRampFromStartTransform:CGAffineTransformMakeTranslation(OUTPUT_VIDEO_SIZE.width, 0.0)
 													toEndTransform:CGAffineTransformIdentity
 														 timeRange:timeRange];
 
@@ -156,6 +163,8 @@
 
 		instructions.compositionInstruction.layerInstructions = @[fromLayerInstruction, toLayerInstruction];
 	}
+	composition.renderSize = OUTPUT_VIDEO_SIZE;
+	
 	return composition;
 }
 
@@ -217,8 +226,8 @@
 - (CALayer *)buildTitleLayer {
 
 	CALayer *titleLayer = [CALayer layer];
-	titleLayer.bounds = CGRectMake(0.0f, 0.0f, VIDEO_SIZE.width, VIDEO_SIZE.height);
-	titleLayer.position = CGPointMake(VIDEO_SIZE.width / 2, VIDEO_SIZE.height / 2);
+	titleLayer.bounds = OUTPUT_VIDEO_BOUNDS;
+	titleLayer.position = CGPointMake(OUTPUT_VIDEO_SIZE.width / 2, OUTPUT_VIDEO_SIZE.height / 2);
 
 	for (THCompositionLayer *compositionLayer in self.timeline.titles) {
 		CALayer *layer = compositionLayer.layer;

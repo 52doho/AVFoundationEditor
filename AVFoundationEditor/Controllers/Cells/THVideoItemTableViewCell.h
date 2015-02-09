@@ -28,6 +28,7 @@
 
 @property (nonatomic, readonly) UIButton *playButton;
 @property (nonatomic, readonly) UIButton *addButton;
+@property (nonatomic, assign) BOOL showOverlayView;
 
 - (void)setThumbnails:(NSArray *)thumbnails;
 

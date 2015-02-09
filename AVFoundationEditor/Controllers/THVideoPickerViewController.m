@@ -87,6 +87,8 @@ static NSString * const THVideoItemCellID = @"THVideoItemCell";
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+	THVideoItemTableViewCell *cell = (THVideoItemTableViewCell *)[tableView cellForRowAtIndexPath:indexPath];
+	cell.showOverlayView = !cell.showOverlayView;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {

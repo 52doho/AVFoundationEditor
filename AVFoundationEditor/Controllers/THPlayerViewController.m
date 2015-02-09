@@ -33,7 +33,6 @@
 
 
 #define STATUS_KEYPATH @"status"
-#define VIDEO_SIZE CGSizeMake(1280, 720)
 
 // Define this constant for the key-value observation context.
 static const NSString *PlayerItemStatusContext;
@@ -179,8 +178,8 @@ static const NSString *PlayerItemStatusContext;
 	self.titleView = [[UIView alloc] initWithFrame:CGRectZero];
 	[self.titleView.layer addSublayer:synchLayer];
 
-	CGFloat scale = fminf(self.view.boundsWidth / VIDEO_SIZE.width, self.view.boundsHeight /VIDEO_SIZE.height);
-	CGRect videoRect = AVMakeRectWithAspectRatioInsideRect(VIDEO_SIZE, self.view.bounds);
+	CGFloat scale = fminf(self.view.boundsWidth / OUTPUT_VIDEO_SIZE.width, self.view.boundsHeight /OUTPUT_VIDEO_SIZE.height);
+	CGRect videoRect = AVMakeRectWithAspectRatioInsideRect(OUTPUT_VIDEO_SIZE, self.view.bounds);
 	self.titleView.center = CGPointMake( CGRectGetMidX(videoRect), CGRectGetMidY(videoRect));
 	self.titleView.transform = CGAffineTransformMakeScale(scale, scale);
 	[self.view addSubview:self.titleView];

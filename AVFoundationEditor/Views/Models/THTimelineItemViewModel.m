@@ -35,14 +35,14 @@
 	if (self) {
 		_timelineItem = timelineItem;
 		CMTimeRange maxTimeRange = CMTimeRangeMake(kCMTimeZero, timelineItem.timeRange.duration);
-		_maxWidthInTimeline = THGetWidthForTimeRange(maxTimeRange, TIMELINE_WIDTH / TIMELINE_SECONDS);
+		_maxWidthInTimeline = THGetWidthForTimeRange(maxTimeRange, TIMELINE_SCALE_FACTOR);
 	}
 	return self;
 }
 
 - (CGFloat)widthInTimeline {
 	if (_widthInTimeline == 0.0f) {
-		_widthInTimeline = THGetWidthForTimeRange(self.timelineItem.timeRange, TIMELINE_WIDTH / TIMELINE_SECONDS);
+		_widthInTimeline = THGetWidthForTimeRange(self.timelineItem.timeRange, TIMELINE_SCALE_FACTOR);
 	}
 	return _widthInTimeline;
 }
@@ -52,11 +52,11 @@
 	// Only care about position if user explicitly positioned media item.
 	// This can only happen on the title and commentary tracks.
 	if (self.positionInTimeline.x > 0.0f) {
-		CMTime startTime = THGetTimeForOrigin(self.positionInTimeline.x, TIMELINE_WIDTH / TIMELINE_SECONDS);
+		CMTime startTime = THGetTimeForOrigin(self.positionInTimeline.x, TIMELINE_SCALE_FACTOR);
 		self.timelineItem.startTimeInTimeline = startTime;
 	}
 	
-	self.timelineItem.timeRange = THGetTimeRangeForWidth(self.widthInTimeline, TIMELINE_WIDTH / TIMELINE_SECONDS);
+	self.timelineItem.timeRange = THGetTimeRangeForWidth(self.widthInTimeline, TIMELINE_SCALE_FACTOR);
 }
 
 @end

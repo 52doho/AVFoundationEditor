@@ -25,9 +25,6 @@
 #import "THAdvancedComposition.h"
 #import "AVPlayerItem+THAdditions.h"
 
-#define VIDEO_SIZE CGSizeMake(1280, 720)
-#define VIDEO_BOUNDS CGRectMake(0, 0, VIDEO_SIZE.width, VIDEO_SIZE.height)
-
 @interface THAdvancedComposition ()
 @property (nonatomic, strong) AVAudioMix *audioMix;
 @property (nonatomic, strong) CALayer *titleLayer;
@@ -55,7 +52,7 @@
 	playerItem.audioMix = self.audioMix;
 
 	AVSynchronizedLayer *synchLayer = [AVSynchronizedLayer synchronizedLayerWithPlayerItem:playerItem];
-	synchLayer.bounds = VIDEO_BOUNDS;
+	synchLayer.bounds = OUTPUT_VIDEO_BOUNDS;
 	[synchLayer addSublayer:self.titleLayer];
 
 	// WARNING: This is calling a category method I added to carry the synch layer to the
@@ -87,7 +84,7 @@
 
 - (CALayer *)createLayer {
 	CALayer *layer = [CALayer layer];
-	layer.frame = VIDEO_BOUNDS;
+	layer.frame = OUTPUT_VIDEO_BOUNDS;
 	return layer;
 }
 

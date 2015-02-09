@@ -43,8 +43,10 @@ typedef enum {
 	THMusicTrack
 } THTrack;
 
-static const NSUInteger TIMELINE_SECONDS = 30;
-static const NSUInteger TIMELINE_WIDTH = 1024;
+#define OUTPUT_VIDEO_SIZE CGSizeMake(720, 720)
+#define OUTPUT_VIDEO_BOUNDS CGRectMake(0, 0, OUTPUT_VIDEO_SIZE.width, OUTPUT_VIDEO_SIZE.height)
+#define TRANSITION_DURATION CMTimeMake(1, 1)
+static const CGFloat TIMELINE_SCALE_FACTOR = 34;
 
 static inline BOOL THIsEmpty(id value) {
 	return value == nil ||
@@ -59,7 +61,7 @@ static inline CGFloat THGetWidthForTimeRange(CMTimeRange timeRange, CGFloat scal
 
 static inline CGPoint THGetOriginForTime(CMTime time) {
 	CGFloat seconds = CMTimeGetSeconds(time);
-	return CGPointMake(seconds * (TIMELINE_WIDTH / TIMELINE_SECONDS), 0);
+	return CGPointMake(seconds * TIMELINE_SCALE_FACTOR, 0);
 }
 
 static inline CMTimeRange THGetTimeRangeForWidth(CGFloat width, CGFloat scaleFactor) {

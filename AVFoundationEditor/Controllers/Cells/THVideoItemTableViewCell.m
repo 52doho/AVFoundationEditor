@@ -38,7 +38,7 @@
 		self.backgroundView = [[THThumbnailView alloc] initWithFrame:self.bounds];
 		self.contentView.backgroundColor = [UIColor clearColor];
 		_overlayView = [[THVideoPickerOverlayView alloc] initWithFrame:self.bounds];
-		//_overlayView.hidden = YES;
+		_overlayView.hidden = YES;
 		[self.contentView addSubview:_overlayView];
 	}
 	return self;
@@ -56,10 +56,11 @@
 	return self.overlayView.addButton;
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-	[super setSelected:selected animated:animated];
-	self.overlayView.hidden = !selected;
-	if (!selected) {
+- (void)setShowOverlayView:(BOOL)showOverlayView {
+	_showOverlayView = showOverlayView;
+	
+	self.overlayView.hidden = !showOverlayView;
+	if (!showOverlayView) {
 		self.overlayView.playButton.selected = NO;
 	}
 }

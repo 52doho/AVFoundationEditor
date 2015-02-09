@@ -38,7 +38,10 @@ CGFloat _THGetWidthForTimeRange(CMTimeRange timeRange, CGFloat scaleFactor) {
 
 - (CGFloat)xForTime:(CMTime)time {
 	CMTime xTime = CMTimeSubtract(self.duration, CMTimeSubtract(self.duration, time));
-	CGFloat seconds = xTime.timescale == 0 ? 0 : CMTimeGetSeconds(xTime);
+	CGFloat seconds = 0;
+	if (CMTIME_COMPARE_INLINE(xTime, !=, kCMTimeInvalid)) {
+		seconds = CMTimeGetSeconds(xTime);
+	}
 	return seconds * self.scaleFactor;
 }
 
