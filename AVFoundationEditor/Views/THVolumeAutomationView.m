@@ -8,6 +8,7 @@
 
 #import "THVolumeAutomationView.h"
 #import "THVolumeAutomation.h"
+#import "THShared.h"
 
 @interface THVolumeAutomationView ()
 @property (nonatomic) CGFloat scaleFactor;
@@ -30,10 +31,6 @@
 - (void)setAudioRamps:(NSArray *)audioRamps {
 	_audioRamps = audioRamps;
 	[self setNeedsDisplay];
-}
-
-CGFloat _THGetWidthForTimeRange(CMTimeRange timeRange, CGFloat scaleFactor) {
-	return CMTimeGetSeconds(timeRange.duration) * scaleFactor;
 }
 
 - (CGFloat)xForTime:(CMTime)time {

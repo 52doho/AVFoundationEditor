@@ -23,6 +23,7 @@
 //
 
 #import "THTimelineItemViewModel.h"
+#import "THShared.h"
 
 @implementation THTimelineItemViewModel
 
