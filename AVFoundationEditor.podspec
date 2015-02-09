@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.description  = "AVFoundationEditor"
   s.homepage     = "http://bobmccune.com"
   s.license      = "MIT (example)"  
-  s.author       = { "bob mccune" }
+  s.author       = { "bob mccune" => "" }
   s.platform     = :ios, "7.0"
   s.source       = { :git => "https://github.com/52doho/AVFoundationEditor.git", :branch=> "develop"}
   s.source_files  = "Library/**/*.{h,m}"
