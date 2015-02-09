@@ -11,6 +11,31 @@
 		4E73D06A1A87C78700500741 /* 06_1920x1080.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4E73D0691A87C78700500741 /* 06_1920x1080.mp4 */; };
 		4E73D06C1A87C7F200500741 /* 07_640x640.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4E73D06B1A87C7F200500741 /* 07_640x640.mp4 */; };
 		4E73D06E1A888B4200500741 /* app_video_gravity@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E73D06D1A888B4200500741 /* app_video_gravity@2x.png */; };
+		4E73D0A31A88992F00500741 /* AVPlayerItem+THAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E73D0721A88992F00500741 /* AVPlayerItem+THAdditions.m */; };
+		4E73D0A41A88992F00500741 /* NSString+THAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E73D0741A88992F00500741 /* NSString+THAdditions.m */; };
+		4E73D0A51A88992F00500741 /* UIColor+THAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E73D0761A88992F00500741 /* UIColor+THAdditions.m */; };
+		4E73D0A61A88992F00500741 /* UIView+THAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E73D0781A88992F00500741 /* UIView+THAdditions.m */; };
+		4E73D0A71A88992F00500741 /* THAdvancedComposition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E73D07D1A88992F00500741 /* THAdvancedComposition.m */; };
+		4E73D0A81A88992F00500741 /* THAdvancedCompositionBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E73D07F1A88992F00500741 /* THAdvancedCompositionBuilder.m */; };
+		4E73D0A91A88992F00500741 /* THBasicComposition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E73D0811A88992F00500741 /* THBasicComposition.m */; };
+		4E73D0AA1A88992F00500741 /* THBasicCompositionBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E73D0831A88992F00500741 /* THBasicCompositionBuilder.m */; };
+		4E73D0AB1A88992F00500741 /* THTransitionInstructions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E73D0851A88992F00500741 /* THTransitionInstructions.m */; };
+		4E73D0AC1A88992F00500741 /* THCompositionBuilderFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E73D0891A88992F00500741 /* THCompositionBuilderFactory.m */; };
+		4E73D0AD1A88992F00500741 /* THTimelineBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E73D08B1A88992F00500741 /* THTimelineBuilder.m */; };
+		4E73D0AE1A88992F00500741 /* THCompositionLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E73D08E1A88992F00500741 /* THCompositionLayer.m */; };
+		4E73D0AF1A88992F00500741 /* THTitleLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E73D0901A88992F00500741 /* THTitleLayer.m */; };
+		4E73D0B01A88992F00500741 /* THAppSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E73D0921A88992F00500741 /* THAppSettings.m */; };
+		4E73D0B11A88992F00500741 /* THAudioItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E73D0941A88992F00500741 /* THAudioItem.m */; };
+		4E73D0B21A88992F00500741 /* THMediaItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E73D0961A88992F00500741 /* THMediaItem.m */; };
+		4E73D0B31A88992F00500741 /* THTimeline.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E73D0991A88992F00500741 /* THTimeline.m */; };
+		4E73D0B41A88992F00500741 /* THTimelineItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E73D09B1A88992F00500741 /* THTimelineItem.m */; };
+		4E73D0B51A88992F00500741 /* THVideoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E73D09D1A88992F00500741 /* THVideoItem.m */; };
+		4E73D0B61A88992F00500741 /* THVideoTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E73D09F1A88992F00500741 /* THVideoTransition.m */; };
+		4E73D0B71A88992F00500741 /* THVolumeAutomation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E73D0A11A88992F00500741 /* THVolumeAutomation.m */; };
+		4E73D10A1A889A2400500741 /* THTimelineItemViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E73D1051A889A2400500741 /* THTimelineItemViewModel.m */; };
+		4E73D10B1A889A2400500741 /* THVideoTransitionDurationViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E73D1071A889A2400500741 /* THVideoTransitionDurationViewModel.m */; };
+		4E73D10C1A889A2400500741 /* THVideoTransitionTypeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E73D1091A889A2400500741 /* THVideoTransitionTypeViewModel.m */; };
+		4E73D1641A88A1F800500741 /* THBaseCompositionBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E73D1631A88A1F800500741 /* THBaseCompositionBuilder.m */; };
 		C4145D8316F97A46002AFD67 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4145D8216F97A46002AFD67 /* AssetsLibrary.framework */; };
 		C4145D8B16F998D3002AFD67 /* tp_ff_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C4145D8516F998D3002AFD67 /* tp_ff_icon.png */; };
 		C4145D8C16F998D3002AFD67 /* tp_ff_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4145D8616F998D3002AFD67 /* tp_ff_icon@2x.png */; };
@@ -37,10 +62,6 @@
 		C4289AA916F92A9D00BA04A9 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4289AA716F92A9D00BA04A9 /* MainStoryboard.storyboard */; };
 		C42B5C6316FA597C006F5083 /* avf_logo_large@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C42B5C6116FA597C006F5083 /* avf_logo_large@2x.png */; };
 		C42B5C6416FA597C006F5083 /* avf_logo_large.png in Resources */ = {isa = PBXBuildFile; fileRef = C42B5C6216FA597C006F5083 /* avf_logo_large.png */; };
-		C4525DD316F92BA90064B891 /* AVPlayerItem+THAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C4525CE616F92BA90064B891 /* AVPlayerItem+THAdditions.m */; };
-		C4525DD416F92BA90064B891 /* NSString+THAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C4525CE816F92BA90064B891 /* NSString+THAdditions.m */; };
-		C4525DD516F92BA90064B891 /* UIColor+THAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C4525CEA16F92BA90064B891 /* UIColor+THAdditions.m */; };
-		C4525DD616F92BA90064B891 /* UIView+THAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C4525CEC16F92BA90064B891 /* UIView+THAdditions.m */; };
 		C4525DD716F92BA90064B891 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4525CEF16F92BA90064B891 /* AppDelegate.m */; };
 		C4525DD816F92BA90064B891 /* THNotifications.m in Sources */ = {isa = PBXBuildFile; fileRef = C4525CF116F92BA90064B891 /* THNotifications.m */; };
 		C4525DD916F92BA90064B891 /* THTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C4525CF416F92BA90064B891 /* THTabBarButton.m */; };
@@ -66,23 +87,6 @@
 		C4525DED16F92BA90064B891 /* THTimelineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4525D2016F92BA90064B891 /* THTimelineViewController.m */; };
 		C4525DEE16F92BA90064B891 /* THTransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4525D2216F92BA90064B891 /* THTransitionViewController.m */; };
 		C4525DEF16F92BA90064B891 /* THVideoPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4525D2416F92BA90064B891 /* THVideoPickerViewController.m */; };
-		C4525DF016F92BA90064B891 /* THAdvancedComposition.m in Sources */ = {isa = PBXBuildFile; fileRef = C4525D2916F92BA90064B891 /* THAdvancedComposition.m */; };
-		C4525DF116F92BA90064B891 /* THAdvancedCompositionBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = C4525D2B16F92BA90064B891 /* THAdvancedCompositionBuilder.m */; };
-		C4525DF216F92BA90064B891 /* THBasicComposition.m in Sources */ = {isa = PBXBuildFile; fileRef = C4525D2D16F92BA90064B891 /* THBasicComposition.m */; };
-		C4525DF316F92BA90064B891 /* THBasicCompositionBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = C4525D2F16F92BA90064B891 /* THBasicCompositionBuilder.m */; };
-		C4525DF416F92BA90064B891 /* THTransitionInstructions.m in Sources */ = {isa = PBXBuildFile; fileRef = C4525D3116F92BA90064B891 /* THTransitionInstructions.m */; };
-		C4525DF516F92BA90064B891 /* THCompositionBuilderFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = C4525D3516F92BA90064B891 /* THCompositionBuilderFactory.m */; };
-		C4525DF616F92BA90064B891 /* THTimelineBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = C4525D3716F92BA90064B891 /* THTimelineBuilder.m */; };
-		C4525DF716F92BA90064B891 /* THCompositionLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C4525D3A16F92BA90064B891 /* THCompositionLayer.m */; };
-		C4525DF916F92BA90064B891 /* THTitleLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C4525D3E16F92BA90064B891 /* THTitleLayer.m */; };
-		C4525DFA16F92BA90064B891 /* THAppSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = C4525D4016F92BA90064B891 /* THAppSettings.m */; };
-		C4525DFB16F92BA90064B891 /* THAudioItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C4525D4216F92BA90064B891 /* THAudioItem.m */; };
-		C4525DFC16F92BA90064B891 /* THMediaItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C4525D4416F92BA90064B891 /* THMediaItem.m */; };
-		C4525DFD16F92BA90064B891 /* THTimeline.m in Sources */ = {isa = PBXBuildFile; fileRef = C4525D4716F92BA90064B891 /* THTimeline.m */; };
-		C4525DFE16F92BA90064B891 /* THTimelineItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C4525D4916F92BA90064B891 /* THTimelineItem.m */; };
-		C4525DFF16F92BA90064B891 /* THVideoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C4525D4B16F92BA90064B891 /* THVideoItem.m */; };
-		C4525E0016F92BA90064B891 /* THVideoTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = C4525D4D16F92BA90064B891 /* THVideoTransition.m */; };
-		C4525E0116F92BA90064B891 /* THVolumeAutomation.m in Sources */ = {isa = PBXBuildFile; fileRef = C4525D4F16F92BA90064B891 /* THVolumeAutomation.m */; };
 		C4525E0716F92BA90064B891 /* app_black_background.png in Resources */ = {isa = PBXBuildFile; fileRef = C4525D5A16F92BA90064B891 /* app_black_background.png */; };
 		C4525E0816F92BA90064B891 /* app_black_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4525D5B16F92BA90064B891 /* app_black_background@2x.png */; };
 		C4525E0916F92BA90064B891 /* app_cell_background.png in Resources */ = {isa = PBXBuildFile; fileRef = C4525D5C16F92BA90064B891 /* app_cell_background.png */; };
@@ -142,9 +146,6 @@
 		C4525E4F16F92BA90064B891 /* trans_btn_bg_push@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4525DA316F92BA90064B891 /* trans_btn_bg_push@2x.png */; };
 		C4525E5016F92BA90064B891 /* trans_btn_bg_xfade.png in Resources */ = {isa = PBXBuildFile; fileRef = C4525DA416F92BA90064B891 /* trans_btn_bg_xfade.png */; };
 		C4525E5116F92BA90064B891 /* trans_btn_bg_xfade@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4525DA516F92BA90064B891 /* trans_btn_bg_xfade@2x.png */; };
-		C4525E6116F92BA90064B891 /* THTimelineItemViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C4525DBA16F92BA90064B891 /* THTimelineItemViewModel.m */; };
-		C4525E6216F92BA90064B891 /* THVideoTransitionDurationViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C4525DBC16F92BA90064B891 /* THVideoTransitionDurationViewModel.m */; };
-		C4525E6316F92BA90064B891 /* THVideoTransitionTypeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C4525DBE16F92BA90064B891 /* THVideoTransitionTypeViewModel.m */; };
 		C4525E6416F92BA90064B891 /* THBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4525DC016F92BA90064B891 /* THBackgroundView.m */; };
 		C4525E6516F92BA90064B891 /* THExportProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4525DC216F92BA90064B891 /* THExportProgressView.m */; };
 		C4525E6616F92BA90064B891 /* THPlaybackView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4525DC416F92BA90064B891 /* THPlaybackView.m */; };
@@ -204,6 +205,59 @@
 		4E73D0691A87C78700500741 /* 06_1920x1080.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 06_1920x1080.mp4; sourceTree = "<group>"; };
 		4E73D06B1A87C7F200500741 /* 07_640x640.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 07_640x640.mp4; sourceTree = "<group>"; };
 		4E73D06D1A888B4200500741 /* app_video_gravity@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app_video_gravity@2x.png"; sourceTree = "<group>"; };
+		4E73D0711A88992F00500741 /* AVPlayerItem+THAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AVPlayerItem+THAdditions.h"; sourceTree = "<group>"; };
+		4E73D0721A88992F00500741 /* AVPlayerItem+THAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AVPlayerItem+THAdditions.m"; sourceTree = "<group>"; };
+		4E73D0731A88992F00500741 /* NSString+THAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+THAdditions.h"; sourceTree = "<group>"; };
+		4E73D0741A88992F00500741 /* NSString+THAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+THAdditions.m"; sourceTree = "<group>"; };
+		4E73D0751A88992F00500741 /* UIColor+THAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+THAdditions.h"; sourceTree = "<group>"; };
+		4E73D0761A88992F00500741 /* UIColor+THAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+THAdditions.m"; sourceTree = "<group>"; };
+		4E73D0771A88992F00500741 /* UIView+THAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+THAdditions.h"; sourceTree = "<group>"; };
+		4E73D0781A88992F00500741 /* UIView+THAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+THAdditions.m"; sourceTree = "<group>"; };
+		4E73D07C1A88992F00500741 /* THAdvancedComposition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THAdvancedComposition.h; sourceTree = "<group>"; };
+		4E73D07D1A88992F00500741 /* THAdvancedComposition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THAdvancedComposition.m; sourceTree = "<group>"; };
+		4E73D07E1A88992F00500741 /* THAdvancedCompositionBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THAdvancedCompositionBuilder.h; sourceTree = "<group>"; };
+		4E73D07F1A88992F00500741 /* THAdvancedCompositionBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THAdvancedCompositionBuilder.m; sourceTree = "<group>"; };
+		4E73D0801A88992F00500741 /* THBasicComposition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THBasicComposition.h; sourceTree = "<group>"; };
+		4E73D0811A88992F00500741 /* THBasicComposition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THBasicComposition.m; sourceTree = "<group>"; };
+		4E73D0821A88992F00500741 /* THBasicCompositionBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THBasicCompositionBuilder.h; sourceTree = "<group>"; };
+		4E73D0831A88992F00500741 /* THBasicCompositionBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THBasicCompositionBuilder.m; sourceTree = "<group>"; };
+		4E73D0841A88992F00500741 /* THTransitionInstructions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THTransitionInstructions.h; sourceTree = "<group>"; };
+		4E73D0851A88992F00500741 /* THTransitionInstructions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THTransitionInstructions.m; sourceTree = "<group>"; };
+		4E73D0861A88992F00500741 /* THComposition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THComposition.h; sourceTree = "<group>"; };
+		4E73D0881A88992F00500741 /* THCompositionBuilderFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THCompositionBuilderFactory.h; sourceTree = "<group>"; };
+		4E73D0891A88992F00500741 /* THCompositionBuilderFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THCompositionBuilderFactory.m; sourceTree = "<group>"; };
+		4E73D08A1A88992F00500741 /* THTimelineBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THTimelineBuilder.h; sourceTree = "<group>"; };
+		4E73D08B1A88992F00500741 /* THTimelineBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THTimelineBuilder.m; sourceTree = "<group>"; };
+		4E73D08D1A88992F00500741 /* THCompositionLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THCompositionLayer.h; sourceTree = "<group>"; };
+		4E73D08E1A88992F00500741 /* THCompositionLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THCompositionLayer.m; sourceTree = "<group>"; };
+		4E73D08F1A88992F00500741 /* THTitleLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THTitleLayer.h; sourceTree = "<group>"; };
+		4E73D0901A88992F00500741 /* THTitleLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THTitleLayer.m; sourceTree = "<group>"; };
+		4E73D0911A88992F00500741 /* THAppSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THAppSettings.h; sourceTree = "<group>"; };
+		4E73D0921A88992F00500741 /* THAppSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THAppSettings.m; sourceTree = "<group>"; };
+		4E73D0931A88992F00500741 /* THAudioItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THAudioItem.h; sourceTree = "<group>"; };
+		4E73D0941A88992F00500741 /* THAudioItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THAudioItem.m; sourceTree = "<group>"; };
+		4E73D0951A88992F00500741 /* THMediaItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THMediaItem.h; sourceTree = "<group>"; };
+		4E73D0961A88992F00500741 /* THMediaItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THMediaItem.m; sourceTree = "<group>"; };
+		4E73D0971A88992F00500741 /* THModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THModels.h; sourceTree = "<group>"; };
+		4E73D0981A88992F00500741 /* THTimeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THTimeline.h; sourceTree = "<group>"; };
+		4E73D0991A88992F00500741 /* THTimeline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THTimeline.m; sourceTree = "<group>"; };
+		4E73D09A1A88992F00500741 /* THTimelineItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THTimelineItem.h; sourceTree = "<group>"; };
+		4E73D09B1A88992F00500741 /* THTimelineItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THTimelineItem.m; sourceTree = "<group>"; };
+		4E73D09C1A88992F00500741 /* THVideoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THVideoItem.h; sourceTree = "<group>"; };
+		4E73D09D1A88992F00500741 /* THVideoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THVideoItem.m; sourceTree = "<group>"; };
+		4E73D09E1A88992F00500741 /* THVideoTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THVideoTransition.h; sourceTree = "<group>"; };
+		4E73D09F1A88992F00500741 /* THVideoTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THVideoTransition.m; sourceTree = "<group>"; };
+		4E73D0A01A88992F00500741 /* THVolumeAutomation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THVolumeAutomation.h; sourceTree = "<group>"; };
+		4E73D0A11A88992F00500741 /* THVolumeAutomation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THVolumeAutomation.m; sourceTree = "<group>"; };
+		4E73D0B81A88994B00500741 /* THShared.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = THShared.h; sourceTree = "<group>"; };
+		4E73D1041A889A2400500741 /* THTimelineItemViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THTimelineItemViewModel.h; sourceTree = "<group>"; };
+		4E73D1051A889A2400500741 /* THTimelineItemViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THTimelineItemViewModel.m; sourceTree = "<group>"; };
+		4E73D1061A889A2400500741 /* THVideoTransitionDurationViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THVideoTransitionDurationViewModel.h; sourceTree = "<group>"; };
+		4E73D1071A889A2400500741 /* THVideoTransitionDurationViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THVideoTransitionDurationViewModel.m; sourceTree = "<group>"; };
+		4E73D1081A889A2400500741 /* THVideoTransitionTypeViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THVideoTransitionTypeViewModel.h; sourceTree = "<group>"; };
+		4E73D1091A889A2400500741 /* THVideoTransitionTypeViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THVideoTransitionTypeViewModel.m; sourceTree = "<group>"; };
+		4E73D1621A88A1F800500741 /* THBaseCompositionBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THBaseCompositionBuilder.h; sourceTree = "<group>"; };
+		4E73D1631A88A1F800500741 /* THBaseCompositionBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THBaseCompositionBuilder.m; sourceTree = "<group>"; };
 		C4145D8216F97A46002AFD67 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		C4145D8516F998D3002AFD67 /* tp_ff_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tp_ff_icon.png; sourceTree = "<group>"; };
 		C4145D8616F998D3002AFD67 /* tp_ff_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tp_ff_icon@2x.png"; sourceTree = "<group>"; };
@@ -233,14 +287,6 @@
 		C4289AA816F92A9D00BA04A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		C42B5C6116FA597C006F5083 /* avf_logo_large@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avf_logo_large@2x.png"; sourceTree = "<group>"; };
 		C42B5C6216FA597C006F5083 /* avf_logo_large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avf_logo_large.png; sourceTree = "<group>"; };
-		C4525CE516F92BA90064B891 /* AVPlayerItem+THAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AVPlayerItem+THAdditions.h"; sourceTree = "<group>"; };
-		C4525CE616F92BA90064B891 /* AVPlayerItem+THAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AVPlayerItem+THAdditions.m"; sourceTree = "<group>"; };
-		C4525CE716F92BA90064B891 /* NSString+THAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+THAdditions.h"; sourceTree = "<group>"; };
-		C4525CE816F92BA90064B891 /* NSString+THAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+THAdditions.m"; sourceTree = "<group>"; };
-		C4525CE916F92BA90064B891 /* UIColor+THAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+THAdditions.h"; sourceTree = "<group>"; };
-		C4525CEA16F92BA90064B891 /* UIColor+THAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+THAdditions.m"; sourceTree = "<group>"; };
-		C4525CEB16F92BA90064B891 /* UIView+THAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+THAdditions.h"; sourceTree = "<group>"; };
-		C4525CEC16F92BA90064B891 /* UIView+THAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+THAdditions.m"; sourceTree = "<group>"; };
 		C4525CEE16F92BA90064B891 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C4525CEF16F92BA90064B891 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C4525CF016F92BA90064B891 /* THNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THNotifications.h; sourceTree = "<group>"; };
@@ -292,43 +338,6 @@
 		C4525D2216F92BA90064B891 /* THTransitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THTransitionViewController.m; sourceTree = "<group>"; };
 		C4525D2316F92BA90064B891 /* THVideoPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THVideoPickerViewController.h; sourceTree = "<group>"; };
 		C4525D2416F92BA90064B891 /* THVideoPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THVideoPickerViewController.m; sourceTree = "<group>"; };
-		C4525D2816F92BA90064B891 /* THAdvancedComposition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THAdvancedComposition.h; sourceTree = "<group>"; };
-		C4525D2916F92BA90064B891 /* THAdvancedComposition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THAdvancedComposition.m; sourceTree = "<group>"; };
-		C4525D2A16F92BA90064B891 /* THAdvancedCompositionBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THAdvancedCompositionBuilder.h; sourceTree = "<group>"; };
-		C4525D2B16F92BA90064B891 /* THAdvancedCompositionBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THAdvancedCompositionBuilder.m; sourceTree = "<group>"; };
-		C4525D2C16F92BA90064B891 /* THBasicComposition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THBasicComposition.h; sourceTree = "<group>"; };
-		C4525D2D16F92BA90064B891 /* THBasicComposition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THBasicComposition.m; sourceTree = "<group>"; };
-		C4525D2E16F92BA90064B891 /* THBasicCompositionBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THBasicCompositionBuilder.h; sourceTree = "<group>"; };
-		C4525D2F16F92BA90064B891 /* THBasicCompositionBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THBasicCompositionBuilder.m; sourceTree = "<group>"; };
-		C4525D3016F92BA90064B891 /* THTransitionInstructions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THTransitionInstructions.h; sourceTree = "<group>"; };
-		C4525D3116F92BA90064B891 /* THTransitionInstructions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THTransitionInstructions.m; sourceTree = "<group>"; };
-		C4525D3216F92BA90064B891 /* THComposition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THComposition.h; sourceTree = "<group>"; };
-		C4525D3316F92BA90064B891 /* THCompositionBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THCompositionBuilder.h; sourceTree = "<group>"; };
-		C4525D3416F92BA90064B891 /* THCompositionBuilderFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THCompositionBuilderFactory.h; sourceTree = "<group>"; };
-		C4525D3516F92BA90064B891 /* THCompositionBuilderFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THCompositionBuilderFactory.m; sourceTree = "<group>"; };
-		C4525D3616F92BA90064B891 /* THTimelineBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THTimelineBuilder.h; sourceTree = "<group>"; };
-		C4525D3716F92BA90064B891 /* THTimelineBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THTimelineBuilder.m; sourceTree = "<group>"; };
-		C4525D3916F92BA90064B891 /* THCompositionLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THCompositionLayer.h; sourceTree = "<group>"; };
-		C4525D3A16F92BA90064B891 /* THCompositionLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THCompositionLayer.m; sourceTree = "<group>"; };
-		C4525D3D16F92BA90064B891 /* THTitleLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THTitleLayer.h; sourceTree = "<group>"; };
-		C4525D3E16F92BA90064B891 /* THTitleLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THTitleLayer.m; sourceTree = "<group>"; };
-		C4525D3F16F92BA90064B891 /* THAppSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THAppSettings.h; sourceTree = "<group>"; };
-		C4525D4016F92BA90064B891 /* THAppSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THAppSettings.m; sourceTree = "<group>"; };
-		C4525D4116F92BA90064B891 /* THAudioItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THAudioItem.h; sourceTree = "<group>"; };
-		C4525D4216F92BA90064B891 /* THAudioItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THAudioItem.m; sourceTree = "<group>"; };
-		C4525D4316F92BA90064B891 /* THMediaItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THMediaItem.h; sourceTree = "<group>"; };
-		C4525D4416F92BA90064B891 /* THMediaItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THMediaItem.m; sourceTree = "<group>"; };
-		C4525D4516F92BA90064B891 /* THModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THModels.h; sourceTree = "<group>"; };
-		C4525D4616F92BA90064B891 /* THTimeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THTimeline.h; sourceTree = "<group>"; };
-		C4525D4716F92BA90064B891 /* THTimeline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THTimeline.m; sourceTree = "<group>"; };
-		C4525D4816F92BA90064B891 /* THTimelineItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THTimelineItem.h; sourceTree = "<group>"; };
-		C4525D4916F92BA90064B891 /* THTimelineItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THTimelineItem.m; sourceTree = "<group>"; };
-		C4525D4A16F92BA90064B891 /* THVideoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THVideoItem.h; sourceTree = "<group>"; };
-		C4525D4B16F92BA90064B891 /* THVideoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THVideoItem.m; sourceTree = "<group>"; };
-		C4525D4C16F92BA90064B891 /* THVideoTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THVideoTransition.h; sourceTree = "<group>"; };
-		C4525D4D16F92BA90064B891 /* THVideoTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THVideoTransition.m; sourceTree = "<group>"; };
-		C4525D4E16F92BA90064B891 /* THVolumeAutomation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THVolumeAutomation.h; sourceTree = "<group>"; };
-		C4525D4F16F92BA90064B891 /* THVolumeAutomation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THVolumeAutomation.m; sourceTree = "<group>"; };
 		C4525D5A16F92BA90064B891 /* app_black_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_black_background.png; sourceTree = "<group>"; };
 		C4525D5B16F92BA90064B891 /* app_black_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app_black_background@2x.png"; sourceTree = "<group>"; };
 		C4525D5C16F92BA90064B891 /* app_cell_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_cell_background.png; sourceTree = "<group>"; };
@@ -388,12 +397,6 @@
 		C4525DA316F92BA90064B891 /* trans_btn_bg_push@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "trans_btn_bg_push@2x.png"; sourceTree = "<group>"; };
 		C4525DA416F92BA90064B891 /* trans_btn_bg_xfade.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trans_btn_bg_xfade.png; sourceTree = "<group>"; };
 		C4525DA516F92BA90064B891 /* trans_btn_bg_xfade@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "trans_btn_bg_xfade@2x.png"; sourceTree = "<group>"; };
-		C4525DB916F92BA90064B891 /* THTimelineItemViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THTimelineItemViewModel.h; sourceTree = "<group>"; };
-		C4525DBA16F92BA90064B891 /* THTimelineItemViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THTimelineItemViewModel.m; sourceTree = "<group>"; };
-		C4525DBB16F92BA90064B891 /* THVideoTransitionDurationViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THVideoTransitionDurationViewModel.h; sourceTree = "<group>"; };
-		C4525DBC16F92BA90064B891 /* THVideoTransitionDurationViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THVideoTransitionDurationViewModel.m; sourceTree = "<group>"; };
-		C4525DBD16F92BA90064B891 /* THVideoTransitionTypeViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THVideoTransitionTypeViewModel.h; sourceTree = "<group>"; };
-		C4525DBE16F92BA90064B891 /* THVideoTransitionTypeViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THVideoTransitionTypeViewModel.m; sourceTree = "<group>"; };
 		C4525DBF16F92BA90064B891 /* THBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THBackgroundView.h; sourceTree = "<group>"; };
 		C4525DC016F92BA90064B891 /* THBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THBackgroundView.m; sourceTree = "<group>"; };
 		C4525DC116F92BA90064B891 /* THExportProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THExportProgressView.h; sourceTree = "<group>"; };
@@ -479,6 +482,122 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E73D06F1A88992F00500741 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				4E73D0701A88992F00500741 /* Categories */,
+				4E73D0791A88992F00500741 /* Models */,
+				4E73D1031A889A2400500741 /* ViewModels */,
+				4E73D0A21A88992F00500741 /* Shared */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		4E73D0701A88992F00500741 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				4E73D0711A88992F00500741 /* AVPlayerItem+THAdditions.h */,
+				4E73D0721A88992F00500741 /* AVPlayerItem+THAdditions.m */,
+				4E73D0731A88992F00500741 /* NSString+THAdditions.h */,
+				4E73D0741A88992F00500741 /* NSString+THAdditions.m */,
+				4E73D0751A88992F00500741 /* UIColor+THAdditions.h */,
+				4E73D0761A88992F00500741 /* UIColor+THAdditions.m */,
+				4E73D0771A88992F00500741 /* UIView+THAdditions.h */,
+				4E73D0781A88992F00500741 /* UIView+THAdditions.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		4E73D0791A88992F00500741 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4E73D07A1A88992F00500741 /* Builders */,
+				4E73D08C1A88992F00500741 /* Layers */,
+				4E73D0911A88992F00500741 /* THAppSettings.h */,
+				4E73D0921A88992F00500741 /* THAppSettings.m */,
+				4E73D0931A88992F00500741 /* THAudioItem.h */,
+				4E73D0941A88992F00500741 /* THAudioItem.m */,
+				4E73D0951A88992F00500741 /* THMediaItem.h */,
+				4E73D0961A88992F00500741 /* THMediaItem.m */,
+				4E73D0971A88992F00500741 /* THModels.h */,
+				4E73D0981A88992F00500741 /* THTimeline.h */,
+				4E73D0991A88992F00500741 /* THTimeline.m */,
+				4E73D09A1A88992F00500741 /* THTimelineItem.h */,
+				4E73D09B1A88992F00500741 /* THTimelineItem.m */,
+				4E73D09C1A88992F00500741 /* THVideoItem.h */,
+				4E73D09D1A88992F00500741 /* THVideoItem.m */,
+				4E73D09E1A88992F00500741 /* THVideoTransition.h */,
+				4E73D09F1A88992F00500741 /* THVideoTransition.m */,
+				4E73D0A01A88992F00500741 /* THVolumeAutomation.h */,
+				4E73D0A11A88992F00500741 /* THVolumeAutomation.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4E73D07A1A88992F00500741 /* Builders */ = {
+			isa = PBXGroup;
+			children = (
+				4E73D07B1A88992F00500741 /* Private */,
+				4E73D0861A88992F00500741 /* THComposition.h */,
+				4E73D1621A88A1F800500741 /* THBaseCompositionBuilder.h */,
+				4E73D1631A88A1F800500741 /* THBaseCompositionBuilder.m */,
+				4E73D0881A88992F00500741 /* THCompositionBuilderFactory.h */,
+				4E73D0891A88992F00500741 /* THCompositionBuilderFactory.m */,
+				4E73D08A1A88992F00500741 /* THTimelineBuilder.h */,
+				4E73D08B1A88992F00500741 /* THTimelineBuilder.m */,
+			);
+			path = Builders;
+			sourceTree = "<group>";
+		};
+		4E73D07B1A88992F00500741 /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				4E73D07C1A88992F00500741 /* THAdvancedComposition.h */,
+				4E73D07D1A88992F00500741 /* THAdvancedComposition.m */,
+				4E73D07E1A88992F00500741 /* THAdvancedCompositionBuilder.h */,
+				4E73D07F1A88992F00500741 /* THAdvancedCompositionBuilder.m */,
+				4E73D0801A88992F00500741 /* THBasicComposition.h */,
+				4E73D0811A88992F00500741 /* THBasicComposition.m */,
+				4E73D0821A88992F00500741 /* THBasicCompositionBuilder.h */,
+				4E73D0831A88992F00500741 /* THBasicCompositionBuilder.m */,
+				4E73D0841A88992F00500741 /* THTransitionInstructions.h */,
+				4E73D0851A88992F00500741 /* THTransitionInstructions.m */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		4E73D08C1A88992F00500741 /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				4E73D08D1A88992F00500741 /* THCompositionLayer.h */,
+				4E73D08E1A88992F00500741 /* THCompositionLayer.m */,
+				4E73D08F1A88992F00500741 /* THTitleLayer.h */,
+				4E73D0901A88992F00500741 /* THTitleLayer.m */,
+			);
+			path = Layers;
+			sourceTree = "<group>";
+		};
+		4E73D0A21A88992F00500741 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				4E73D0B81A88994B00500741 /* THShared.h */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		4E73D1031A889A2400500741 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4E73D1041A889A2400500741 /* THTimelineItemViewModel.h */,
+				4E73D1051A889A2400500741 /* THTimelineItemViewModel.m */,
+				4E73D1061A889A2400500741 /* THVideoTransitionDurationViewModel.h */,
+				4E73D1071A889A2400500741 /* THVideoTransitionDurationViewModel.m */,
+				4E73D1081A889A2400500741 /* THVideoTransitionTypeViewModel.h */,
+				4E73D1091A889A2400500741 /* THVideoTransitionTypeViewModel.m */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		C4145D5116F93DEC002AFD67 /* Video */ = {
 			isa = PBXGroup;
 			children = (
@@ -531,10 +650,9 @@
 		C4289A9516F92A9D00BA04A9 /* AVFoundationEditor */ = {
 			isa = PBXGroup;
 			children = (
-				C4525CE416F92BA90064B891 /* Categories */,
+				4E73D06F1A88992F00500741 /* Library */,
 				C4525CED16F92BA90064B891 /* Common */,
 				C4525CFF16F92BA90064B891 /* Controllers */,
-				C4525D2516F92BA90064B891 /* Models */,
 				C4525DB716F92BA90064B891 /* Views */,
 				C4289AA716F92A9D00BA04A9 /* MainStoryboard.storyboard */,
 				C4289A9616F92A9D00BA04A9 /* Supporting Files */,
@@ -555,21 +673,6 @@
 				C4289AA516F92A9D00BA04A9 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		C4525CE416F92BA90064B891 /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-				C4525CE516F92BA90064B891 /* AVPlayerItem+THAdditions.h */,
-				C4525CE616F92BA90064B891 /* AVPlayerItem+THAdditions.m */,
-				C4525CE716F92BA90064B891 /* NSString+THAdditions.h */,
-				C4525CE816F92BA90064B891 /* NSString+THAdditions.m */,
-				C4525CE916F92BA90064B891 /* UIColor+THAdditions.h */,
-				C4525CEA16F92BA90064B891 /* UIColor+THAdditions.m */,
-				C4525CEB16F92BA90064B891 /* UIView+THAdditions.h */,
-				C4525CEC16F92BA90064B891 /* UIView+THAdditions.m */,
-			);
-			path = Categories;
 			sourceTree = "<group>";
 		};
 		C4525CED16F92BA90064B891 /* Common */ = {
@@ -659,74 +762,6 @@
 				C4525D1316F92BA90064B891 /* THTimelineLayoutAttributes.m */,
 			);
 			path = Layouts;
-			sourceTree = "<group>";
-		};
-		C4525D2516F92BA90064B891 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				C4525D2616F92BA90064B891 /* Builders */,
-				C4525D3816F92BA90064B891 /* Layers */,
-				C4525D3F16F92BA90064B891 /* THAppSettings.h */,
-				C4525D4016F92BA90064B891 /* THAppSettings.m */,
-				C4525D4116F92BA90064B891 /* THAudioItem.h */,
-				C4525D4216F92BA90064B891 /* THAudioItem.m */,
-				C4525D4316F92BA90064B891 /* THMediaItem.h */,
-				C4525D4416F92BA90064B891 /* THMediaItem.m */,
-				C4525D4516F92BA90064B891 /* THModels.h */,
-				C4525D4616F92BA90064B891 /* THTimeline.h */,
-				C4525D4716F92BA90064B891 /* THTimeline.m */,
-				C4525D4816F92BA90064B891 /* THTimelineItem.h */,
-				C4525D4916F92BA90064B891 /* THTimelineItem.m */,
-				C4525D4A16F92BA90064B891 /* THVideoItem.h */,
-				C4525D4B16F92BA90064B891 /* THVideoItem.m */,
-				C4525D4C16F92BA90064B891 /* THVideoTransition.h */,
-				C4525D4D16F92BA90064B891 /* THVideoTransition.m */,
-				C4525D4E16F92BA90064B891 /* THVolumeAutomation.h */,
-				C4525D4F16F92BA90064B891 /* THVolumeAutomation.m */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		C4525D2616F92BA90064B891 /* Builders */ = {
-			isa = PBXGroup;
-			children = (
-				C4525D2716F92BA90064B891 /* Private */,
-				C4525D3216F92BA90064B891 /* THComposition.h */,
-				C4525D3316F92BA90064B891 /* THCompositionBuilder.h */,
-				C4525D3416F92BA90064B891 /* THCompositionBuilderFactory.h */,
-				C4525D3516F92BA90064B891 /* THCompositionBuilderFactory.m */,
-				C4525D3616F92BA90064B891 /* THTimelineBuilder.h */,
-				C4525D3716F92BA90064B891 /* THTimelineBuilder.m */,
-			);
-			path = Builders;
-			sourceTree = "<group>";
-		};
-		C4525D2716F92BA90064B891 /* Private */ = {
-			isa = PBXGroup;
-			children = (
-				C4525D2816F92BA90064B891 /* THAdvancedComposition.h */,
-				C4525D2916F92BA90064B891 /* THAdvancedComposition.m */,
-				C4525D2A16F92BA90064B891 /* THAdvancedCompositionBuilder.h */,
-				C4525D2B16F92BA90064B891 /* THAdvancedCompositionBuilder.m */,
-				C4525D2C16F92BA90064B891 /* THBasicComposition.h */,
-				C4525D2D16F92BA90064B891 /* THBasicComposition.m */,
-				C4525D2E16F92BA90064B891 /* THBasicCompositionBuilder.h */,
-				C4525D2F16F92BA90064B891 /* THBasicCompositionBuilder.m */,
-				C4525D3016F92BA90064B891 /* THTransitionInstructions.h */,
-				C4525D3116F92BA90064B891 /* THTransitionInstructions.m */,
-			);
-			path = Private;
-			sourceTree = "<group>";
-		};
-		C4525D3816F92BA90064B891 /* Layers */ = {
-			isa = PBXGroup;
-			children = (
-				C4525D3916F92BA90064B891 /* THCompositionLayer.h */,
-				C4525D3A16F92BA90064B891 /* THCompositionLayer.m */,
-				C4525D3D16F92BA90064B891 /* THTitleLayer.h */,
-				C4525D3E16F92BA90064B891 /* THTitleLayer.m */,
-			);
-			path = Layers;
 			sourceTree = "<group>";
 		};
 		C4525D5016F92BA90064B891 /* Resources */ = {
@@ -880,7 +915,6 @@
 			children = (
 				C45BA3D316F9BD0F00627C66 /* DDProgressView.h */,
 				C45BA3D416F9BD0F00627C66 /* DDProgressView.m */,
-				C4525DB816F92BA90064B891 /* Models */,
 				C4525DBF16F92BA90064B891 /* THBackgroundView.h */,
 				C4525DC016F92BA90064B891 /* THBackgroundView.m */,
 				C4525DC116F92BA90064B891 /* THExportProgressView.h */,
@@ -903,19 +937,6 @@
 				C4525DD216F92BA90064B891 /* THVolumeAutomationView.m */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		C4525DB816F92BA90064B891 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				C4525DB916F92BA90064B891 /* THTimelineItemViewModel.h */,
-				C4525DBA16F92BA90064B891 /* THTimelineItemViewModel.m */,
-				C4525DBB16F92BA90064B891 /* THVideoTransitionDurationViewModel.h */,
-				C4525DBC16F92BA90064B891 /* THVideoTransitionDurationViewModel.m */,
-				C4525DBD16F92BA90064B891 /* THVideoTransitionTypeViewModel.h */,
-				C4525DBE16F92BA90064B891 /* THVideoTransitionTypeViewModel.m */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1099,67 +1120,68 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E73D0AE1A88992F00500741 /* THCompositionLayer.m in Sources */,
 				C4289A9C16F92A9D00BA04A9 /* main.m in Sources */,
-				C4525DD316F92BA90064B891 /* AVPlayerItem+THAdditions.m in Sources */,
-				C4525DD416F92BA90064B891 /* NSString+THAdditions.m in Sources */,
-				C4525DD516F92BA90064B891 /* UIColor+THAdditions.m in Sources */,
-				C4525DD616F92BA90064B891 /* UIView+THAdditions.m in Sources */,
+				4E73D0B31A88992F00500741 /* THTimeline.m in Sources */,
 				C4525DD716F92BA90064B891 /* AppDelegate.m in Sources */,
+				4E73D10A1A889A2400500741 /* THTimelineItemViewModel.m in Sources */,
 				C4525DD816F92BA90064B891 /* THNotifications.m in Sources */,
+				4E73D0B41A88992F00500741 /* THTimelineItem.m in Sources */,
 				C4525DD916F92BA90064B891 /* THTabBarButton.m in Sources */,
+				4E73D0AD1A88992F00500741 /* THTimelineBuilder.m in Sources */,
 				C4525DDA16F92BA90064B891 /* THTabBarController.m in Sources */,
 				C4525DDB16F92BA90064B891 /* THTabBarControllerView.m in Sources */,
+				4E73D0AB1A88992F00500741 /* THTransitionInstructions.m in Sources */,
 				C4525DDC16F92BA90064B891 /* THTabBarItem.m in Sources */,
+				4E73D0A31A88992F00500741 /* AVPlayerItem+THAdditions.m in Sources */,
 				C4525DDD16F92BA90064B891 /* THTabBarRelationshipSegue.m in Sources */,
+				4E73D10B1A889A2400500741 /* THVideoTransitionDurationViewModel.m in Sources */,
+				4E73D0A91A88992F00500741 /* THBasicComposition.m in Sources */,
 				C4525DDE16F92BA90064B891 /* THTabBarView.m in Sources */,
+				4E73D10C1A889A2400500741 /* THVideoTransitionTypeViewModel.m in Sources */,
+				4E73D0A61A88992F00500741 /* UIView+THAdditions.m in Sources */,
 				C4525DDF16F92BA90064B891 /* THAudioItemCollectionViewCell.m in Sources */,
 				C4525DE016F92BA90064B891 /* THAudioItemTableViewCell.m in Sources */,
+				4E73D0A71A88992F00500741 /* THAdvancedComposition.m in Sources */,
+				4E73D0AA1A88992F00500741 /* THBasicCompositionBuilder.m in Sources */,
 				C4525DE116F92BA90064B891 /* THLightTableViewCell.m in Sources */,
+				4E73D0B11A88992F00500741 /* THAudioItem.m in Sources */,
 				C4525DE216F92BA90064B891 /* THTimelineItemCell.m in Sources */,
 				C4525DE316F92BA90064B891 /* THTransitionCollectionViewCell.m in Sources */,
+				4E73D0B71A88992F00500741 /* THVolumeAutomation.m in Sources */,
+				4E73D1641A88A1F800500741 /* THBaseCompositionBuilder.m in Sources */,
 				C4525DE416F92BA90064B891 /* THVideoItemCollectionViewCell.m in Sources */,
 				C4525DE516F92BA90064B891 /* THVideoItemTableViewCell.m in Sources */,
 				C4525DE616F92BA90064B891 /* THTimelineLayout.m in Sources */,
+				4E73D0AF1A88992F00500741 /* THTitleLayer.m in Sources */,
+				4E73D0A81A88992F00500741 /* THAdvancedCompositionBuilder.m in Sources */,
 				C4525DE716F92BA90064B891 /* THTimelineLayoutAttributes.m in Sources */,
 				C4525DE816F92BA90064B891 /* THAudioPickerViewController.m in Sources */,
 				C4525DE916F92BA90064B891 /* THMainViewController.m in Sources */,
 				C4525DEA16F92BA90064B891 /* THPlayerViewController.m in Sources */,
 				C4525DEB16F92BA90064B891 /* THSettingsViewController.m in Sources */,
+				4E73D0AC1A88992F00500741 /* THCompositionBuilderFactory.m in Sources */,
 				C4525DEC16F92BA90064B891 /* THTimelineDataSource.m in Sources */,
 				C4525DED16F92BA90064B891 /* THTimelineViewController.m in Sources */,
 				C4525DEE16F92BA90064B891 /* THTransitionViewController.m in Sources */,
 				C4525DEF16F92BA90064B891 /* THVideoPickerViewController.m in Sources */,
-				C4525DF016F92BA90064B891 /* THAdvancedComposition.m in Sources */,
-				C4525DF116F92BA90064B891 /* THAdvancedCompositionBuilder.m in Sources */,
-				C4525DF216F92BA90064B891 /* THBasicComposition.m in Sources */,
-				C4525DF316F92BA90064B891 /* THBasicCompositionBuilder.m in Sources */,
-				C4525DF416F92BA90064B891 /* THTransitionInstructions.m in Sources */,
-				C4525DF516F92BA90064B891 /* THCompositionBuilderFactory.m in Sources */,
-				C4525DF616F92BA90064B891 /* THTimelineBuilder.m in Sources */,
-				C4525DF716F92BA90064B891 /* THCompositionLayer.m in Sources */,
-				C4525DF916F92BA90064B891 /* THTitleLayer.m in Sources */,
-				C4525DFA16F92BA90064B891 /* THAppSettings.m in Sources */,
-				C4525DFB16F92BA90064B891 /* THAudioItem.m in Sources */,
-				C4525DFC16F92BA90064B891 /* THMediaItem.m in Sources */,
-				C4525DFD16F92BA90064B891 /* THTimeline.m in Sources */,
-				C4525DFE16F92BA90064B891 /* THTimelineItem.m in Sources */,
-				C4525DFF16F92BA90064B891 /* THVideoItem.m in Sources */,
-				C4525E0016F92BA90064B891 /* THVideoTransition.m in Sources */,
-				C4525E0116F92BA90064B891 /* THVolumeAutomation.m in Sources */,
-				C4525E6116F92BA90064B891 /* THTimelineItemViewModel.m in Sources */,
-				C4525E6216F92BA90064B891 /* THVideoTransitionDurationViewModel.m in Sources */,
-				C4525E6316F92BA90064B891 /* THVideoTransitionTypeViewModel.m in Sources */,
+				4E73D0B61A88992F00500741 /* THVideoTransition.m in Sources */,
 				C4525E6416F92BA90064B891 /* THBackgroundView.m in Sources */,
 				C4525E6516F92BA90064B891 /* THExportProgressView.m in Sources */,
+				4E73D0B21A88992F00500741 /* THMediaItem.m in Sources */,
 				C4525E6616F92BA90064B891 /* THPlaybackView.m in Sources */,
+				4E73D0A51A88992F00500741 /* UIColor+THAdditions.m in Sources */,
 				C4525E6716F92BA90064B891 /* THTableSectionHeaderView.m in Sources */,
 				C4525E6816F92BA90064B891 /* THThumbnailView.m in Sources */,
 				C4525E6916F92BA90064B891 /* THTimelineItemView.m in Sources */,
 				C4525E6A16F92BA90064B891 /* THTransitionButton.m in Sources */,
+				4E73D0B01A88992F00500741 /* THAppSettings.m in Sources */,
 				C4525E6B16F92BA90064B891 /* THTransportView.m in Sources */,
 				C4525E6C16F92BA90064B891 /* THVideoPickerOverlayView.m in Sources */,
+				4E73D0A41A88992F00500741 /* NSString+THAdditions.m in Sources */,
 				C4525E6D16F92BA90064B891 /* THVolumeAutomationView.m in Sources */,
 				C45BA3D516F9BD0F00627C66 /* DDProgressView.m in Sources */,
+				4E73D0B51A88992F00500741 /* THVideoItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

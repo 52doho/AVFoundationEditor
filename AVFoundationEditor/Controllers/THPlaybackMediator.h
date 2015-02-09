@@ -23,6 +23,7 @@
 //
 
 #import "THMediaItem.h"
+#import "THShared.h"
 
 @protocol THPlaybackMediator <NSObject>
 

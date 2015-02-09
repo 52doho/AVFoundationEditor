@@ -22,11 +22,11 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //
 
-#import "THCompositionBuilder.h"
+#import "THBaseCompositionBuilder.h"
 #import "THTimeline.h"
 
-@interface THBasicCompositionBuilder : NSObject <THCompositionBuilder>
+@interface THCompositionBuilderFactory : NSObject
 
-- (id)initWithTimeline:(THTimeline *)timeline;
+- (THBaseCompositionBuilder *)builderForTimeline:(THTimeline *)timeline;
 
 @end

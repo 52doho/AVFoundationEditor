@@ -28,7 +28,6 @@
 #import "THVideoPickerViewController.h"
 #import "THVideoItem.h"
 #import "THCompositionBuilderFactory.h"
-#import "THCompositionBuilder.h"
 #import "THTimeline.h"
 #import "THNotifications.h"
 #import <MobileCoreServices/MobileCoreServices.h>
@@ -73,7 +72,9 @@
 
 - (void)prepareTimelineForPlayback {
 	THTimeline *timeline = self.timelineViewController.currentTimeline;
-	id<THCompositionBuilder> builder = [self.factory builderForTimeline:timeline];
+	THBaseCompositionBuilder *builder = [self.factory builderForTimeline:timeline];
+	builder.renderSize = OUTPUT_VIDEO_SIZE;
+	builder.frameRate = 30;
 	id<THComposition> composition = [builder buildComposition];
 	[self.playerViewController playPlayerItem:[composition makePlayable]];
 }
@@ -88,12 +89,19 @@
 
 - (void)exportComposition:(NSNotification *)notification {
 	THTimeline *timeline = self.timelineViewController.currentTimeline;
-	id<THCompositionBuilder> builder = [self.factory builderForTimeline:timeline];
+	THBaseCompositionBuilder *builder = [self.factory builderForTimeline:timeline];
+	builder.renderSize = OUTPUT_VIDEO_SIZE;
+	builder.frameRate = 30;
 	id<THComposition> composition = [builder buildComposition];
 
 	self.exportSession = [composition makeExportable];
 	self.exportSession.outputURL = [self exportURL];
 	self.exportSession.outputFileType = AVFileTypeMPEG4;
+//	if ([self.exportSession.videoComposition isKindOfClass:[AVMutableVideoComposition class]]) {
+//		AVMutableVideoComposition *composition = (AVMutableVideoComposition *)self.exportSession.videoComposition;
+//		composition.renderSize = ;
+//		composition.frameDuration = CMTimeMake(1, 30);
+//	}
 
 	[self.exportSession exportAsynchronouslyWithCompletionHandler:^ {
 		[self playerViewController].exporting = NO;

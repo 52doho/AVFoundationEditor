@@ -30,23 +30,15 @@
 #import "THTitleLayer.h"
 #import "THAdvancedComposition.h"
 #import "THTransitionInstructions.h"
+#import "THShared.h"
 
 @interface THAdvancedCompositionBuilder ()
-@property (nonatomic, strong) THTimeline *timeline;
 @property (nonatomic, strong) AVMutableComposition *composition;
 @property (nonatomic, strong) AVVideoComposition *videoComposition;
 @property (nonatomic, weak) AVMutableCompositionTrack *musicTrack;
 @end
 
 @implementation THAdvancedCompositionBuilder
-
-- (id)initWithTimeline:(THTimeline *)timeline {
-	self = [super init];
-	if (self) {
-		_timeline = timeline;
-	}
-	return self;
-}
 
 - (id <THComposition>)buildComposition {
 
@@ -57,7 +49,8 @@
 	return [[THAdvancedComposition alloc] initWithComposition:self.composition
 											 videoComposition:[self buildVideoComposition]
 													 audioMix:[self buildAudioMix]
-												   titleLayer:[self buildTitleLayer]];
+												   titleLayer:[self buildTitleLayer]
+												   renderSize:self.renderSize];
 }
 
 - (void)buildCompositionTracks {
@@ -152,10 +145,10 @@
 			// Push
 			// Set a transform ramp on fromLayer from identity to all the way left of the screen.
 			[fromLayerInstruction setTransformRampFromStartTransform:CGAffineTransformIdentity
-													  toEndTransform:CGAffineTransformMakeTranslation(-OUTPUT_VIDEO_SIZE.width, 0.0)
+													  toEndTransform:CGAffineTransformMakeTranslation(-self.renderSize.width, 0.0)
 														   timeRange:timeRange];
 			// Set a transform ramp on toLayer from all the way right of the screen to identity.
-			[toLayerInstruction setTransformRampFromStartTransform:CGAffineTransformMakeTranslation(OUTPUT_VIDEO_SIZE.width, 0.0)
+			[toLayerInstruction setTransformRampFromStartTransform:CGAffineTransformMakeTranslation(self.renderSize.width, 0.0)
 													toEndTransform:CGAffineTransformIdentity
 														 timeRange:timeRange];
 
@@ -163,8 +156,8 @@
 
 		instructions.compositionInstruction.layerInstructions = @[fromLayerInstruction, toLayerInstruction];
 	}
-	composition.renderSize = OUTPUT_VIDEO_SIZE;
-	composition.frameDuration = CMTimeMake(1, OUTPUT_FRAME_RATE);
+	composition.renderSize = self.renderSize;
+	composition.frameDuration = CMTimeMake(1, self.frameRate);
 	
 	return composition;
 }
@@ -198,7 +191,7 @@
 			THMediaItem *item = self.timeline.videos[videoItemIndex];
 			AVAssetTrack *assetTrack = [item.asset tracksWithMediaType:AVMediaTypeVideo][0];
 			CGSize size = assetTrack.naturalSize;
-			CGAffineTransform transform = [self _calculateTransformWithSize:size inSize:OUTPUT_VIDEO_SIZE];
+			CGAffineTransform transform = [self _calculateTransformWithSize:size inSize:self.renderSize];
 			
 			for (AVMutableVideoCompositionLayerInstruction *compositionLayerInstruction in instruction.layerInstructions) {
 				CGAffineTransform targetTransform = CGAffineTransformConcat(assetTrack.preferredTransform, transform);
@@ -262,8 +255,8 @@
 - (CALayer *)buildTitleLayer {
 
 	CALayer *titleLayer = [CALayer layer];
-	titleLayer.bounds = OUTPUT_VIDEO_BOUNDS;
-	titleLayer.position = CGPointMake(OUTPUT_VIDEO_SIZE.width / 2, OUTPUT_VIDEO_SIZE.height / 2);
+	titleLayer.bounds = CGRectMake(0, 0, self.renderSize.width, self.renderSize.height);
+	titleLayer.position = CGPointMake(self.renderSize.width / 2, self.renderSize.height / 2);
 
 	for (THCompositionLayer *compositionLayer in self.timeline.titles) {
 		CALayer *layer = compositionLayer.layer;

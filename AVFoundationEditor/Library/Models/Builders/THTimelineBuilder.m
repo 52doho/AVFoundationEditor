@@ -24,6 +24,7 @@
 
 #import "THTimelineBuilder.h"
 #import "THVideoTransition.h"
+#import "THShared.h"
 
 @implementation THTimelineBuilder
 

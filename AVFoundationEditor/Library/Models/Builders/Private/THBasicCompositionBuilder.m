@@ -27,19 +27,10 @@
 #import "THAdvancedComposition.h"
 
 @interface THBasicCompositionBuilder ()
-@property (nonatomic, strong) THTimeline *timeline;
 @property (nonatomic, strong) AVMutableComposition *composition;
 @end
 
 @implementation THBasicCompositionBuilder
-
-- (id)initWithTimeline:(THTimeline *)timeline {
-	self = [super init];
-	if (self) {
-		_timeline = timeline;
-	}
-	return self;
-}
 
 - (id <THComposition>)buildComposition {
 

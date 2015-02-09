@@ -9,7 +9,7 @@ http://bobmccune.com/"
   s.author       = { "bob mccune" }
   s.platform     = :ios, "7.0"
   s.source       = { :git => "https://github.com/52doho/AVFoundationEditor.git", :branch=> "develop"}
-  s.source_files  = "Models/**/*.{h,m}", "Categories/**/*.{h,m}"
+  s.source_files  = "Library/**/*.{h,m}"
   s.frameworks = "AVFoundation", "CoreMedia", "CoreText", "AssetsLibrary"
   s.requires_arc = true
 end

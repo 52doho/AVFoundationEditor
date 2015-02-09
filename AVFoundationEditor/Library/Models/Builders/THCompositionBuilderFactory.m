@@ -22,17 +22,18 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //
 
-#import "THBasicComposition.h"
+#import "THCompositionBuilderFactory.h"
+#import "THBasicCompositionBuilder.h"
+#import "THAdvancedCompositionBuilder.h"
 
-@interface THAdvancedComposition : THBasicComposition
+@implementation THCompositionBuilderFactory
 
-@property (nonatomic, strong, readonly) AVVideoComposition *videoComposition;
-@property (nonatomic, strong, readonly) AVAudioMix *audioMix;
-@property (nonatomic, strong, readonly) CALayer *titleLayer;
-
-- (id)initWithComposition:(AVComposition *)composition
-		 videoComposition:(AVVideoComposition *)videoComposition
-				 audioMix:(AVAudioMix *)audioMix
-			   titleLayer:(CALayer *)titleLayer;
+- (THBaseCompositionBuilder *)builderForTimeline:(THTimeline *)timeline {
+	if ([timeline isSimpleTimeline]) {
+		return [[THBasicCompositionBuilder alloc] initWithTimeline:timeline];
+	} else {
+		return [[THAdvancedCompositionBuilder alloc] initWithTimeline:timeline];
+	}
+}
 
 @end

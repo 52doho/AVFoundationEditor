@@ -22,18 +22,9 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //
 
-#import "THCompositionBuilderFactory.h"
-#import "THBasicCompositionBuilder.h"
-#import "THAdvancedCompositionBuilder.h"
+#import "THBaseCompositionBuilder.h"
+#import "THTimeline.h"
 
-@implementation THCompositionBuilderFactory
-
-- (id <THCompositionBuilder>)builderForTimeline:(THTimeline *)timeline {
-	if ([timeline isSimpleTimeline]) {
-		return [[THBasicCompositionBuilder alloc] initWithTimeline:timeline];
-	} else {
-		return [[THAdvancedCompositionBuilder alloc] initWithTimeline:timeline];
-	}
-}
+@interface THBasicCompositionBuilder : THBaseCompositionBuilder
 
 @end
