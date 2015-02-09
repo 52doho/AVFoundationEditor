@@ -41,7 +41,6 @@
 @implementation THAdvancedCompositionBuilder
 
 - (id <THComposition>)buildComposition {
-
 	self.composition = [AVMutableComposition composition];
 
 	[self buildCompositionTracks];
@@ -54,43 +53,53 @@
 }
 
 - (void)buildCompositionTracks {
-
-	AVMutableCompositionTrack *compositionTrackA = [self.composition addMutableTrackWithMediaType:AVMediaTypeVideo
-																				 preferredTrackID:kCMPersistentTrackID_Invalid];
-	AVMutableCompositionTrack *compositionTrackB = [self.composition addMutableTrackWithMediaType:AVMediaTypeVideo
-																				 preferredTrackID:kCMPersistentTrackID_Invalid];
-
-	NSArray *tracks = @[compositionTrackA, compositionTrackB];
-
 	CMTime cursorTime = kCMTimeZero;
-
-	CMTime transitionDuration = self.timeline.transitions.count > 0 ? TRANSITION_DURATION : kCMTimeZero;
 	NSUInteger videoCount = self.timeline.videos.count;
-
-	// Insert video segments into alternating tracks.  Overlap them by the transition duration.
-	for (NSUInteger i = 0; i < videoCount; i++) {
-
-		NSUInteger trackIndex = i % 2;
-
-		THMediaItem *item = self.timeline.videos[i];
-		AVMutableCompositionTrack *currentTrack = tracks[trackIndex];
-		AVAssetTrack *assetTrack = [item.asset tracksWithMediaType:AVMediaTypeVideo][0];
-		[currentTrack insertTimeRange:item.timeRange ofTrack:assetTrack atTime:cursorTime error:nil];
-
-		// Overlap clips by transition duration by moving cursor to the current
-		// item's duration and then back it up by the transition duration time.
-		cursorTime = CMTimeAdd(cursorTime, item.timeRange.duration);
-		cursorTime = CMTimeSubtract(cursorTime, transitionDuration);
+	if (videoCount == 1) {
+		AVMutableCompositionTrack *compositionTrack = [self.composition addMutableTrackWithMediaType:AVMediaTypeVideo preferredTrackID:kCMPersistentTrackID_Invalid];
+		for (THMediaItem *item in self.timeline.videos) {
+			if (CMTIME_COMPARE_INLINE(item.startTimeInTimeline, !=, kCMTimeInvalid)) {
+				cursorTime = item.startTimeInTimeline;
+			}
+			
+			AVAssetTrack *assetTrack = [item.asset tracksWithMediaType:AVMediaTypeVideo][0];
+			[compositionTrack insertTimeRange:item.timeRange ofTrack:assetTrack atTime:cursorTime error:nil];
+			
+			// Move cursor to next item time
+			cursorTime = CMTimeAdd(cursorTime, item.timeRange.duration);
+		}
+	} else if (videoCount > 1) {
+		AVMutableCompositionTrack *compositionTrackA = [self.composition addMutableTrackWithMediaType:AVMediaTypeVideo preferredTrackID:kCMPersistentTrackID_Invalid];
+		AVMutableCompositionTrack *compositionTrackB = [self.composition addMutableTrackWithMediaType:AVMediaTypeVideo preferredTrackID:kCMPersistentTrackID_Invalid];
+		
+		NSArray *tracks = @[compositionTrackA, compositionTrackB];
+		CMTime transitionDuration = self.timeline.transitions.count > 0 ? TRANSITION_DURATION : kCMTimeZero;
+		
+		// Insert video segments into alternating tracks.  Overlap them by the transition duration.
+		for (NSUInteger i = 0; i < videoCount; i++) {
+			
+			NSUInteger trackIndex = i % 2;
+			
+			THMediaItem *item = self.timeline.videos[i];
+			AVMutableCompositionTrack *currentTrack = tracks[trackIndex];
+			AVAssetTrack *assetTrack = [item.asset tracksWithMediaType:AVMediaTypeVideo][0];
+			[currentTrack insertTimeRange:item.timeRange ofTrack:assetTrack atTime:cursorTime error:nil];
+			
+			// Overlap clips by transition duration by moving cursor to the current
+			// item's duration and then back it up by the transition duration time.
+			cursorTime = CMTimeAdd(cursorTime, item.timeRange.duration);
+			cursorTime = CMTimeSubtract(cursorTime, transitionDuration);
+		}
 	}
 
 	// Add voice overs
-	[self addCompositionTrackOfType:AVMediaTypeAudio forMediaItems:self.timeline.voiceOvers maxCursorTime:cursorTime];
+	[self addCompositionTrackOfType:AVMediaTypeAudio forMediaItems:self.timeline.voiceOvers maxVideoTime:cursorTime];
 
 	// Add music track
-	self.musicTrack = [self addCompositionTrackOfType:AVMediaTypeAudio forMediaItems:self.timeline.musicItems maxCursorTime:cursorTime];
+	self.musicTrack = [self addCompositionTrackOfType:AVMediaTypeAudio forMediaItems:self.timeline.musicItems maxVideoTime:cursorTime];
 }
 
-- (AVMutableCompositionTrack *)addCompositionTrackOfType:(NSString *)mediaType forMediaItems:(NSArray *)mediaItems maxCursorTime:(CMTime)maxCursorTime {
+- (AVMutableCompositionTrack *)addCompositionTrackOfType:(NSString *)mediaType forMediaItems:(NSArray *)mediaItems maxVideoTime:(CMTime)maxVideoTime {
 
 	AVMutableCompositionTrack *compositionTrack = nil;
 
@@ -107,8 +116,8 @@
 
 			BOOL needStop = NO;
 			CMTime nextCursorTime = CMTimeAdd(cursorTime, item.timeRange.duration);
-			if (CMTIME_COMPARE_INLINE(nextCursorTime, >, maxCursorTime)) {
-				CMTime duration = CMTimeSubtract(maxCursorTime, item.timeRange.start);
+			if (CMTIME_COMPARE_INLINE(nextCursorTime, >, maxVideoTime)) {
+				CMTime duration = CMTimeSubtract(maxVideoTime, item.timeRange.start);
 				item.timeRange = CMTimeRangeMake(item.timeRange.start, duration);
 				needStop = YES;
 			}
