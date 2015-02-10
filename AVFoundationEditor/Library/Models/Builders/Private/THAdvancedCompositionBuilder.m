@@ -200,6 +200,8 @@
 			THMediaItem *item = self.timeline.videos[videoItemIndex];
 			AVAssetTrack *assetTrack = [item.asset tracksWithMediaType:AVMediaTypeVideo][0];
 			CGSize size = assetTrack.naturalSize;
+			size = CGSizeApplyAffineTransform(size, assetTrack.preferredTransform);
+			size = CGSizeMake(fabsf(size.width), fabsf(size.height));
 			CGAffineTransform transform = [self _calculateTransformWithSize:size inSize:self.renderSize];
 			
 			for (AVMutableVideoCompositionLayerInstruction *compositionLayerInstruction in instruction.layerInstructions) {
