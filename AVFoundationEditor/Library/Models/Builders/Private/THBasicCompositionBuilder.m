@@ -38,6 +38,7 @@
 	self.composition = [AVMutableComposition composition];
 
 	[self addCompositionTrackOfType:AVMediaTypeVideo forMediaItems:self.timeline.videos];
+	[self addCompositionTrackOfType:AVMediaTypeAudio forMediaItems:self.timeline.videos];
 	[self addCompositionTrackOfType:AVMediaTypeAudio forMediaItems:self.timeline.voiceOvers];
 	[self addCompositionTrackOfType:AVMediaTypeAudio forMediaItems:self.timeline.musicItems];
 
