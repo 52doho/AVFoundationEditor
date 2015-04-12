@@ -36,6 +36,14 @@
 		4E73D10C1A889A2400500741 /* THVideoTransitionTypeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E73D1091A889A2400500741 /* THVideoTransitionTypeViewModel.m */; };
 		4E73D1641A88A1F800500741 /* THBaseCompositionBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E73D1631A88A1F800500741 /* THBaseCompositionBuilder.m */; };
 		4E73D1C31A88AC9700500741 /* THAppSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E73D1C21A88AC9700500741 /* THAppSettings.m */; };
+		4EAC2D661ADA576600889C69 /* BSIntroduceInView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EAC2D651ADA576600889C69 /* BSIntroduceInView.xib */; };
+		4EAC2D691ADA577000889C69 /* BSIntroduceInView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EAC2D681ADA577000889C69 /* BSIntroduceInView.m */; };
+		4EAE3FD61ADAA55600B76160 /* CALayer+Geometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EAE3FD51ADAA55500B76160 /* CALayer+Geometry.m */; };
+		4EAE3FDE1ADAA72B00B76160 /* Tungsten-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4EAE3FD91ADAA72B00B76160 /* Tungsten-Medium.otf */; };
+		4EAE3FDF1ADAA72B00B76160 /* Tungsten-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4EAE3FDA1ADAA72B00B76160 /* Tungsten-Semibold.otf */; };
+		4EAE3FE01ADAA72B00B76160 /* Zepp highlight blur.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EAE3FDB1ADAA72B00B76160 /* Zepp highlight blur.png */; };
+		4EAE3FE11ADAA72B00B76160 /* Zepp highlight frame.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EAE3FDC1ADAA72B00B76160 /* Zepp highlight frame.png */; };
+		4EAE3FE21ADAA72B00B76160 /* Zepp TV Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EAE3FDD1ADAA72B00B76160 /* Zepp TV Icon.png */; };
 		C4145D8316F97A46002AFD67 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4145D8216F97A46002AFD67 /* AssetsLibrary.framework */; };
 		C4145D8B16F998D3002AFD67 /* tp_ff_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C4145D8516F998D3002AFD67 /* tp_ff_icon.png */; };
 		C4145D8C16F998D3002AFD67 /* tp_ff_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4145D8616F998D3002AFD67 /* tp_ff_icon@2x.png */; };
@@ -259,6 +267,16 @@
 		4E73D1C01A88AC2200500741 /* AVFoundationEditor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVFoundationEditor.h; sourceTree = "<group>"; };
 		4E73D1C11A88AC9700500741 /* THAppSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THAppSettings.h; sourceTree = "<group>"; };
 		4E73D1C21A88AC9700500741 /* THAppSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THAppSettings.m; sourceTree = "<group>"; };
+		4EAC2D651ADA576600889C69 /* BSIntroduceInView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BSIntroduceInView.xib; sourceTree = "<group>"; };
+		4EAC2D671ADA577000889C69 /* BSIntroduceInView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSIntroduceInView.h; sourceTree = "<group>"; };
+		4EAC2D681ADA577000889C69 /* BSIntroduceInView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSIntroduceInView.m; sourceTree = "<group>"; };
+		4EAE3FD41ADAA55500B76160 /* CALayer+Geometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Geometry.h"; sourceTree = "<group>"; };
+		4EAE3FD51ADAA55500B76160 /* CALayer+Geometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Geometry.m"; sourceTree = "<group>"; };
+		4EAE3FD91ADAA72B00B76160 /* Tungsten-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tungsten-Medium.otf"; sourceTree = "<group>"; };
+		4EAE3FDA1ADAA72B00B76160 /* Tungsten-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tungsten-Semibold.otf"; sourceTree = "<group>"; };
+		4EAE3FDB1ADAA72B00B76160 /* Zepp highlight blur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Zepp highlight blur.png"; sourceTree = "<group>"; };
+		4EAE3FDC1ADAA72B00B76160 /* Zepp highlight frame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Zepp highlight frame.png"; sourceTree = "<group>"; };
+		4EAE3FDD1ADAA72B00B76160 /* Zepp TV Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Zepp TV Icon.png"; sourceTree = "<group>"; };
 		C4145D8216F97A46002AFD67 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		C4145D8516F998D3002AFD67 /* tp_ff_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tp_ff_icon.png; sourceTree = "<group>"; };
 		C4145D8616F998D3002AFD67 /* tp_ff_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tp_ff_icon@2x.png"; sourceTree = "<group>"; };
@@ -598,6 +616,26 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		4EAE3FD71ADAA72B00B76160 /* ResTest */ = {
+			isa = PBXGroup;
+			children = (
+				4EAE3FD81ADAA72B00B76160 /* Fonts */,
+				4EAE3FDB1ADAA72B00B76160 /* Zepp highlight blur.png */,
+				4EAE3FDC1ADAA72B00B76160 /* Zepp highlight frame.png */,
+				4EAE3FDD1ADAA72B00B76160 /* Zepp TV Icon.png */,
+			);
+			path = ResTest;
+			sourceTree = "<group>";
+		};
+		4EAE3FD81ADAA72B00B76160 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				4EAE3FD91ADAA72B00B76160 /* Tungsten-Medium.otf */,
+				4EAE3FDA1ADAA72B00B76160 /* Tungsten-Semibold.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		C4145D5116F93DEC002AFD67 /* Video */ = {
 			isa = PBXGroup;
 			children = (
@@ -769,6 +807,7 @@
 		C4525D5016F92BA90064B891 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4EAE3FD71ADAA72B00B76160 /* ResTest */,
 				C4525D5116F92BA90064B891 /* Audio */,
 				C4525D5916F92BA90064B891 /* Images */,
 				C4145D5116F93DEC002AFD67 /* Video */,
@@ -915,6 +954,11 @@
 		C4525DB716F92BA90064B891 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4EAC2D651ADA576600889C69 /* BSIntroduceInView.xib */,
+				4EAC2D671ADA577000889C69 /* BSIntroduceInView.h */,
+				4EAC2D681ADA577000889C69 /* BSIntroduceInView.m */,
+				4EAE3FD41ADAA55500B76160 /* CALayer+Geometry.h */,
+				4EAE3FD51ADAA55500B76160 /* CALayer+Geometry.m */,
 				C45BA3D316F9BD0F00627C66 /* DDProgressView.h */,
 				C45BA3D416F9BD0F00627C66 /* DDProgressView.m */,
 				C4525DBF16F92BA90064B891 /* THBackgroundView.h */,
@@ -1037,6 +1081,7 @@
 				C4525E2316F92BA90064B891 /* mp_add_button.png in Resources */,
 				C4525E2416F92BA90064B891 /* mp_add_button@2x.png in Resources */,
 				C4525E2516F92BA90064B891 /* mp_play_button.png in Resources */,
+				4EAE3FDF1ADAA72B00B76160 /* Tungsten-Semibold.otf in Resources */,
 				C4525E2616F92BA90064B891 /* mp_play_button@2x.png in Resources */,
 				C4525E2716F92BA90064B891 /* mp_stop_button.png in Resources */,
 				C4525E2816F92BA90064B891 /* mp_stop_button@2x.png in Resources */,
@@ -1047,6 +1092,7 @@
 				C4525E2C16F92BA90064B891 /* pv_play_button@2x.png in Resources */,
 				C4525E2D16F92BA90064B891 /* pv_play_icon.png in Resources */,
 				C4525E2E16F92BA90064B891 /* pv_play_icon@2x.png in Resources */,
+				4EAC2D661ADA576600889C69 /* BSIntroduceInView.xib in Resources */,
 				C4525E2F16F92BA90064B891 /* pv_stop_icon.png in Resources */,
 				C4525E3016F92BA90064B891 /* pv_stop_icon@2x.png in Resources */,
 				C4525E3116F92BA90064B891 /* spark.png in Resources */,
@@ -1058,10 +1104,12 @@
 				C4525E4016F92BA90064B891 /* tp_add_media_icon.png in Resources */,
 				C4525E4116F92BA90064B891 /* tp_add_media_icon@2x.png in Resources */,
 				C4525E4216F92BA90064B891 /* tp_play_icon.png in Resources */,
+				4EAE3FE11ADAA72B00B76160 /* Zepp highlight frame.png in Resources */,
 				C4525E4316F92BA90064B891 /* tp_play_icon@2x.png in Resources */,
 				C4525E4416F92BA90064B891 /* tp_round_button.png in Resources */,
 				C4525E4516F92BA90064B891 /* tp_round_button@2x.png in Resources */,
 				C4525E4616F92BA90064B891 /* tp_square_button.png in Resources */,
+				4EAE3FE21ADAA72B00B76160 /* Zepp TV Icon.png in Resources */,
 				C4525E4716F92BA90064B891 /* tp_square_button@2x.png in Resources */,
 				C4E21EA818905C2E001315F6 /* renio@2x.png in Resources */,
 				C4525E4A16F92BA90064B891 /* tp_volume_button_icon.png in Resources */,
@@ -1071,6 +1119,7 @@
 				C423954F189031CF005A37FF /* tb_background@2x.png in Resources */,
 				C4525E4D16F92BA90064B891 /* trans_btn_bg_none@2x.png in Resources */,
 				C4525E4E16F92BA90064B891 /* trans_btn_bg_push.png in Resources */,
+				4EAE3FDE1ADAA72B00B76160 /* Tungsten-Medium.otf in Resources */,
 				C4710B3F18906110005830D9 /* THTabBarAudio@2x.png in Resources */,
 				C4710B3E18906110005830D9 /* THTabBarAudio.png in Resources */,
 				C4525E4F16F92BA90064B891 /* trans_btn_bg_push@2x.png in Resources */,
@@ -1083,6 +1132,7 @@
 				C4145D8B16F998D3002AFD67 /* tp_ff_icon.png in Resources */,
 				C4145D8C16F998D3002AFD67 /* tp_ff_icon@2x.png in Resources */,
 				C4145D8D16F998D3002AFD67 /* tp_rewind_icon.png in Resources */,
+				4EAE3FE01ADAA72B00B76160 /* Zepp highlight blur.png in Resources */,
 				C4239552189031F0005A37FF /* app_navbar_background.png in Resources */,
 				C4145D8E16F998D3002AFD67 /* tp_rewind_icon@2x.png in Resources */,
 				C4D8947D189A423E001A18B8 /* 04_Aerial.mp4 in Resources */,
@@ -1155,9 +1205,11 @@
 				4E73D1641A88A1F800500741 /* THBaseCompositionBuilder.m in Sources */,
 				C4525DE416F92BA90064B891 /* THVideoItemCollectionViewCell.m in Sources */,
 				C4525DE516F92BA90064B891 /* THVideoItemTableViewCell.m in Sources */,
+				4EAC2D691ADA577000889C69 /* BSIntroduceInView.m in Sources */,
 				C4525DE616F92BA90064B891 /* THTimelineLayout.m in Sources */,
 				4E73D0AF1A88992F00500741 /* THTitleLayer.m in Sources */,
 				4E73D0A81A88992F00500741 /* THAdvancedCompositionBuilder.m in Sources */,
+				4EAE3FD61ADAA55600B76160 /* CALayer+Geometry.m in Sources */,
 				C4525DE716F92BA90064B891 /* THTimelineLayoutAttributes.m in Sources */,
 				C4525DE816F92BA90064B891 /* THAudioPickerViewController.m in Sources */,
 				C4525DE916F92BA90064B891 /* THMainViewController.m in Sources */,

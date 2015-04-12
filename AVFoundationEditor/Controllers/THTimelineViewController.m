@@ -37,6 +37,8 @@
 #import "THBackgroundView.h"
 #import "THAppSettings.h"
 
+#import "BSIntroduceInView.h"
+
 @interface THTimelineViewController ()
 @property (nonatomic, strong) NSArray *cellIDs;
 @property (nonatomic, strong) THTimelineDataSource *dataSource;
@@ -156,10 +158,15 @@
 	self.titlesEnabled = [[notification object] boolValue];
 
 	if (self.titlesEnabled) {
-		THTitleLayer *tapHarmonicLayer = [[THTitleLayer alloc] init];
+		BSIntroduceInViewLayer *tapHarmonicLayer = BSIntroduceInViewLayer.new;
+		tapHarmonicLayer.title = @"Pingpong";
+		tapHarmonicLayer.location = @"Los gatos";
+		tapHarmonicLayer.team = @"Zepp Pro Team";
+		
+//		THTitleLayer *tapHarmonicLayer = [[THTitleLayer alloc] init];
+//		tapHarmonicLayer.titleText = @"TapHarmonic Films Presents";
+//		tapHarmonicLayer.titleImage = [UIImage imageNamed:@"tapharmonic_logo"];
 		tapHarmonicLayer.identifier = @"TapHarmonic Layer";
-		tapHarmonicLayer.titleText = @"TapHarmonic Films Presents";
-		tapHarmonicLayer.titleImage = [UIImage imageNamed:@"tapharmonic_logo"];
 		tapHarmonicLayer.timeRange = CMTimeRangeMake(kCMTimeZero, CMTimeMake(3, 1));
 		tapHarmonicLayer.startTimeInTimeline = CMTimeMake(1, 1);
 
