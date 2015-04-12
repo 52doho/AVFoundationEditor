@@ -17,7 +17,7 @@
 @end
 
 
-@implementation BSIntroduceInViewLayer
+@implementation BSIntroduceCompositionLayer
 
 - (id)init {
 	self = [super init];
@@ -43,6 +43,8 @@
 	
 	static const CGFloat FRAME_RATE = 30;
 	CFTimeInterval beginTime = 27/FRAME_RATE;
+	
+	// Opening
 	[bgBlurLayer addAnimation:[self _createScaleAnimationFromScale:1.2 toScale:1 duration:26/FRAME_RATE beginTime:AVCoreAnimationBeginTimeAtZero] forKey:nil];
 	[bgBlurLayer addAnimation:[self _createOpacityAnimationFromValue:1 toValue:0 duration:1/FRAME_RATE beginTime:beginTime] forKey:nil];
 	
@@ -58,6 +60,18 @@
 	[bgOriginLayer addAnimation:[self _createOpacityAnimationFromValue:1 toValue:0 duration:6/FRAME_RATE beginTime:beginTime] forKey:nil];
 	[infoLayer addAnimation:[self _createScaleAnimationFromScale:1 toScale:3 duration:6/FRAME_RATE beginTime:beginTime] forKey:nil];
 	[infoLayer addAnimation:[self _createOpacityAnimationFromValue:1 toValue:0 duration:6/FRAME_RATE beginTime:beginTime] forKey:nil];
+	
+	// Closing
+	CFTimeInterval duration = 35/FRAME_RATE;
+	if (_beginTimeOfClosing == 0) {
+		_beginTimeOfClosing = beginTime * 2;
+	}
+	_beginTimeOfClosing -= duration;
+	[bgBlurLayer addAnimation:[self _createScaleAnimationFromScale:1.2 toScale:1 duration:duration beginTime:_beginTimeOfClosing] forKey:nil];
+	[bgBlurLayer addAnimation:[self _createOpacityAnimationFromValue:0 toValue:1 duration:duration beginTime:_beginTimeOfClosing] forKey:nil];
+	
+	[logoLayer addAnimation:[self _createScaleAnimationFromScale:1.2 toScale:1 duration:duration beginTime:_beginTimeOfClosing] forKey:nil];
+	[logoLayer addAnimation:[self _createOpacityAnimationFromValue:0 toValue:1 duration:duration beginTime:_beginTimeOfClosing] forKey:nil];
 	
 	return rootLayer;
 }

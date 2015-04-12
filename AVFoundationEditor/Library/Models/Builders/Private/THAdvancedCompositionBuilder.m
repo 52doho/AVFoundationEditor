@@ -268,6 +268,7 @@
 	CALayer *titleLayer = [CALayer layer];
 	titleLayer.bounds = CGRectMake(0, 0, self.renderSize.width, self.renderSize.height);
 	titleLayer.position = CGPointMake(self.renderSize.width / 2, self.renderSize.height / 2);
+	titleLayer.masksToBounds = YES;
 
 	for (THCompositionLayer *compositionLayer in self.timeline.titles) {
 		CALayer *layer = compositionLayer.layer;

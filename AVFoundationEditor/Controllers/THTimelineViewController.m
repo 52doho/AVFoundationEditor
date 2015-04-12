@@ -158,7 +158,7 @@
 	self.titlesEnabled = [[notification object] boolValue];
 
 	if (self.titlesEnabled) {
-		BSIntroduceInViewLayer *tapHarmonicLayer = BSIntroduceInViewLayer.new;
+		BSIntroduceCompositionLayer *tapHarmonicLayer = BSIntroduceCompositionLayer.new;
 		tapHarmonicLayer.title = @"Pingpong";
 		tapHarmonicLayer.location = @"Los gatos";
 		tapHarmonicLayer.team = @"Zepp Pro Team";
@@ -169,26 +169,30 @@
 		tapHarmonicLayer.identifier = @"TapHarmonic Layer";
 		tapHarmonicLayer.timeRange = CMTimeRangeMake(kCMTimeZero, CMTimeMake(3, 1));
 		tapHarmonicLayer.startTimeInTimeline = CMTimeMake(1, 1);
+		NSMutableArray *itemsVideo = self.dataSource.timelineItems[THVideoTrack];
+		for (THTimelineItemViewModel *viewModel in itemsVideo) {
+			tapHarmonicLayer.beginTimeOfClosing += CMTimeGetSeconds(viewModel.timelineItem.timeRange.duration);
+		}
 
-		THTitleLayer *renioLayer = [[THTitleLayer alloc] init];
-		renioLayer.identifier = @"AV Foundation Layer";
-		renioLayer.titleText = @"Renaissance: Master Video";
-		renioLayer.titleImage = [UIImage imageNamed:@"renio"];
-		renioLayer.useLargeFont = YES;
-		renioLayer.spinOut = YES;
-		renioLayer.timeRange = CMTimeRangeMake(kCMTimeZero, CMTimeMake(4, 1));
-		renioLayer.startTimeInTimeline = CMTimeMake(55, 10);
+//		THTitleLayer *renioLayer = [[THTitleLayer alloc] init];
+//		renioLayer.identifier = @"AV Foundation Layer";
+//		renioLayer.titleText = @"Renaissance: Master Video";
+//		renioLayer.titleImage = [UIImage imageNamed:@"renio"];
+//		renioLayer.useLargeFont = YES;
+//		renioLayer.spinOut = YES;
+//		renioLayer.timeRange = CMTimeRangeMake(kCMTimeZero, CMTimeMake(4, 1));
+//		renioLayer.startTimeInTimeline = CMTimeMake(55, 10);
 
 
 		THTimelineItemViewModel *tapHarmonicModel = [THTimelineItemViewModel modelWithTimelineItem:tapHarmonicLayer];
 		tapHarmonicModel.positionInTimeline = THGetOriginForTime(tapHarmonicLayer.startTimeInTimeline);
 
-		THTimelineItemViewModel *avFoundationModel = [THTimelineItemViewModel modelWithTimelineItem:renioLayer];
-		avFoundationModel.positionInTimeline = THGetOriginForTime(renioLayer.startTimeInTimeline);
+//		THTimelineItemViewModel *avFoundationModel = [THTimelineItemViewModel modelWithTimelineItem:renioLayer];
+//		avFoundationModel.positionInTimeline = THGetOriginForTime(renioLayer.startTimeInTimeline);
 
 		NSMutableArray *items = self.dataSource.timelineItems[THTitleTrack];
 		[items addObject:tapHarmonicModel];
-		[items addObject:avFoundationModel];
+//		[items addObject:avFoundationModel];
 		
 	} else {
 		NSMutableArray *items = self.dataSource.timelineItems[THTitleTrack];

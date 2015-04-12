@@ -20,11 +20,11 @@
 @end
 
 
-@interface BSIntroduceInViewLayer : THCompositionLayer
+@interface BSIntroduceCompositionLayer : THCompositionLayer
 
 @property(nonatomic, assign) CGRect bounds; // defaults to (0, 0, 720, 720)
 @property(nonatomic, strong) NSString *title;
 @property(nonatomic, strong) NSString *location;
 @property(nonatomic, strong) NSString *team;
-
+@property(nonatomic, assign) CFTimeInterval beginTimeOfClosing;
 @end
