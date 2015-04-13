@@ -25,15 +25,15 @@
                     <rect key="frame" x="0.0" y="0.0" width="720" height="720"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="izR-Tl-VQy" userLabel="Seperator View">
-                            <rect key="frame" x="210" y="358.5" width="300" height="3"/>
+                            <rect key="frame" x="210" y="359" width="300" height="3"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="3" id="LTA-dZ-Aju"/>
                                 <constraint firstAttribute="width" constant="300" id="bhS-fE-XHB"/>
                             </constraints>
                         </view>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GON-0m-FEO">
-                            <rect key="frame" x="231" y="361.5" width="258.5" height="50"/>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GON-0m-FEO">
+                            <rect key="frame" x="231" y="362" width="259" height="50"/>
                             <constraints>
                                 <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="Fgc-a4-eSH"/>
                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="26" id="HmL-DQ-AIv"/>
@@ -43,8 +43,8 @@
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WWT-XN-QB2">
-                            <rect key="frame" x="230.5" y="411.5" width="258.5" height="50"/>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="top" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WWT-XN-QB2">
+                            <rect key="frame" x="231" y="412" width="259" height="50"/>
                             <constraints>
                                 <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="PLt-c3-0pp"/>
                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="26" id="pcA-wV-ajW"/>
@@ -54,8 +54,8 @@
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                         </button>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TITLE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="30" preferredMaxLayoutWidth="282" translatesAutoresizingMaskIntoConstraints="NO" id="g2L-Lj-ekt">
-                            <rect key="frame" x="231.5" y="250.5" width="257.5" height="100"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="TITLE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="30" preferredMaxLayoutWidth="282" translatesAutoresizingMaskIntoConstraints="NO" id="g2L-Lj-ekt">
+                            <rect key="frame" x="232" y="251" width="258" height="100"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="100" id="5c8-N3-gy6"/>
                             </constraints>
@@ -123,6 +123,6 @@
     </objects>
     <resources>
         <image name="Zepp TV Icon.png" width="338" height="338"/>
-        <image name="Zepp highlight blur.png" width="640" height="640"/>
+        <image name="Zepp highlight blur.png" width="720" height="720"/>
     </resources>
 </document>

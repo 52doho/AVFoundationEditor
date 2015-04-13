@@ -149,7 +149,12 @@ static NSString * const THAudioItemCellID = @"THAudioItemCell";
 }
 
 - (NSArray *)musicURLs {
-	return [[NSBundle mainBundle] URLsForResourcesWithExtension:@"m4a" subdirectory:@"Music"];
+	NSArray *m4a = [[NSBundle mainBundle] URLsForResourcesWithExtension:@"m4a" subdirectory:@"Music"];
+	NSArray *wav = [[NSBundle mainBundle] URLsForResourcesWithExtension:@"wav" subdirectory:@"Music"];
+	NSMutableArray *musics = [NSMutableArray arrayWithArray:m4a];
+	[musics addObjectsFromArray:wav];
+	
+	return musics;
 }
 
 - (NSArray *)voiceOverURLs {

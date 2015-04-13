@@ -159,9 +159,9 @@
 
 	if (self.titlesEnabled) {
 		BSIntroduceCompositionLayer *tapHarmonicLayer = BSIntroduceCompositionLayer.new;
-		tapHarmonicLayer.title = @"Pingpong";
-		tapHarmonicLayer.location = @"Los gatos";
-		tapHarmonicLayer.team = @"Zepp Pro Team";
+		tapHarmonicLayer.title = @"TITLE";
+		tapHarmonicLayer.location = @"LOCATION";
+		tapHarmonicLayer.team = @"TEAMNAME";
 		
 //		THTitleLayer *tapHarmonicLayer = [[THTitleLayer alloc] init];
 //		tapHarmonicLayer.titleText = @"TapHarmonic Films Presents";
