@@ -10,29 +10,30 @@
 		07309A8D188A027D00C6BF36 /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07309A8C188A027D00C6BF36 /* Reveal.framework */; };
 		4E689D491ADB7E8D0012017A /* Commentary in Resources */ = {isa = PBXBuildFile; fileRef = 4E689D471ADB7E8D0012017A /* Commentary */; };
 		4E689D4A1ADB7E8D0012017A /* Music in Resources */ = {isa = PBXBuildFile; fileRef = 4E689D481ADB7E8D0012017A /* Music */; };
-		4E689D661ADB93DC0012017A /* Light0015.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E689D4F1ADB93DC0012017A /* Light0015.png */; };
-		4E689D671ADB93DC0012017A /* Light0016.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E689D501ADB93DC0012017A /* Light0016.png */; };
-		4E689D681ADB93DC0012017A /* Light0017.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E689D511ADB93DC0012017A /* Light0017.png */; };
-		4E689D691ADB93DC0012017A /* Light0018.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E689D521ADB93DC0012017A /* Light0018.png */; };
-		4E689D6A1ADB93DC0012017A /* Light0019.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E689D531ADB93DC0012017A /* Light0019.png */; };
-		4E689D6B1ADB93DC0012017A /* Light0020.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E689D541ADB93DC0012017A /* Light0020.png */; };
-		4E689D6C1ADB93DC0012017A /* Light0021.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E689D551ADB93DC0012017A /* Light0021.png */; };
-		4E689D6D1ADB93DC0012017A /* Light0022.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E689D561ADB93DC0012017A /* Light0022.png */; };
-		4E689D6E1ADB93DC0012017A /* Light0023.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E689D571ADB93DC0012017A /* Light0023.png */; };
-		4E689D6F1ADB93DC0012017A /* Light0024.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E689D581ADB93DC0012017A /* Light0024.png */; };
-		4E689D701ADB93DC0012017A /* Light0025.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E689D591ADB93DC0012017A /* Light0025.png */; };
-		4E689D711ADB93DC0012017A /* Light0026.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E689D5A1ADB93DC0012017A /* Light0026.png */; };
-		4E689D721ADB93DC0012017A /* Light0027.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E689D5B1ADB93DC0012017A /* Light0027.png */; };
-		4E689D731ADB93DC0012017A /* Light0028.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E689D5C1ADB93DC0012017A /* Light0028.png */; };
-		4E689D741ADB93DC0012017A /* Light0029.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E689D5D1ADB93DC0012017A /* Light0029.png */; };
-		4E689D751ADB93DC0012017A /* Light0030.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E689D5E1ADB93DC0012017A /* Light0030.png */; };
-		4E689D761ADB93DC0012017A /* Light0031.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E689D5F1ADB93DC0012017A /* Light0031.png */; };
-		4E689D771ADB93DC0012017A /* Light0032.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E689D601ADB93DC0012017A /* Light0032.png */; };
-		4E689D781ADB93DC0012017A /* Light0033.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E689D611ADB93DC0012017A /* Light0033.png */; };
-		4E689D791ADB93DC0012017A /* Light0034.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E689D621ADB93DC0012017A /* Light0034.png */; };
-		4E689D7A1ADB93DC0012017A /* Zepp highlight blur.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E689D631ADB93DC0012017A /* Zepp highlight blur.png */; };
-		4E689D7B1ADB93DC0012017A /* Zepp highlight frame.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E689D641ADB93DC0012017A /* Zepp highlight frame.png */; };
-		4E689D7C1ADB93DC0012017A /* Zepp TV Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E689D651ADB93DC0012017A /* Zepp TV Icon.png */; };
+		4E689DBE1ADCC8E40012017A /* 22_00010.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E689DA61ADCC8E40012017A /* 22_00010.png */; };
+		4E689DBF1ADCC8E40012017A /* 22_00011.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E689DA71ADCC8E40012017A /* 22_00011.png */; };
+		4E689DC01ADCC8E40012017A /* 22_00012.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E689DA81ADCC8E40012017A /* 22_00012.png */; };
+		4E689DC11ADCC8E40012017A /* 22_00013.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E689DA91ADCC8E40012017A /* 22_00013.png */; };
+		4E689DC21ADCC8E40012017A /* 22_00014.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E689DAA1ADCC8E40012017A /* 22_00014.png */; };
+		4E689DC31ADCC8E40012017A /* 22_00015.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E689DAB1ADCC8E40012017A /* 22_00015.png */; };
+		4E689DC41ADCC8E40012017A /* 22_00016.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E689DAC1ADCC8E40012017A /* 22_00016.png */; };
+		4E689DC51ADCC8E40012017A /* 22_00017.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E689DAD1ADCC8E40012017A /* 22_00017.png */; };
+		4E689DC61ADCC8E40012017A /* 22_00018.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E689DAE1ADCC8E40012017A /* 22_00018.png */; };
+		4E689DC71ADCC8E40012017A /* 22_00019.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E689DAF1ADCC8E40012017A /* 22_00019.png */; };
+		4E689DC81ADCC8E40012017A /* 22_00020.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E689DB01ADCC8E40012017A /* 22_00020.png */; };
+		4E689DC91ADCC8E40012017A /* 22_00021.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E689DB11ADCC8E40012017A /* 22_00021.png */; };
+		4E689DCA1ADCC8E40012017A /* 22_00022.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E689DB21ADCC8E40012017A /* 22_00022.png */; };
+		4E689DCB1ADCC8E40012017A /* 22_00023.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E689DB31ADCC8E40012017A /* 22_00023.png */; };
+		4E689DCC1ADCC8E40012017A /* 22_00024.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E689DB41ADCC8E40012017A /* 22_00024.png */; };
+		4E689DCD1ADCC8E40012017A /* 22_00025.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E689DB51ADCC8E40012017A /* 22_00025.png */; };
+		4E689DCE1ADCC8E40012017A /* 22_00026.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E689DB61ADCC8E40012017A /* 22_00026.png */; };
+		4E689DCF1ADCC8E40012017A /* 22_00027.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E689DB71ADCC8E40012017A /* 22_00027.png */; };
+		4E689DD01ADCC8E40012017A /* 22_00028.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E689DB81ADCC8E40012017A /* 22_00028.png */; };
+		4E689DD11ADCC8E40012017A /* 22_00029.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E689DB91ADCC8E40012017A /* 22_00029.png */; };
+		4E689DD21ADCC8E40012017A /* 22_00030.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E689DBA1ADCC8E40012017A /* 22_00030.png */; };
+		4E689DD31ADCC8E40012017A /* Zepp highlight blur.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E689DBB1ADCC8E40012017A /* Zepp highlight blur.png */; };
+		4E689DD41ADCC8E40012017A /* Zepp highlight frame.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E689DBC1ADCC8E40012017A /* Zepp highlight frame.png */; };
+		4E689DD51ADCC8E40012017A /* Zepp TV Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E689DBD1ADCC8E40012017A /* Zepp TV Icon.png */; };
 		4E73D0A31A88992F00500741 /* AVPlayerItem+THAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E73D0721A88992F00500741 /* AVPlayerItem+THAdditions.m */; };
 		4E73D0A41A88992F00500741 /* NSString+THAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E73D0741A88992F00500741 /* NSString+THAdditions.m */; };
 		4E73D0A51A88992F00500741 /* UIColor+THAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E73D0761A88992F00500741 /* UIColor+THAdditions.m */; };
@@ -234,29 +235,30 @@
 		07309A8C188A027D00C6BF36 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
 		4E689D471ADB7E8D0012017A /* Commentary */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Commentary; sourceTree = "<group>"; };
 		4E689D481ADB7E8D0012017A /* Music */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Music; sourceTree = "<group>"; };
-		4E689D4F1ADB93DC0012017A /* Light0015.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Light0015.png; sourceTree = "<group>"; };
-		4E689D501ADB93DC0012017A /* Light0016.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Light0016.png; sourceTree = "<group>"; };
-		4E689D511ADB93DC0012017A /* Light0017.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Light0017.png; sourceTree = "<group>"; };
-		4E689D521ADB93DC0012017A /* Light0018.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Light0018.png; sourceTree = "<group>"; };
-		4E689D531ADB93DC0012017A /* Light0019.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Light0019.png; sourceTree = "<group>"; };
-		4E689D541ADB93DC0012017A /* Light0020.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Light0020.png; sourceTree = "<group>"; };
-		4E689D551ADB93DC0012017A /* Light0021.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Light0021.png; sourceTree = "<group>"; };
-		4E689D561ADB93DC0012017A /* Light0022.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Light0022.png; sourceTree = "<group>"; };
-		4E689D571ADB93DC0012017A /* Light0023.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Light0023.png; sourceTree = "<group>"; };
-		4E689D581ADB93DC0012017A /* Light0024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Light0024.png; sourceTree = "<group>"; };
-		4E689D591ADB93DC0012017A /* Light0025.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Light0025.png; sourceTree = "<group>"; };
-		4E689D5A1ADB93DC0012017A /* Light0026.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Light0026.png; sourceTree = "<group>"; };
-		4E689D5B1ADB93DC0012017A /* Light0027.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Light0027.png; sourceTree = "<group>"; };
-		4E689D5C1ADB93DC0012017A /* Light0028.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Light0028.png; sourceTree = "<group>"; };
-		4E689D5D1ADB93DC0012017A /* Light0029.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Light0029.png; sourceTree = "<group>"; };
-		4E689D5E1ADB93DC0012017A /* Light0030.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Light0030.png; sourceTree = "<group>"; };
-		4E689D5F1ADB93DC0012017A /* Light0031.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Light0031.png; sourceTree = "<group>"; };
-		4E689D601ADB93DC0012017A /* Light0032.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Light0032.png; sourceTree = "<group>"; };
-		4E689D611ADB93DC0012017A /* Light0033.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Light0033.png; sourceTree = "<group>"; };
-		4E689D621ADB93DC0012017A /* Light0034.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Light0034.png; sourceTree = "<group>"; };
-		4E689D631ADB93DC0012017A /* Zepp highlight blur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Zepp highlight blur.png"; sourceTree = "<group>"; };
-		4E689D641ADB93DC0012017A /* Zepp highlight frame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Zepp highlight frame.png"; sourceTree = "<group>"; };
-		4E689D651ADB93DC0012017A /* Zepp TV Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Zepp TV Icon.png"; sourceTree = "<group>"; };
+		4E689DA61ADCC8E40012017A /* 22_00010.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 22_00010.png; sourceTree = "<group>"; };
+		4E689DA71ADCC8E40012017A /* 22_00011.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 22_00011.png; sourceTree = "<group>"; };
+		4E689DA81ADCC8E40012017A /* 22_00012.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 22_00012.png; sourceTree = "<group>"; };
+		4E689DA91ADCC8E40012017A /* 22_00013.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 22_00013.png; sourceTree = "<group>"; };
+		4E689DAA1ADCC8E40012017A /* 22_00014.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 22_00014.png; sourceTree = "<group>"; };
+		4E689DAB1ADCC8E40012017A /* 22_00015.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 22_00015.png; sourceTree = "<group>"; };
+		4E689DAC1ADCC8E40012017A /* 22_00016.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 22_00016.png; sourceTree = "<group>"; };
+		4E689DAD1ADCC8E40012017A /* 22_00017.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 22_00017.png; sourceTree = "<group>"; };
+		4E689DAE1ADCC8E40012017A /* 22_00018.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 22_00018.png; sourceTree = "<group>"; };
+		4E689DAF1ADCC8E40012017A /* 22_00019.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 22_00019.png; sourceTree = "<group>"; };
+		4E689DB01ADCC8E40012017A /* 22_00020.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 22_00020.png; sourceTree = "<group>"; };
+		4E689DB11ADCC8E40012017A /* 22_00021.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 22_00021.png; sourceTree = "<group>"; };
+		4E689DB21ADCC8E40012017A /* 22_00022.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 22_00022.png; sourceTree = "<group>"; };
+		4E689DB31ADCC8E40012017A /* 22_00023.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 22_00023.png; sourceTree = "<group>"; };
+		4E689DB41ADCC8E40012017A /* 22_00024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 22_00024.png; sourceTree = "<group>"; };
+		4E689DB51ADCC8E40012017A /* 22_00025.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 22_00025.png; sourceTree = "<group>"; };
+		4E689DB61ADCC8E40012017A /* 22_00026.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 22_00026.png; sourceTree = "<group>"; };
+		4E689DB71ADCC8E40012017A /* 22_00027.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 22_00027.png; sourceTree = "<group>"; };
+		4E689DB81ADCC8E40012017A /* 22_00028.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 22_00028.png; sourceTree = "<group>"; };
+		4E689DB91ADCC8E40012017A /* 22_00029.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 22_00029.png; sourceTree = "<group>"; };
+		4E689DBA1ADCC8E40012017A /* 22_00030.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 22_00030.png; sourceTree = "<group>"; };
+		4E689DBB1ADCC8E40012017A /* Zepp highlight blur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Zepp highlight blur.png"; sourceTree = "<group>"; };
+		4E689DBC1ADCC8E40012017A /* Zepp highlight frame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Zepp highlight frame.png"; sourceTree = "<group>"; };
+		4E689DBD1ADCC8E40012017A /* Zepp TV Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Zepp TV Icon.png"; sourceTree = "<group>"; };
 		4E73D0711A88992F00500741 /* AVPlayerItem+THAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AVPlayerItem+THAdditions.h"; sourceTree = "<group>"; };
 		4E73D0721A88992F00500741 /* AVPlayerItem+THAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AVPlayerItem+THAdditions.m"; sourceTree = "<group>"; };
 		4E73D0731A88992F00500741 /* NSString+THAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+THAdditions.h"; sourceTree = "<group>"; };
@@ -545,32 +547,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4E689D4E1ADB93DC0012017A /* Images */ = {
+		4E689DA51ADCC8E40012017A /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				4E689D4F1ADB93DC0012017A /* Light0015.png */,
-				4E689D501ADB93DC0012017A /* Light0016.png */,
-				4E689D511ADB93DC0012017A /* Light0017.png */,
-				4E689D521ADB93DC0012017A /* Light0018.png */,
-				4E689D531ADB93DC0012017A /* Light0019.png */,
-				4E689D541ADB93DC0012017A /* Light0020.png */,
-				4E689D551ADB93DC0012017A /* Light0021.png */,
-				4E689D561ADB93DC0012017A /* Light0022.png */,
-				4E689D571ADB93DC0012017A /* Light0023.png */,
-				4E689D581ADB93DC0012017A /* Light0024.png */,
-				4E689D591ADB93DC0012017A /* Light0025.png */,
-				4E689D5A1ADB93DC0012017A /* Light0026.png */,
-				4E689D5B1ADB93DC0012017A /* Light0027.png */,
-				4E689D5C1ADB93DC0012017A /* Light0028.png */,
-				4E689D5D1ADB93DC0012017A /* Light0029.png */,
-				4E689D5E1ADB93DC0012017A /* Light0030.png */,
-				4E689D5F1ADB93DC0012017A /* Light0031.png */,
-				4E689D601ADB93DC0012017A /* Light0032.png */,
-				4E689D611ADB93DC0012017A /* Light0033.png */,
-				4E689D621ADB93DC0012017A /* Light0034.png */,
-				4E689D631ADB93DC0012017A /* Zepp highlight blur.png */,
-				4E689D641ADB93DC0012017A /* Zepp highlight frame.png */,
-				4E689D651ADB93DC0012017A /* Zepp TV Icon.png */,
+				4E689DA61ADCC8E40012017A /* 22_00010.png */,
+				4E689DA71ADCC8E40012017A /* 22_00011.png */,
+				4E689DA81ADCC8E40012017A /* 22_00012.png */,
+				4E689DA91ADCC8E40012017A /* 22_00013.png */,
+				4E689DAA1ADCC8E40012017A /* 22_00014.png */,
+				4E689DAB1ADCC8E40012017A /* 22_00015.png */,
+				4E689DAC1ADCC8E40012017A /* 22_00016.png */,
+				4E689DAD1ADCC8E40012017A /* 22_00017.png */,
+				4E689DAE1ADCC8E40012017A /* 22_00018.png */,
+				4E689DAF1ADCC8E40012017A /* 22_00019.png */,
+				4E689DB01ADCC8E40012017A /* 22_00020.png */,
+				4E689DB11ADCC8E40012017A /* 22_00021.png */,
+				4E689DB21ADCC8E40012017A /* 22_00022.png */,
+				4E689DB31ADCC8E40012017A /* 22_00023.png */,
+				4E689DB41ADCC8E40012017A /* 22_00024.png */,
+				4E689DB51ADCC8E40012017A /* 22_00025.png */,
+				4E689DB61ADCC8E40012017A /* 22_00026.png */,
+				4E689DB71ADCC8E40012017A /* 22_00027.png */,
+				4E689DB81ADCC8E40012017A /* 22_00028.png */,
+				4E689DB91ADCC8E40012017A /* 22_00029.png */,
+				4E689DBA1ADCC8E40012017A /* 22_00030.png */,
+				4E689DBB1ADCC8E40012017A /* Zepp highlight blur.png */,
+				4E689DBC1ADCC8E40012017A /* Zepp highlight frame.png */,
+				4E689DBD1ADCC8E40012017A /* Zepp TV Icon.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -834,7 +837,7 @@
 		4EAE406C1ADB7D1800B76160 /* ResTest */ = {
 			isa = PBXGroup;
 			children = (
-				4E689D4E1ADB93DC0012017A /* Images */,
+				4E689DA51ADCC8E40012017A /* Images */,
 				4EAE406D1ADB7D1800B76160 /* Fonts */,
 			);
 			path = ResTest;
@@ -1104,10 +1107,11 @@
 			files = (
 				4EAE40EF1ADB7D1800B76160 /* Tungsten-Semibold.otf in Resources */,
 				4EAE408A1ADB7D1800B76160 /* app_gray_background.png in Resources */,
-				4E689D731ADB93DC0012017A /* Light0028.png in Resources */,
+				4E689DC51ADCC8E40012017A /* 22_00017.png in Resources */,
 				4EAE40BD1ADB7D1800B76160 /* renio.png in Resources */,
 				4EAE40BA1ADB7D1800B76160 /* pv_play_icon@2x.png in Resources */,
 				4EAE40D91ADB7D1800B76160 /* tp_ff_icon@2x.png in Resources */,
+				4E689DC31ADCC8E40012017A /* 22_00015.png in Resources */,
 				4EAE40A21ADB7D1800B76160 /* export_progress_img@2x.png in Resources */,
 				4EAE40DA1ADB7D1800B76160 /* tp_play_icon.png in Resources */,
 				4EAE409F1ADB7D1800B76160 /* dark_button_background.png in Resources */,
@@ -1118,7 +1122,7 @@
 				4EAE40CB1ADB7D1800B76160 /* th_trimmer_ui_highlighted@2x.png in Resources */,
 				4EAE409B1ADB7D1800B76160 /* avf_logo_large.png in Resources */,
 				4EAE40B21ADB7D1800B76160 /* mp_stop_button@2x.png in Resources */,
-				4E689D701ADB93DC0012017A /* Light0025.png in Resources */,
+				4E689DC61ADCC8E40012017A /* 22_00018.png in Resources */,
 				4EAE40D01ADB7D1800B76160 /* THTabBarAudio_selected.png in Resources */,
 				4EAE40F61ADB7D1800B76160 /* 02_Skater.mp4 in Resources */,
 				4EAE40DC1ADB7D1800B76160 /* tp_rewind_icon.png in Resources */,
@@ -1128,23 +1132,22 @@
 				4EAE408E1ADB7D1800B76160 /* app_settings_icon.png in Resources */,
 				4EAE40901ADB7D1800B76160 /* app_slate_background.png in Resources */,
 				4EAE40C91ADB7D1800B76160 /* th_selector_ui_selected@2x.png in Resources */,
+				4E689DCD1ADCC8E40012017A /* 22_00025.png in Resources */,
 				4EAE40AC1ADB7D1800B76160 /* mp_add_button@2x.png in Resources */,
 				C4289A9A16F92A9D00BA04A9 /* InfoPlist.strings in Resources */,
 				4EAE40CD1ADB7D1800B76160 /* th_trimmer_ui_selected@2x.png in Resources */,
-				4E689D791ADB93DC0012017A /* Light0034.png in Resources */,
 				4EAE40C11ADB7D1800B76160 /* table_view_header_background@2x.png in Resources */,
 				4EAE40AB1ADB7D1800B76160 /* mp_add_button.png in Resources */,
 				4EAE40C81ADB7D1800B76160 /* th_selector_ui_selected.png in Resources */,
 				4EAE40F71ADB7D1800B76160 /* 03_Car.mp4 in Resources */,
 				4EAE409D1ADB7D1800B76160 /* dark_bar_button_background.png in Resources */,
 				C4289AA216F92A9D00BA04A9 /* Default.png in Resources */,
+				4E689DCC1ADCC8E40012017A /* 22_00024.png in Resources */,
+				4E689DCE1ADCC8E40012017A /* 22_00026.png in Resources */,
 				4EAE40EA1ADB7D1800B76160 /* trans_btn_bg_push.png in Resources */,
-				4E689D7C1ADB93DC0012017A /* Zepp TV Icon.png in Resources */,
-				4E689D6F1ADB93DC0012017A /* Light0024.png in Resources */,
 				4EAE40ED1ADB7D1800B76160 /* trans_btn_bg_xfade@2x.png in Resources */,
-				4E689D7B1ADB93DC0012017A /* Zepp highlight frame.png in Resources */,
+				4E689DD41ADCC8E40012017A /* Zepp highlight frame.png in Resources */,
 				4EAE40E31ADB7D1800B76160 /* tp_square_button@2x.png in Resources */,
-				4E689D771ADB93DC0012017A /* Light0032.png in Resources */,
 				4EAE40F81ADB7D1800B76160 /* 04_Aerial.mp4 in Resources */,
 				4EAE40CE1ADB7D1800B76160 /* THTabBarAudio.png in Resources */,
 				4EAE40C41ADB7D1800B76160 /* tb_background.png in Resources */,
@@ -1157,58 +1160,60 @@
 				4EAE40E71ADB7D1800B76160 /* tp_volume_button_icon@2x.png in Resources */,
 				4EAE40A31ADB7D1800B76160 /* export_progress_track_img.png in Resources */,
 				4EAE408F1ADB7D1800B76160 /* app_settings_icon@2x.png in Resources */,
+				4E689DC71ADCC8E40012017A /* 22_00019.png in Resources */,
 				4EAE40971ADB7D1800B76160 /* app_white_background.png in Resources */,
 				C4289AA416F92A9D00BA04A9 /* Default@2x.png in Resources */,
 				4EAE40921ADB7D1800B76160 /* app_stone_background.png in Resources */,
+				4E689DCF1ADCC8E40012017A /* 22_00027.png in Resources */,
+				4E689DBE1ADCC8E40012017A /* 22_00010.png in Resources */,
+				4E689DD01ADCC8E40012017A /* 22_00028.png in Resources */,
 				4EAE40D81ADB7D1800B76160 /* tp_ff_icon.png in Resources */,
+				4E689DC01ADCC8E40012017A /* 22_00012.png in Resources */,
 				4EAE40B61ADB7D1800B76160 /* mp_video_icon_highlighted@2x.png in Resources */,
 				4EAE40FA1ADB7D1800B76160 /* 06_1920x1080.mp4 in Resources */,
 				4EAE40B11ADB7D1800B76160 /* mp_stop_button.png in Resources */,
+				4E689DD31ADCC8E40012017A /* Zepp highlight blur.png in Resources */,
 				4EAE40B41ADB7D1800B76160 /* mp_tb_selection@2x.png in Resources */,
-				4E689D6D1ADB93DC0012017A /* Light0022.png in Resources */,
 				4EAE40871ADB7D1800B76160 /* app_cell_background@2x.png in Resources */,
 				4EAE409C1ADB7D1800B76160 /* avf_logo_large@2x.png in Resources */,
-				4E689D721ADB93DC0012017A /* Light0027.png in Resources */,
-				4E689D671ADB93DC0012017A /* Light0016.png in Resources */,
-				4E689D761ADB93DC0012017A /* Light0031.png in Resources */,
-				4E689D751ADB93DC0012017A /* Light0030.png in Resources */,
 				4EAE40CA1ADB7D1800B76160 /* th_trimmer_ui_highlighted.png in Resources */,
 				4EAE40841ADB7D1800B76160 /* app_black_background.png in Resources */,
 				4EAE408C1ADB7D1800B76160 /* app_navbar_background.png in Resources */,
 				4EAE40C21ADB7D1800B76160 /* tapharmonic_logo.png in Resources */,
 				4EAE408B1ADB7D1800B76160 /* app_gray_background@2x.png in Resources */,
-				4E689D681ADB93DC0012017A /* Light0017.png in Resources */,
 				4EAE40BE1ADB7D1800B76160 /* renio@2x.png in Resources */,
-				4E689D6E1ADB93DC0012017A /* Light0023.png in Resources */,
 				4EAE40DB1ADB7D1800B76160 /* tp_play_icon@2x.png in Resources */,
 				4EAE40F31ADB7D1800B76160 /* 00_Gas.mov in Resources */,
 				4EAE40C01ADB7D1800B76160 /* table_view_header_background.png in Resources */,
 				4EAE40BF1ADB7D1800B76160 /* spark.png in Resources */,
 				4EAE40AD1ADB7D1800B76160 /* mp_audio_icon_highlighted.png in Resources */,
+				4E689DC21ADCC8E40012017A /* 22_00014.png in Resources */,
 				4E689D4A1ADB7E8D0012017A /* Music in Resources */,
 				4EAE40C31ADB7D1800B76160 /* tapharmonic_logo@2x.png in Resources */,
 				4EAE40E41ADB7D1800B76160 /* tp_stop_icon.png in Resources */,
 				4EAE40A51ADB7D1800B76160 /* Icon-Small-50.png in Resources */,
+				4E689DD51ADCC8E40012017A /* Zepp TV Icon.png in Resources */,
 				4EAE40E91ADB7D1800B76160 /* trans_btn_bg_none@2x.png in Resources */,
 				4EAE40B31ADB7D1800B76160 /* mp_tb_selection.png in Resources */,
 				4EAE40E51ADB7D1800B76160 /* tp_stop_icon@2x.png in Resources */,
 				4EAE40A81ADB7D1800B76160 /* Icon-Small@2x.png in Resources */,
+				4E689DCA1ADCC8E40012017A /* 22_00022.png in Resources */,
 				C4289AA616F92A9D00BA04A9 /* Default-568h@2x.png in Resources */,
+				4E689DD11ADCC8E40012017A /* 22_00029.png in Resources */,
 				4EAE40EB1ADB7D1800B76160 /* trans_btn_bg_push@2x.png in Resources */,
 				4EAE40C51ADB7D1800B76160 /* tb_background@2x.png in Resources */,
 				4EAE408D1ADB7D1800B76160 /* app_navbar_background@2x.png in Resources */,
 				4EAE40DD1ADB7D1800B76160 /* tp_rewind_icon@2x.png in Resources */,
+				4E689DC11ADCC8E40012017A /* 22_00013.png in Resources */,
 				4EAE40FB1ADB7D1800B76160 /* 07_640x640.mp4 in Resources */,
-				4E689D781ADB93DC0012017A /* Light0033.png in Resources */,
 				4EAE40CF1ADB7D1800B76160 /* THTabBarAudio@2x.png in Resources */,
+				4E689DCB1ADCC8E40012017A /* 22_00023.png in Resources */,
 				4EAE40D21ADB7D1800B76160 /* THTabBarVideo.png in Resources */,
 				4EAE40E21ADB7D1800B76160 /* tp_square_button.png in Resources */,
 				4EAE40A11ADB7D1800B76160 /* export_progress_img.png in Resources */,
-				4E689D6B1ADB93DC0012017A /* Light0020.png in Resources */,
 				4EAE409A1ADB7D1800B76160 /* avf_logo@2x.png in Resources */,
 				4EAE40D31ADB7D1800B76160 /* THTabBarVideo@2x.png in Resources */,
 				4EAE40A71ADB7D1800B76160 /* Icon-Small.png in Resources */,
-				4E689D711ADB93DC0012017A /* Light0026.png in Resources */,
 				4EAE40E01ADB7D1800B76160 /* tp_round_button_small.png in Resources */,
 				4EAE40881ADB7D1800B76160 /* app_cell_background_selected.png in Resources */,
 				4EAE40B91ADB7D1800B76160 /* pv_play_icon.png in Resources */,
@@ -1219,36 +1224,35 @@
 				4EAE40D41ADB7D1800B76160 /* THTabBarVideo_selected.png in Resources */,
 				4EAE40A91ADB7D1800B76160 /* light_bar_button_background.png in Resources */,
 				4EAE40851ADB7D1800B76160 /* app_black_background@2x.png in Resources */,
-				4E689D6C1ADB93DC0012017A /* Light0021.png in Resources */,
+				4E689DC41ADCC8E40012017A /* 22_00016.png in Resources */,
 				4EAC2D661ADA576600889C69 /* BSIntroduceInView.xib in Resources */,
 				4EAE40F51ADB7D1800B76160 /* 01_Open.mov in Resources */,
 				4EAE40E81ADB7D1800B76160 /* trans_btn_bg_none.png in Resources */,
 				4EAE40EC1ADB7D1800B76160 /* trans_btn_bg_xfade.png in Resources */,
 				4EAE40D51ADB7D1800B76160 /* THTabBarVideo_selected@2x.png in Resources */,
+				4E689DC91ADCC8E40012017A /* 22_00021.png in Resources */,
 				4EAE40F91ADB7D1800B76160 /* 05_Close.mov in Resources */,
 				4EAE40891ADB7D1800B76160 /* app_cell_background_selected@2x.png in Resources */,
+				4E689DC81ADCC8E40012017A /* 22_00020.png in Resources */,
 				4EAE40B01ADB7D1800B76160 /* mp_play_button@2x.png in Resources */,
-				4E689D741ADB93DC0012017A /* Light0029.png in Resources */,
 				4EAE40BB1ADB7D1800B76160 /* pv_stop_icon.png in Resources */,
 				4EAE40F41ADB7D1800B76160 /* 00_Swirl.mov in Resources */,
 				4EAE40991ADB7D1800B76160 /* avf_logo.png in Resources */,
 				4EAE40B81ADB7D1800B76160 /* pv_play_button@2x.png in Resources */,
 				4EAE40C71ADB7D1800B76160 /* th_selector_ui_highlighted@2x.png in Resources */,
-				4E689D691ADB93DC0012017A /* Light0018.png in Resources */,
 				4EAE40941ADB7D1800B76160 /* app_table_cell.png in Resources */,
 				4EAE40DE1ADB7D1800B76160 /* tp_round_button.png in Resources */,
 				4EAE40D11ADB7D1800B76160 /* THTabBarAudio_selected@2x.png in Resources */,
-				4E689D7A1ADB93DC0012017A /* Zepp highlight blur.png in Resources */,
 				4EAE40AA1ADB7D1800B76160 /* light_bar_button_background@2x.png in Resources */,
 				4EAE40AF1ADB7D1800B76160 /* mp_play_button.png in Resources */,
-				4E689D661ADB93DC0012017A /* Light0015.png in Resources */,
 				4EAE40B51ADB7D1800B76160 /* mp_video_icon_highlighted.png in Resources */,
 				4EAE40B71ADB7D1800B76160 /* pv_play_button.png in Resources */,
-				4E689D6A1ADB93DC0012017A /* Light0019.png in Resources */,
 				4EAE40961ADB7D1800B76160 /* app_video_gravity@2x.png in Resources */,
 				4EAE40981ADB7D1800B76160 /* app_white_background@2x.png in Resources */,
 				4EAE40A01ADB7D1800B76160 /* dark_button_background@2x.png in Resources */,
 				4EAE40A41ADB7D1800B76160 /* export_progress_track_img@2x.png in Resources */,
+				4E689DD21ADCC8E40012017A /* 22_00030.png in Resources */,
+				4E689DBF1ADCC8E40012017A /* 22_00011.png in Resources */,
 				4EAE40E61ADB7D1800B76160 /* tp_volume_button_icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

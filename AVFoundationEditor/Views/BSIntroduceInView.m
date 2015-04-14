@@ -177,8 +177,8 @@ static const CGFloat FRAME_RATE = 30;
 	animation.beginTime = beginTime;
 	
 	NSMutableArray *images = [NSMutableArray array];
-	for (uint i = 15; i <= 34; i++) {
-		NSString *name = [NSString stringWithFormat:@"Light00%i.png", i];
+	for (uint i = 10; i <= 30; i++) {
+		NSString *name = [NSString stringWithFormat:@"22_000%i.png", i];
 		UIImage *image = [UIImage imageNamed:name];
 		[images addObject:(id)image.CGImage];
 	}
