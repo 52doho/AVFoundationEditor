@@ -61,7 +61,6 @@
 		4E73D10C1A889A2400500741 /* THVideoTransitionTypeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E73D1091A889A2400500741 /* THVideoTransitionTypeViewModel.m */; };
 		4E73D1641A88A1F800500741 /* THBaseCompositionBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E73D1631A88A1F800500741 /* THBaseCompositionBuilder.m */; };
 		4E73D1C31A88AC9700500741 /* THAppSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E73D1C21A88AC9700500741 /* THAppSettings.m */; };
-		4EAE3FD61ADAA55600B76160 /* CALayer+Geometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EAE3FD51ADAA55500B76160 /* CALayer+Geometry.m */; };
 		4EAE40841ADB7D1800B76160 /* app_black_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EAE40011ADB7D1800B76160 /* app_black_background.png */; };
 		4EAE40851ADB7D1800B76160 /* app_black_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EAE40021ADB7D1800B76160 /* app_black_background@2x.png */; };
 		4EAE40861ADB7D1800B76160 /* app_cell_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EAE40031ADB7D1800B76160 /* app_cell_background.png */; };
@@ -183,6 +182,7 @@
 		4EFD1FBA1ADE164A00EBFA96 /* BSCoreImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFD1FB71ADE164A00EBFA96 /* BSCoreImageManager.m */; };
 		4EFD1FBB1ADE164A00EBFA96 /* BSCustomVideoCompositor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFD1FB91ADE164A00EBFA96 /* BSCustomVideoCompositor.m */; };
 		4EFD1FEF1ADE217D00EBFA96 /* BSIntroduceCompositionLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFD1FEE1ADE217D00EBFA96 /* BSIntroduceCompositionLayer.m */; };
+		4EFD1FF51ADE226000EBFA96 /* CALayer+Geometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFD1FF41ADE226000EBFA96 /* CALayer+Geometry.m */; };
 		C4145D8316F97A46002AFD67 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4145D8216F97A46002AFD67 /* AssetsLibrary.framework */; };
 		C4289A9016F92A9D00BA04A9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4289A8F16F92A9D00BA04A9 /* UIKit.framework */; };
 		C4289A9216F92A9D00BA04A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4289A9116F92A9D00BA04A9 /* Foundation.framework */; };
@@ -319,8 +319,6 @@
 		4E73D1C01A88AC2200500741 /* AVFoundationEditor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVFoundationEditor.h; sourceTree = "<group>"; };
 		4E73D1C11A88AC9700500741 /* THAppSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THAppSettings.h; sourceTree = "<group>"; };
 		4E73D1C21A88AC9700500741 /* THAppSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THAppSettings.m; sourceTree = "<group>"; };
-		4EAE3FD41ADAA55500B76160 /* CALayer+Geometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Geometry.h"; sourceTree = "<group>"; };
-		4EAE3FD51ADAA55500B76160 /* CALayer+Geometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Geometry.m"; sourceTree = "<group>"; };
 		4EAE40011ADB7D1800B76160 /* app_black_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_black_background.png; sourceTree = "<group>"; };
 		4EAE40021ADB7D1800B76160 /* app_black_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app_black_background@2x.png"; sourceTree = "<group>"; };
 		4EAE40031ADB7D1800B76160 /* app_cell_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_cell_background.png; sourceTree = "<group>"; };
@@ -446,6 +444,8 @@
 		4EFD1FB91ADE164A00EBFA96 /* BSCustomVideoCompositor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSCustomVideoCompositor.m; sourceTree = "<group>"; };
 		4EFD1FED1ADE217D00EBFA96 /* BSIntroduceCompositionLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSIntroduceCompositionLayer.h; sourceTree = "<group>"; };
 		4EFD1FEE1ADE217D00EBFA96 /* BSIntroduceCompositionLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSIntroduceCompositionLayer.m; sourceTree = "<group>"; };
+		4EFD1FF31ADE226000EBFA96 /* CALayer+Geometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Geometry.h"; sourceTree = "<group>"; };
+		4EFD1FF41ADE226000EBFA96 /* CALayer+Geometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Geometry.m"; sourceTree = "<group>"; };
 		C4145D8216F97A46002AFD67 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		C4289A8C16F92A9D00BA04A9 /* AVFoundationEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVFoundationEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4289A8F16F92A9D00BA04A9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -616,6 +616,8 @@
 				4E73D0761A88992F00500741 /* UIColor+THAdditions.m */,
 				4E73D0771A88992F00500741 /* UIView+THAdditions.h */,
 				4E73D0781A88992F00500741 /* UIView+THAdditions.m */,
+				4EFD1FF31ADE226000EBFA96 /* CALayer+Geometry.h */,
+				4EFD1FF41ADE226000EBFA96 /* CALayer+Geometry.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -1053,8 +1055,6 @@
 		C4525DB716F92BA90064B891 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				4EAE3FD41ADAA55500B76160 /* CALayer+Geometry.h */,
-				4EAE3FD51ADAA55500B76160 /* CALayer+Geometry.m */,
 				C45BA3D316F9BD0F00627C66 /* DDProgressView.h */,
 				C45BA3D416F9BD0F00627C66 /* DDProgressView.m */,
 				C4525DBF16F92BA90064B891 /* THBackgroundView.h */,
@@ -1292,6 +1292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E73D0AE1A88992F00500741 /* THCompositionLayer.m in Sources */,
+				4EFD1FF51ADE226000EBFA96 /* CALayer+Geometry.m in Sources */,
 				C4289A9C16F92A9D00BA04A9 /* main.m in Sources */,
 				4E73D0B31A88992F00500741 /* THTimeline.m in Sources */,
 				C4525DD716F92BA90064B891 /* AppDelegate.m in Sources */,
@@ -1329,7 +1330,6 @@
 				C4525DE616F92BA90064B891 /* THTimelineLayout.m in Sources */,
 				4E73D0AF1A88992F00500741 /* THTitleLayer.m in Sources */,
 				4E73D0A81A88992F00500741 /* THAdvancedCompositionBuilder.m in Sources */,
-				4EAE3FD61ADAA55600B76160 /* CALayer+Geometry.m in Sources */,
 				C4525DE716F92BA90064B891 /* THTimelineLayoutAttributes.m in Sources */,
 				4EFD1FBB1ADE164A00EBFA96 /* BSCustomVideoCompositor.m in Sources */,
 				C4525DE816F92BA90064B891 /* THAudioPickerViewController.m in Sources */,

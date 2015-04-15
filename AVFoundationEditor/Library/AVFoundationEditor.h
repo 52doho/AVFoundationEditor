@@ -18,6 +18,7 @@
 #import "NSString+THAdditions.h"
 #import "UIColor+THAdditions.h"
 #import "UIView+THAdditions.h"
+#import "CALayer+Geometry.h"
 
 // Models
 #import "THModels.h"
