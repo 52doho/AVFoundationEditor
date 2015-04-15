@@ -178,10 +178,10 @@
 		4EAE40F91ADB7D1800B76160 /* 05_Close.mov in Resources */ = {isa = PBXBuildFile; fileRef = 4EAE407B1ADB7D1800B76160 /* 05_Close.mov */; };
 		4EAE40FA1ADB7D1800B76160 /* 06_1920x1080.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4EAE407C1ADB7D1800B76160 /* 06_1920x1080.mp4 */; };
 		4EAE40FB1ADB7D1800B76160 /* 07_640x640.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4EAE407D1ADB7D1800B76160 /* 07_640x640.mp4 */; };
+		4EF70D1D1ADE975F00C20427 /* BSCoreImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF70D181ADE975F00C20427 /* BSCoreImageManager.m */; };
+		4EF70D1E1ADE975F00C20427 /* BSCustomVideoCompositor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF70D1A1ADE975F00C20427 /* BSCustomVideoCompositor.m */; };
+		4EF70D1F1ADE975F00C20427 /* BSIntroduceCompositionLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF70D1C1ADE975F00C20427 /* BSIntroduceCompositionLayer.m */; };
 		4EFD1FA01ADDFAAE00EBFA96 /* AVMutableVideoCompositionLayerInstruction+THAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFD1F9F1ADDFAAE00EBFA96 /* AVMutableVideoCompositionLayerInstruction+THAdditions.m */; };
-		4EFD1FBA1ADE164A00EBFA96 /* BSCoreImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFD1FB71ADE164A00EBFA96 /* BSCoreImageManager.m */; };
-		4EFD1FBB1ADE164A00EBFA96 /* BSCustomVideoCompositor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFD1FB91ADE164A00EBFA96 /* BSCustomVideoCompositor.m */; };
-		4EFD1FEF1ADE217D00EBFA96 /* BSIntroduceCompositionLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFD1FEE1ADE217D00EBFA96 /* BSIntroduceCompositionLayer.m */; };
 		4EFD1FF51ADE226000EBFA96 /* CALayer+Geometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFD1FF41ADE226000EBFA96 /* CALayer+Geometry.m */; };
 		C4145D8316F97A46002AFD67 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4145D8216F97A46002AFD67 /* AssetsLibrary.framework */; };
 		C4289A9016F92A9D00BA04A9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4289A8F16F92A9D00BA04A9 /* UIKit.framework */; };
@@ -436,14 +436,14 @@
 		4EAE407B1ADB7D1800B76160 /* 05_Close.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = 05_Close.mov; sourceTree = "<group>"; };
 		4EAE407C1ADB7D1800B76160 /* 06_1920x1080.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 06_1920x1080.mp4; sourceTree = "<group>"; };
 		4EAE407D1ADB7D1800B76160 /* 07_640x640.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 07_640x640.mp4; sourceTree = "<group>"; };
+		4EF70D171ADE975F00C20427 /* BSCoreImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BSCoreImageManager.h; path = ../../Bristol/Bristol/Utility/Media/BSCoreImageManager.h; sourceTree = "<group>"; };
+		4EF70D181ADE975F00C20427 /* BSCoreImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BSCoreImageManager.m; path = ../../Bristol/Bristol/Utility/Media/BSCoreImageManager.m; sourceTree = "<group>"; };
+		4EF70D191ADE975F00C20427 /* BSCustomVideoCompositor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BSCustomVideoCompositor.h; path = ../../Bristol/Bristol/Utility/Media/BSCustomVideoCompositor.h; sourceTree = "<group>"; };
+		4EF70D1A1ADE975F00C20427 /* BSCustomVideoCompositor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BSCustomVideoCompositor.m; path = ../../Bristol/Bristol/Utility/Media/BSCustomVideoCompositor.m; sourceTree = "<group>"; };
+		4EF70D1B1ADE975F00C20427 /* BSIntroduceCompositionLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BSIntroduceCompositionLayer.h; path = ../../Bristol/Bristol/Utility/Media/BSIntroduceCompositionLayer.h; sourceTree = "<group>"; };
+		4EF70D1C1ADE975F00C20427 /* BSIntroduceCompositionLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BSIntroduceCompositionLayer.m; path = ../../Bristol/Bristol/Utility/Media/BSIntroduceCompositionLayer.m; sourceTree = "<group>"; };
 		4EFD1F9E1ADDFAAE00EBFA96 /* AVMutableVideoCompositionLayerInstruction+THAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AVMutableVideoCompositionLayerInstruction+THAdditions.h"; sourceTree = "<group>"; };
 		4EFD1F9F1ADDFAAE00EBFA96 /* AVMutableVideoCompositionLayerInstruction+THAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AVMutableVideoCompositionLayerInstruction+THAdditions.m"; sourceTree = "<group>"; };
-		4EFD1FB61ADE164A00EBFA96 /* BSCoreImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSCoreImageManager.h; sourceTree = "<group>"; };
-		4EFD1FB71ADE164A00EBFA96 /* BSCoreImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSCoreImageManager.m; sourceTree = "<group>"; };
-		4EFD1FB81ADE164A00EBFA96 /* BSCustomVideoCompositor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSCustomVideoCompositor.h; sourceTree = "<group>"; };
-		4EFD1FB91ADE164A00EBFA96 /* BSCustomVideoCompositor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSCustomVideoCompositor.m; sourceTree = "<group>"; };
-		4EFD1FED1ADE217D00EBFA96 /* BSIntroduceCompositionLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSIntroduceCompositionLayer.h; sourceTree = "<group>"; };
-		4EFD1FEE1ADE217D00EBFA96 /* BSIntroduceCompositionLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSIntroduceCompositionLayer.m; sourceTree = "<group>"; };
 		4EFD1FF31ADE226000EBFA96 /* CALayer+Geometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Geometry.h"; sourceTree = "<group>"; };
 		4EFD1FF41ADE226000EBFA96 /* CALayer+Geometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Geometry.m"; sourceTree = "<group>"; };
 		C4145D8216F97A46002AFD67 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
@@ -594,7 +594,6 @@
 			isa = PBXGroup;
 			children = (
 				4E73D1C01A88AC2200500741 /* AVFoundationEditor.h */,
-				4EFD1FB51ADE164A00EBFA96 /* Extension */,
 				4E73D0701A88992F00500741 /* Categories */,
 				4E73D0791A88992F00500741 /* Models */,
 				4E73D1031A889A2400500741 /* ViewModels */,
@@ -886,17 +885,17 @@
 			path = Video;
 			sourceTree = "<group>";
 		};
-		4EFD1FB51ADE164A00EBFA96 /* Extension */ = {
+		4EF70D201ADE976C00C20427 /* Bristol Extension */ = {
 			isa = PBXGroup;
 			children = (
-				4EFD1FB61ADE164A00EBFA96 /* BSCoreImageManager.h */,
-				4EFD1FB71ADE164A00EBFA96 /* BSCoreImageManager.m */,
-				4EFD1FB81ADE164A00EBFA96 /* BSCustomVideoCompositor.h */,
-				4EFD1FB91ADE164A00EBFA96 /* BSCustomVideoCompositor.m */,
-				4EFD1FED1ADE217D00EBFA96 /* BSIntroduceCompositionLayer.h */,
-				4EFD1FEE1ADE217D00EBFA96 /* BSIntroduceCompositionLayer.m */,
+				4EF70D171ADE975F00C20427 /* BSCoreImageManager.h */,
+				4EF70D181ADE975F00C20427 /* BSCoreImageManager.m */,
+				4EF70D191ADE975F00C20427 /* BSCustomVideoCompositor.h */,
+				4EF70D1A1ADE975F00C20427 /* BSCustomVideoCompositor.m */,
+				4EF70D1B1ADE975F00C20427 /* BSIntroduceCompositionLayer.h */,
+				4EF70D1C1ADE975F00C20427 /* BSIntroduceCompositionLayer.m */,
 			);
-			path = Extension;
+			name = "Bristol Extension";
 			sourceTree = "<group>";
 		};
 		C4289A8316F92A9D00BA04A9 = {
@@ -937,6 +936,7 @@
 			isa = PBXGroup;
 			children = (
 				4E73D06F1A88992F00500741 /* Library */,
+				4EF70D201ADE976C00C20427 /* Bristol Extension */,
 				C4525CED16F92BA90064B891 /* Common */,
 				C4525CFF16F92BA90064B891 /* Controllers */,
 				C4525DB716F92BA90064B891 /* Views */,
@@ -1303,7 +1303,6 @@
 				4E73D0AD1A88992F00500741 /* THTimelineBuilder.m in Sources */,
 				C4525DDA16F92BA90064B891 /* THTabBarController.m in Sources */,
 				C4525DDB16F92BA90064B891 /* THTabBarControllerView.m in Sources */,
-				4EFD1FBA1ADE164A00EBFA96 /* BSCoreImageManager.m in Sources */,
 				4E73D0AB1A88992F00500741 /* THTransitionInstructions.m in Sources */,
 				C4525DDC16F92BA90064B891 /* THTabBarItem.m in Sources */,
 				4E73D0A31A88992F00500741 /* AVPlayerItem+THAdditions.m in Sources */,
@@ -1324,6 +1323,7 @@
 				C4525DE216F92BA90064B891 /* THTimelineItemCell.m in Sources */,
 				C4525DE316F92BA90064B891 /* THTransitionCollectionViewCell.m in Sources */,
 				4E73D0B71A88992F00500741 /* THVolumeAutomation.m in Sources */,
+				4EF70D1F1ADE975F00C20427 /* BSIntroduceCompositionLayer.m in Sources */,
 				4E73D1641A88A1F800500741 /* THBaseCompositionBuilder.m in Sources */,
 				C4525DE416F92BA90064B891 /* THVideoItemCollectionViewCell.m in Sources */,
 				C4525DE516F92BA90064B891 /* THVideoItemTableViewCell.m in Sources */,
@@ -1331,9 +1331,7 @@
 				4E73D0AF1A88992F00500741 /* THTitleLayer.m in Sources */,
 				4E73D0A81A88992F00500741 /* THAdvancedCompositionBuilder.m in Sources */,
 				C4525DE716F92BA90064B891 /* THTimelineLayoutAttributes.m in Sources */,
-				4EFD1FBB1ADE164A00EBFA96 /* BSCustomVideoCompositor.m in Sources */,
 				C4525DE816F92BA90064B891 /* THAudioPickerViewController.m in Sources */,
-				4EFD1FEF1ADE217D00EBFA96 /* BSIntroduceCompositionLayer.m in Sources */,
 				C4525DE916F92BA90064B891 /* THMainViewController.m in Sources */,
 				C4525DEA16F92BA90064B891 /* THPlayerViewController.m in Sources */,
 				C4525DEB16F92BA90064B891 /* THSettingsViewController.m in Sources */,
@@ -1346,10 +1344,12 @@
 				C4525E6416F92BA90064B891 /* THBackgroundView.m in Sources */,
 				C4525E6516F92BA90064B891 /* THExportProgressView.m in Sources */,
 				4E73D0B21A88992F00500741 /* THMediaItem.m in Sources */,
+				4EF70D1E1ADE975F00C20427 /* BSCustomVideoCompositor.m in Sources */,
 				C4525E6616F92BA90064B891 /* THPlaybackView.m in Sources */,
 				4E73D0A51A88992F00500741 /* UIColor+THAdditions.m in Sources */,
 				C4525E6716F92BA90064B891 /* THTableSectionHeaderView.m in Sources */,
 				C4525E6816F92BA90064B891 /* THThumbnailView.m in Sources */,
+				4EF70D1D1ADE975F00C20427 /* BSCoreImageManager.m in Sources */,
 				C4525E6916F92BA90064B891 /* THTimelineItemView.m in Sources */,
 				C4525E6A16F92BA90064B891 /* THTransitionButton.m in Sources */,
 				C4525E6B16F92BA90064B891 /* THTransportView.m in Sources */,

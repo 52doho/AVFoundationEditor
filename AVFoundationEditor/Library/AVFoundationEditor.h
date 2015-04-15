@@ -39,9 +39,4 @@
 #import "THVideoTransitionDurationViewModel.h"
 #import "THVideoTransitionTypeViewModel.h"
 
-// Extension
-#import "BSCoreImageManager.h"
-#import "BSCustomVideoCompositor.h"
-#import "BSIntroduceCompositionLayer.h"
-
 #endif
