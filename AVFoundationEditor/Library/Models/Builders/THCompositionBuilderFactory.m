@@ -29,11 +29,11 @@
 @implementation THCompositionBuilderFactory
 
 - (THBaseCompositionBuilder *)builderForTimeline:(THTimeline *)timeline {
-	if ([timeline isSimpleTimeline]) {
-		return [[THBasicCompositionBuilder alloc] initWithTimeline:timeline];
-	} else {
+//	if ([timeline isSimpleTimeline]) {
+//		return [[THBasicCompositionBuilder alloc] initWithTimeline:timeline];
+//	} else {
 		return [[THAdvancedCompositionBuilder alloc] initWithTimeline:timeline];
-	}
+//	}
 }
 
 @end

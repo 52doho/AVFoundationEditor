@@ -30,9 +30,12 @@
 #import "THCompositionBuilderFactory.h"
 #import "THTimeline.h"
 #import "THNotifications.h"
+#import "THAdvancedComposition.h"
 #import <MobileCoreServices/MobileCoreServices.h>
 #import <AssetsLibrary/AssetsLibrary.h>
 #import "AppDelegate.h"
+
+#import "BSCustomVideoCompositor.h"
 
 #define SEGUE_ADD_MEDIA_PICKER	@"addMediaPickerViewController"
 #define SEGUE_ADD_PLAYER		@"addPlayerViewController"
@@ -75,7 +78,11 @@
 	THBaseCompositionBuilder *builder = [self.factory builderForTimeline:timeline];
 	builder.renderSize = OUTPUT_VIDEO_SIZE;
 	builder.frameRate = 30;
-	id<THComposition> composition = [builder buildComposition];
+	
+	THAdvancedComposition *composition = (THAdvancedComposition *)[builder buildComposition];
+	AVMutableVideoComposition *videoComposition = (AVMutableVideoComposition *)composition.videoComposition;
+	videoComposition.customVideoCompositorClass = [BSCustomVideoCompositor class];
+	
 	[self.playerViewController playPlayerItem:[composition makePlayable]];
 }
 
@@ -92,7 +99,10 @@
 	THBaseCompositionBuilder *builder = [self.factory builderForTimeline:timeline];
 	builder.renderSize = OUTPUT_VIDEO_SIZE;
 	builder.frameRate = 30;
-	id<THComposition> composition = [builder buildComposition];
+	
+	THAdvancedComposition *composition = (THAdvancedComposition *)[builder buildComposition];
+	AVMutableVideoComposition *videoComposition = (AVMutableVideoComposition *)composition.videoComposition;
+	videoComposition.customVideoCompositorClass = [BSCustomVideoCompositor class];
 
 	self.exportSession = [composition makeExportable];
 	self.exportSession.outputURL = [self exportURL];

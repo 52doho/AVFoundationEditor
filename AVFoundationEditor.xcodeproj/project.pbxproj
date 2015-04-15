@@ -34,6 +34,10 @@
 		4E689DD31ADCC8E40012017A /* Zepp highlight blur.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E689DBB1ADCC8E40012017A /* Zepp highlight blur.png */; };
 		4E689DD41ADCC8E40012017A /* Zepp highlight frame.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E689DBC1ADCC8E40012017A /* Zepp highlight frame.png */; };
 		4E689DD51ADCC8E40012017A /* Zepp TV Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E689DBD1ADCC8E40012017A /* Zepp TV Icon.png */; };
+		4E689DDA1ADD1FA30012017A /* BSCustomVideoCompositor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E689DD91ADD1FA30012017A /* BSCustomVideoCompositor.m */; };
+		4E689DDC1ADD25D20012017A /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E689DDB1ADD25D20012017A /* CoreImage.framework */; };
+		4E689DDE1ADD2D120012017A /* Pingpong_30fps.mov in Resources */ = {isa = PBXBuildFile; fileRef = 4E689DDD1ADD2D120012017A /* Pingpong_30fps.mov */; };
+		4E689DF31ADD5F4B0012017A /* BSCoreImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E689DF21ADD5F4B0012017A /* BSCoreImageManager.m */; };
 		4E73D0A31A88992F00500741 /* AVPlayerItem+THAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E73D0721A88992F00500741 /* AVPlayerItem+THAdditions.m */; };
 		4E73D0A41A88992F00500741 /* NSString+THAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E73D0741A88992F00500741 /* NSString+THAdditions.m */; };
 		4E73D0A51A88992F00500741 /* UIColor+THAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E73D0761A88992F00500741 /* UIColor+THAdditions.m */; };
@@ -259,6 +263,12 @@
 		4E689DBB1ADCC8E40012017A /* Zepp highlight blur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Zepp highlight blur.png"; sourceTree = "<group>"; };
 		4E689DBC1ADCC8E40012017A /* Zepp highlight frame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Zepp highlight frame.png"; sourceTree = "<group>"; };
 		4E689DBD1ADCC8E40012017A /* Zepp TV Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Zepp TV Icon.png"; sourceTree = "<group>"; };
+		4E689DD81ADD1FA30012017A /* BSCustomVideoCompositor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSCustomVideoCompositor.h; sourceTree = "<group>"; };
+		4E689DD91ADD1FA30012017A /* BSCustomVideoCompositor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSCustomVideoCompositor.m; sourceTree = "<group>"; };
+		4E689DDB1ADD25D20012017A /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		4E689DDD1ADD2D120012017A /* Pingpong_30fps.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Pingpong_30fps.mov; sourceTree = "<group>"; };
+		4E689DF11ADD5F4B0012017A /* BSCoreImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSCoreImageManager.h; sourceTree = "<group>"; };
+		4E689DF21ADD5F4B0012017A /* BSCoreImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSCoreImageManager.m; sourceTree = "<group>"; };
 		4E73D0711A88992F00500741 /* AVPlayerItem+THAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AVPlayerItem+THAdditions.h"; sourceTree = "<group>"; };
 		4E73D0721A88992F00500741 /* AVPlayerItem+THAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AVPlayerItem+THAdditions.m"; sourceTree = "<group>"; };
 		4E73D0731A88992F00500741 /* NSString+THAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+THAdditions.h"; sourceTree = "<group>"; };
@@ -532,6 +542,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E689DDC1ADD25D20012017A /* CoreImage.framework in Frameworks */,
 				07309A8D188A027D00C6BF36 /* Reveal.framework in Frameworks */,
 				C4145D8316F97A46002AFD67 /* AssetsLibrary.framework in Frameworks */,
 				C4525E7516F92C4C0064B891 /* CoreText.framework in Frameworks */,
@@ -864,6 +875,7 @@
 				4EAE407B1ADB7D1800B76160 /* 05_Close.mov */,
 				4EAE407C1ADB7D1800B76160 /* 06_1920x1080.mp4 */,
 				4EAE407D1ADB7D1800B76160 /* 07_640x640.mp4 */,
+				4E689DDD1ADD2D120012017A /* Pingpong_30fps.mov */,
 			);
 			path = Video;
 			sourceTree = "<group>";
@@ -888,6 +900,7 @@
 		C4289A8E16F92A9D00BA04A9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4E689DDB1ADD25D20012017A /* CoreImage.framework */,
 				07309A8C188A027D00C6BF36 /* Reveal.framework */,
 				C4145D8216F97A46002AFD67 /* AssetsLibrary.framework */,
 				C4525E7016F92C330064B891 /* AVFoundation.framework */,
@@ -971,6 +984,10 @@
 				C4525D1516F92BA90064B891 /* THAudioPickerViewController.m */,
 				C4525D1616F92BA90064B891 /* THMainViewController.h */,
 				C4525D1716F92BA90064B891 /* THMainViewController.m */,
+				4E689DD81ADD1FA30012017A /* BSCustomVideoCompositor.h */,
+				4E689DD91ADD1FA30012017A /* BSCustomVideoCompositor.m */,
+				4E689DF11ADD5F4B0012017A /* BSCoreImageManager.h */,
+				4E689DF21ADD5F4B0012017A /* BSCoreImageManager.m */,
 				C4525D1816F92BA90064B891 /* THPlaybackMediator.h */,
 				C4525D1916F92BA90064B891 /* THPlayerViewController.h */,
 				C4525D1A16F92BA90064B891 /* THPlayerViewController.m */,
@@ -1222,6 +1239,7 @@
 				C4289AA916F92A9D00BA04A9 /* MainStoryboard.storyboard in Resources */,
 				4EAE40D71ADB7D1800B76160 /* tp_add_media_icon@2x.png in Resources */,
 				4EAE40D41ADB7D1800B76160 /* THTabBarVideo_selected.png in Resources */,
+				4E689DDE1ADD2D120012017A /* Pingpong_30fps.mov in Resources */,
 				4EAE40A91ADB7D1800B76160 /* light_bar_button_background.png in Resources */,
 				4EAE40851ADB7D1800B76160 /* app_black_background@2x.png in Resources */,
 				4E689DC41ADCC8E40012017A /* 22_00016.png in Resources */,
@@ -1264,6 +1282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E689DDA1ADD1FA30012017A /* BSCustomVideoCompositor.m in Sources */,
 				4E73D0AE1A88992F00500741 /* THCompositionLayer.m in Sources */,
 				C4289A9C16F92A9D00BA04A9 /* main.m in Sources */,
 				4E73D0B31A88992F00500741 /* THTimeline.m in Sources */,
@@ -1274,6 +1293,7 @@
 				C4525DD916F92BA90064B891 /* THTabBarButton.m in Sources */,
 				4E73D0AD1A88992F00500741 /* THTimelineBuilder.m in Sources */,
 				C4525DDA16F92BA90064B891 /* THTabBarController.m in Sources */,
+				4E689DF31ADD5F4B0012017A /* BSCoreImageManager.m in Sources */,
 				C4525DDB16F92BA90064B891 /* THTabBarControllerView.m in Sources */,
 				4E73D0AB1A88992F00500741 /* THTransitionInstructions.m in Sources */,
 				C4525DDC16F92BA90064B891 /* THTabBarItem.m in Sources */,
