@@ -37,7 +37,7 @@
 #import "THBackgroundView.h"
 #import "THAppSettings.h"
 
-#import "BSIntroduceInView.h"
+#import "BSIntroduceCompositionLayer.h"
 
 @interface THTimelineViewController ()
 @property (nonatomic, strong) NSArray *cellIDs;
