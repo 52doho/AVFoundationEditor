@@ -32,6 +32,8 @@
 #import "THTransitionInstructions.h"
 #import "THShared.h"
 
+#import "AVMutableVideoCompositionLayerInstruction+THAdditions.h"
+
 @interface THAdvancedCompositionBuilder ()
 @property (nonatomic, strong) AVMutableComposition *composition;
 @property (nonatomic, strong) AVVideoComposition *videoComposition;
@@ -207,6 +209,7 @@
 			for (AVMutableVideoCompositionLayerInstruction *compositionLayerInstruction in instruction.layerInstructions) {
 				CGAffineTransform targetTransform = CGAffineTransformConcat(assetTrack.preferredTransform, transform);
 				[compositionLayerInstruction setTransform:targetTransform atTime:instruction.timeRange.start];
+                compositionLayerInstruction.transform = targetTransform;
 			}
 		}
 	}
@@ -235,8 +238,8 @@
 	CGFloat width = size.width * scale;
 	CGFloat height = size.height * scale;
 	
-	float dwidth = ((inSize.width - width) / 2.0f);
-	float dheight = ((inSize.height - height) / 2.0f);
+	float dwidth = ((inSize.width - width) / 2.0f) / scale;
+	float dheight = ((inSize.height - height) / 2.0f) / scale;
 	
 	CGAffineTransform transform = CGAffineTransformMakeScale(scale, scale);
 	transform = CGAffineTransformTranslate(transform, dwidth, dheight);

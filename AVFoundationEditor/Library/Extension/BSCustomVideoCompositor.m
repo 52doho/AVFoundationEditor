@@ -3,11 +3,13 @@
 //  AVFoundationEditor
 //
 //  Created by Guichao Huang (Gary) on 4/14/15.
-//  Copyright (c) 2015 TapHarmonic, LLC. All rights reserved.
+//  Copyright (c) 2015 Zepp US Inc. All rights reserved.
 //
 
 #import "BSCustomVideoCompositor.h"
 #import "BSCoreImageManager.h"
+
+#import "AVMutableVideoCompositionLayerInstruction+THAdditions.h"
 
 #import <CoreImage/CoreImage.h>
 
@@ -58,16 +60,21 @@ typedef NSArray * (^BSFilterBlock)(CGSize frameSize);
 }
 
 - (void)_setBlendFilterWithCorner:(BSMultiplyBlendCorner)corner size:(CGSize)size {
-	UIImage *image = [[BSCoreImageManager sharedManager] blendImageInCorner:corner size:size];
+	UIImage *image = [[BSCoreImageManager sharedManager] blendImageInCorner:corner sizeOfScaleOne:size];
 	[_multiplyBlendCornerFilter setValue:[CIImage imageWithCGImage:image.CGImage] forKey:@"inputBackgroundImage"];
+}
+
+- (void)_setTransformFilterToCenterWithScale:(CGFloat)scale frameSize:(CGSize)frameSize {
+    CGFloat padding = -(scale - 1) / 2;
+    CGAffineTransform transform = CGAffineTransformMakeScale(scale, scale);
+    transform = CGAffineTransformConcat(transform, CGAffineTransformMakeTranslation(frameSize.width * padding, frameSize.height * padding));
+    [_transformFilter setValue:[self _transformToValue:transform] forKey:@"inputTransform"];
 }
 
 - (void)_setupFilters {
 	_grayFilter = [CIFilter filterWithName:@"CIColorControls" keysAndValues:@"inputBrightness", @(0), @"inputContrast", @(1.1), @"inputSaturation", @(0), nil];
-//	_grayFilter = [CIFilter filterWithName:@"CISepiaTone"];           // 3
-//	[_grayFilter setValue:@0.8f forKey:kCIInputIntensityKey];
 	
-	_transformFilter = [CIFilter filterWithName:@"CIAffineTransform" keysAndValues:@"inputTransform", [self _transformToValue:CGAffineTransformMakeScale(1.2, 1.2)], nil];
+	_transformFilter = [CIFilter filterWithName:@"CIAffineTransform"];
 	
 	_pureColorFilter = [CIFilter filterWithName:@"CIConstantColorGenerator" keysAndValues:@"inputColor", [CIColor colorWithRed:.78 green:.94 blue:.04 alpha:1], nil];
 	
@@ -80,47 +87,55 @@ typedef NSArray * (^BSFilterBlock)(CGSize frameSize);
 	BSFilterBlock composeFilterBlock_Gray = ^NSArray * (CGSize frameSize){
 		return @[_grayFilter];
 	};
-	BSFilterBlock composeFilterBlock_Gray_Transform = ^NSArray * (CGSize frameSize){
+    BSFilterBlock composeFilterBlock_Gray_Transform = ^NSArray * (CGSize frameSize){
+        [self _setTransformFilterToCenterWithScale:1.2 frameSize:frameSize];
 		return @[_transformFilter, _grayFilter];
 	};
-	BSFilterBlock composeFilterBlock_Gray_Transform_Big = ^NSArray * (CGSize frameSize){
-		[_transformFilter setValue:[self _transformToValue:CGAffineTransformMakeScale(1.4, 1.4)] forKey:@"inputTransform"];
+    BSFilterBlock composeFilterBlock_Gray_Transform_Big = ^NSArray * (CGSize frameSize){
+        [self _setTransformFilterToCenterWithScale:1.4 frameSize:frameSize];
 		return @[_transformFilter, _grayFilter];
 	};
 	
-	BSFilterBlock composeFilterBlock_TL = ^NSArray * (CGSize frameSize){
+    BSFilterBlock composeFilterBlock_TL = ^NSArray * (CGSize frameSize){
+        [self _setTransformFilterToCenterWithScale:1.2 frameSize:frameSize];
 		[self _setBlendFilterWithCorner:BSMultiplyBlendCornerTL size:frameSize];
-		return @[/*_transformFilter, */_grayFilter/*, _multiplyBlendCornerFilter*/];
+		return @[_transformFilter, _grayFilter, _multiplyBlendCornerFilter];
 	};
-	BSFilterBlock composeFilterBlock_TR = ^NSArray * (CGSize frameSize){
+    BSFilterBlock composeFilterBlock_TR = ^NSArray * (CGSize frameSize){
+        [self _setTransformFilterToCenterWithScale:1.2 frameSize:frameSize];
 		[self _setBlendFilterWithCorner:BSMultiplyBlendCornerTR size:frameSize];
-		return @[/*_transformFilter, */_grayFilter/*, _multiplyBlendCornerFilter*/];
+		return @[_transformFilter, _grayFilter, _multiplyBlendCornerFilter];
 	};
-	BSFilterBlock composeFilterBlock_BL = ^NSArray * (CGSize frameSize){
+    BSFilterBlock composeFilterBlock_BL = ^NSArray * (CGSize frameSize){
+        [self _setTransformFilterToCenterWithScale:1.2 frameSize:frameSize];
 		[self _setBlendFilterWithCorner:BSMultiplyBlendCornerBL size:frameSize];
-		return @[/*_transformFilter, */_grayFilter/*, _multiplyBlendCornerFilter*/];
+		return @[_transformFilter, _grayFilter, _multiplyBlendCornerFilter];
 	};
-	BSFilterBlock composeFilterBlock_BR = ^NSArray * (CGSize frameSize){
+    BSFilterBlock composeFilterBlock_BR = ^NSArray * (CGSize frameSize){
+        [self _setTransformFilterToCenterWithScale:1.2 frameSize:frameSize];
 		[self _setBlendFilterWithCorner:BSMultiplyBlendCornerBR size:frameSize];
-		return @[/*_transformFilter, */_grayFilter/*, _multiplyBlendCornerFilter*/];
+		return @[_transformFilter, _grayFilter, _multiplyBlendCornerFilter];
 	};
-	BSFilterBlock composeFilterBlock_TL_BR = ^NSArray * (CGSize frameSize){
+    BSFilterBlock composeFilterBlock_TL_BR = ^NSArray * (CGSize frameSize){
+        [self _setTransformFilterToCenterWithScale:1.2 frameSize:frameSize];
 		[self _setBlendFilterWithCorner:BSMultiplyBlendCornerTL | BSMultiplyBlendCornerBR size:frameSize];
-		return @[/*_transformFilter, */_grayFilter/*, _multiplyBlendCornerFilter*/];
+		return @[_transformFilter, _grayFilter, _multiplyBlendCornerFilter];
 	};
-	BSFilterBlock composeFilterBlock_BL_TR = ^NSArray * (CGSize frameSize){
+    BSFilterBlock composeFilterBlock_BL_TR = ^NSArray * (CGSize frameSize){
+        [self _setTransformFilterToCenterWithScale:1.2 frameSize:frameSize];
 		[self _setBlendFilterWithCorner:BSMultiplyBlendCornerBL | BSMultiplyBlendCornerTR size:frameSize];
-		return @[/*_transformFilter, */_grayFilter/*, _multiplyBlendCornerFilter*/];
+		return @[_transformFilter, _grayFilter, _multiplyBlendCornerFilter];
 	};
-	
-	_filters[@(0)] = composeFilterBlock_TL;
-	_filters[@(1)] = composeFilterBlock_TL;
-	_filters[@(2)] = composeFilterBlock_TR;
-	_filters[@(3)] = composeFilterBlock_TR;
-	_filters[@(4)] = composeFilterBlock_BL;
-	_filters[@(5)] = composeFilterBlock_BL;
-	_filters[@(6)] = composeFilterBlock_BR;
-	_filters[@(7)] = composeFilterBlock_BR;
+
+    // for test
+//	_filters[@(0)] = composeFilterBlock_TL;
+//	_filters[@(1)] = composeFilterBlock_TL;
+//	_filters[@(2)] = composeFilterBlock_TR;
+//	_filters[@(3)] = composeFilterBlock_TR;
+//	_filters[@(4)] = composeFilterBlock_BL;
+//	_filters[@(5)] = composeFilterBlock_BL;
+//	_filters[@(6)] = composeFilterBlock_BR;
+//	_filters[@(7)] = composeFilterBlock_BR;
 	
 	
 	_filters[@(12)] = pureColorFilterBlock;
@@ -146,9 +161,9 @@ typedef NSArray * (^BSFilterBlock)(CGSize frameSize);
 	_filters[@(180)] = composeFilterBlock_TR;
 	_filters[@(181)] = composeFilterBlock_TR;
 	_filters[@(182)] = composeFilterBlock_TR;
-	_filters[@(183)] = composeFilterBlock_BR;
-	_filters[@(184)] = composeFilterBlock_BR;
-	_filters[@(185)] = composeFilterBlock_BR;
+	_filters[@(183)] = composeFilterBlock_BL;
+	_filters[@(184)] = composeFilterBlock_BL;
+	_filters[@(185)] = composeFilterBlock_BL;
 	_filters[@(186)] = composeFilterBlock_TL_BR;
 	_filters[@(187)] = composeFilterBlock_TL_BR;
 	_filters[@(188)] = composeFilterBlock_TL_BR;
@@ -232,6 +247,10 @@ typedef NSArray * (^BSFilterBlock)(CGSize frameSize);
 			if (_shouldCancelAllRequests) {
 				[request finishCancelledRequest];
 			} else {
+                id compositionInstruction = request.videoCompositionInstruction;
+                AVMutableVideoCompositionLayerInstruction *instruction = [[compositionInstruction layerInstructions] firstObject];
+                CGAffineTransform transform = instruction.transform;
+                
 				CMPersistentTrackID trackID = [[request.sourceTrackIDs firstObject] intValue];
 				CVPixelBufferRef sourceBuffer = [request sourceFrameByTrackID:trackID];
 				int bufferHeight = (int)CVPixelBufferGetHeight(sourceBuffer);
@@ -244,37 +263,36 @@ typedef NSArray * (^BSFilterBlock)(CGSize frameSize);
 					block = _filters[@(_indexOfCurrentFrame)];
 				}
 				_indexOfCurrentFrame++;
-				
-				NSArray *filters = block ? block(CGSizeMake(bufferWidth, bufferHeight)) : nil;
-				if (filters) {
-					CIImage *filteredImage = [CIImage imageWithCVPixelBuffer:sourceBuffer];
+                
+                
+                CIImage *filteredImage = [CIImage imageWithCVPixelBuffer:sourceBuffer];
+                [_transformFilter setValue:[self _transformToValue:transform] forKey:@"inputTransform"];
+                [_transformFilter setValue:filteredImage forKey:kCIInputImageKey];
+                filteredImage = [_transformFilter valueForKey:kCIOutputImageKey];
+                CGRect extent = filteredImage.extent;
+                CVPixelBufferRef filteredPixels = [_renderContext newPixelBuffer];
+                
+				NSArray *filters = block ? block(request.renderContext.size) : nil;
+                if (filters) {
 					for (CIFilter *filter in filters) {
 						if (![filter.name isEqualToString:@"CIConstantColorGenerator"]) {
 							[filter setValue:filteredImage forKey:kCIInputImageKey];
 						}
 						filteredImage = [filter valueForKey:kCIOutputImageKey];
 					}
-					
-					CVPixelBufferRef filteredPixels = [_renderContext newPixelBuffer];
-					[ciContext render:filteredImage toCVPixelBuffer:filteredPixels];
-					
-					bufferHeight = (int)CVPixelBufferGetHeight(filteredPixels);
-					bufferWidth = (int)CVPixelBufferGetWidth(filteredPixels);
-					CGRect extent = filteredImage.extent;
-					
-					if (filteredPixels) {
-						[request finishWithComposedVideoFrame:filteredPixels];
-						CFRelease(filteredPixels);
-					} else {
-						[request finishWithError:nil];
-					}
-				} else {
-					if (sourceBuffer) {
-						[request finishWithComposedVideoFrame:sourceBuffer];
-					} else {
-						[request finishWithError:nil];
-					}
-				}
+                }
+                [ciContext render:filteredImage toCVPixelBuffer:filteredPixels];
+                
+                bufferHeight = (int)CVPixelBufferGetHeight(filteredPixels);
+                bufferWidth = (int)CVPixelBufferGetWidth(filteredPixels);
+                extent = filteredImage.extent;
+                
+                if (filteredPixels) {
+                    [request finishWithComposedVideoFrame:filteredPixels];
+                    CFRelease(filteredPixels);
+                } else {
+                    [request finishWithError:nil];
+                }
 			}
 		});
 	}

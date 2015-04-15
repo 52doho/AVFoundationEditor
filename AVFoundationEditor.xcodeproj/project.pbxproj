@@ -34,10 +34,8 @@
 		4E689DD31ADCC8E40012017A /* Zepp highlight blur.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E689DBB1ADCC8E40012017A /* Zepp highlight blur.png */; };
 		4E689DD41ADCC8E40012017A /* Zepp highlight frame.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E689DBC1ADCC8E40012017A /* Zepp highlight frame.png */; };
 		4E689DD51ADCC8E40012017A /* Zepp TV Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E689DBD1ADCC8E40012017A /* Zepp TV Icon.png */; };
-		4E689DDA1ADD1FA30012017A /* BSCustomVideoCompositor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E689DD91ADD1FA30012017A /* BSCustomVideoCompositor.m */; };
 		4E689DDC1ADD25D20012017A /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E689DDB1ADD25D20012017A /* CoreImage.framework */; };
 		4E689DDE1ADD2D120012017A /* Pingpong_30fps.mov in Resources */ = {isa = PBXBuildFile; fileRef = 4E689DDD1ADD2D120012017A /* Pingpong_30fps.mov */; };
-		4E689DF31ADD5F4B0012017A /* BSCoreImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E689DF21ADD5F4B0012017A /* BSCoreImageManager.m */; };
 		4E73D0A31A88992F00500741 /* AVPlayerItem+THAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E73D0721A88992F00500741 /* AVPlayerItem+THAdditions.m */; };
 		4E73D0A41A88992F00500741 /* NSString+THAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E73D0741A88992F00500741 /* NSString+THAdditions.m */; };
 		4E73D0A51A88992F00500741 /* UIColor+THAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E73D0761A88992F00500741 /* UIColor+THAdditions.m */; };
@@ -183,6 +181,9 @@
 		4EAE40F91ADB7D1800B76160 /* 05_Close.mov in Resources */ = {isa = PBXBuildFile; fileRef = 4EAE407B1ADB7D1800B76160 /* 05_Close.mov */; };
 		4EAE40FA1ADB7D1800B76160 /* 06_1920x1080.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4EAE407C1ADB7D1800B76160 /* 06_1920x1080.mp4 */; };
 		4EAE40FB1ADB7D1800B76160 /* 07_640x640.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4EAE407D1ADB7D1800B76160 /* 07_640x640.mp4 */; };
+		4EFD1FA01ADDFAAE00EBFA96 /* AVMutableVideoCompositionLayerInstruction+THAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFD1F9F1ADDFAAE00EBFA96 /* AVMutableVideoCompositionLayerInstruction+THAdditions.m */; };
+		4EFD1FBA1ADE164A00EBFA96 /* BSCoreImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFD1FB71ADE164A00EBFA96 /* BSCoreImageManager.m */; };
+		4EFD1FBB1ADE164A00EBFA96 /* BSCustomVideoCompositor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFD1FB91ADE164A00EBFA96 /* BSCustomVideoCompositor.m */; };
 		C4145D8316F97A46002AFD67 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4145D8216F97A46002AFD67 /* AssetsLibrary.framework */; };
 		C4289A9016F92A9D00BA04A9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4289A8F16F92A9D00BA04A9 /* UIKit.framework */; };
 		C4289A9216F92A9D00BA04A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4289A9116F92A9D00BA04A9 /* Foundation.framework */; };
@@ -263,12 +264,8 @@
 		4E689DBB1ADCC8E40012017A /* Zepp highlight blur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Zepp highlight blur.png"; sourceTree = "<group>"; };
 		4E689DBC1ADCC8E40012017A /* Zepp highlight frame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Zepp highlight frame.png"; sourceTree = "<group>"; };
 		4E689DBD1ADCC8E40012017A /* Zepp TV Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Zepp TV Icon.png"; sourceTree = "<group>"; };
-		4E689DD81ADD1FA30012017A /* BSCustomVideoCompositor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSCustomVideoCompositor.h; sourceTree = "<group>"; };
-		4E689DD91ADD1FA30012017A /* BSCustomVideoCompositor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSCustomVideoCompositor.m; sourceTree = "<group>"; };
 		4E689DDB1ADD25D20012017A /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		4E689DDD1ADD2D120012017A /* Pingpong_30fps.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Pingpong_30fps.mov; sourceTree = "<group>"; };
-		4E689DF11ADD5F4B0012017A /* BSCoreImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSCoreImageManager.h; sourceTree = "<group>"; };
-		4E689DF21ADD5F4B0012017A /* BSCoreImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSCoreImageManager.m; sourceTree = "<group>"; };
 		4E73D0711A88992F00500741 /* AVPlayerItem+THAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AVPlayerItem+THAdditions.h"; sourceTree = "<group>"; };
 		4E73D0721A88992F00500741 /* AVPlayerItem+THAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AVPlayerItem+THAdditions.m"; sourceTree = "<group>"; };
 		4E73D0731A88992F00500741 /* NSString+THAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+THAdditions.h"; sourceTree = "<group>"; };
@@ -445,6 +442,12 @@
 		4EAE407B1ADB7D1800B76160 /* 05_Close.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = 05_Close.mov; sourceTree = "<group>"; };
 		4EAE407C1ADB7D1800B76160 /* 06_1920x1080.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 06_1920x1080.mp4; sourceTree = "<group>"; };
 		4EAE407D1ADB7D1800B76160 /* 07_640x640.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 07_640x640.mp4; sourceTree = "<group>"; };
+		4EFD1F9E1ADDFAAE00EBFA96 /* AVMutableVideoCompositionLayerInstruction+THAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AVMutableVideoCompositionLayerInstruction+THAdditions.h"; sourceTree = "<group>"; };
+		4EFD1F9F1ADDFAAE00EBFA96 /* AVMutableVideoCompositionLayerInstruction+THAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AVMutableVideoCompositionLayerInstruction+THAdditions.m"; sourceTree = "<group>"; };
+		4EFD1FB61ADE164A00EBFA96 /* BSCoreImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSCoreImageManager.h; sourceTree = "<group>"; };
+		4EFD1FB71ADE164A00EBFA96 /* BSCoreImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSCoreImageManager.m; sourceTree = "<group>"; };
+		4EFD1FB81ADE164A00EBFA96 /* BSCustomVideoCompositor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSCustomVideoCompositor.h; sourceTree = "<group>"; };
+		4EFD1FB91ADE164A00EBFA96 /* BSCustomVideoCompositor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSCustomVideoCompositor.m; sourceTree = "<group>"; };
 		C4145D8216F97A46002AFD67 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		C4289A8C16F92A9D00BA04A9 /* AVFoundationEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVFoundationEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4289A8F16F92A9D00BA04A9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -593,6 +596,7 @@
 			isa = PBXGroup;
 			children = (
 				4E73D1C01A88AC2200500741 /* AVFoundationEditor.h */,
+				4EFD1FB51ADE164A00EBFA96 /* Extension */,
 				4E73D0701A88992F00500741 /* Categories */,
 				4E73D0791A88992F00500741 /* Models */,
 				4E73D1031A889A2400500741 /* ViewModels */,
@@ -606,6 +610,8 @@
 			children = (
 				4E73D0711A88992F00500741 /* AVPlayerItem+THAdditions.h */,
 				4E73D0721A88992F00500741 /* AVPlayerItem+THAdditions.m */,
+				4EFD1F9E1ADDFAAE00EBFA96 /* AVMutableVideoCompositionLayerInstruction+THAdditions.h */,
+				4EFD1F9F1ADDFAAE00EBFA96 /* AVMutableVideoCompositionLayerInstruction+THAdditions.m */,
 				4E73D0731A88992F00500741 /* NSString+THAdditions.h */,
 				4E73D0741A88992F00500741 /* NSString+THAdditions.m */,
 				4E73D0751A88992F00500741 /* UIColor+THAdditions.h */,
@@ -880,6 +886,17 @@
 			path = Video;
 			sourceTree = "<group>";
 		};
+		4EFD1FB51ADE164A00EBFA96 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4EFD1FB61ADE164A00EBFA96 /* BSCoreImageManager.h */,
+				4EFD1FB71ADE164A00EBFA96 /* BSCoreImageManager.m */,
+				4EFD1FB81ADE164A00EBFA96 /* BSCustomVideoCompositor.h */,
+				4EFD1FB91ADE164A00EBFA96 /* BSCustomVideoCompositor.m */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		C4289A8316F92A9D00BA04A9 = {
 			isa = PBXGroup;
 			children = (
@@ -984,10 +1001,6 @@
 				C4525D1516F92BA90064B891 /* THAudioPickerViewController.m */,
 				C4525D1616F92BA90064B891 /* THMainViewController.h */,
 				C4525D1716F92BA90064B891 /* THMainViewController.m */,
-				4E689DD81ADD1FA30012017A /* BSCustomVideoCompositor.h */,
-				4E689DD91ADD1FA30012017A /* BSCustomVideoCompositor.m */,
-				4E689DF11ADD5F4B0012017A /* BSCoreImageManager.h */,
-				4E689DF21ADD5F4B0012017A /* BSCoreImageManager.m */,
 				C4525D1816F92BA90064B891 /* THPlaybackMediator.h */,
 				C4525D1916F92BA90064B891 /* THPlayerViewController.h */,
 				C4525D1A16F92BA90064B891 /* THPlayerViewController.m */,
@@ -1282,7 +1295,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E689DDA1ADD1FA30012017A /* BSCustomVideoCompositor.m in Sources */,
 				4E73D0AE1A88992F00500741 /* THCompositionLayer.m in Sources */,
 				C4289A9C16F92A9D00BA04A9 /* main.m in Sources */,
 				4E73D0B31A88992F00500741 /* THTimeline.m in Sources */,
@@ -1293,8 +1305,8 @@
 				C4525DD916F92BA90064B891 /* THTabBarButton.m in Sources */,
 				4E73D0AD1A88992F00500741 /* THTimelineBuilder.m in Sources */,
 				C4525DDA16F92BA90064B891 /* THTabBarController.m in Sources */,
-				4E689DF31ADD5F4B0012017A /* BSCoreImageManager.m in Sources */,
 				C4525DDB16F92BA90064B891 /* THTabBarControllerView.m in Sources */,
+				4EFD1FBA1ADE164A00EBFA96 /* BSCoreImageManager.m in Sources */,
 				4E73D0AB1A88992F00500741 /* THTransitionInstructions.m in Sources */,
 				C4525DDC16F92BA90064B891 /* THTabBarItem.m in Sources */,
 				4E73D0A31A88992F00500741 /* AVPlayerItem+THAdditions.m in Sources */,
@@ -1303,6 +1315,7 @@
 				4E73D0A91A88992F00500741 /* THBasicComposition.m in Sources */,
 				C4525DDE16F92BA90064B891 /* THTabBarView.m in Sources */,
 				4E73D10C1A889A2400500741 /* THVideoTransitionTypeViewModel.m in Sources */,
+				4EFD1FA01ADDFAAE00EBFA96 /* AVMutableVideoCompositionLayerInstruction+THAdditions.m in Sources */,
 				4E73D0A61A88992F00500741 /* UIView+THAdditions.m in Sources */,
 				C4525DDF16F92BA90064B891 /* THAudioItemCollectionViewCell.m in Sources */,
 				C4525DE016F92BA90064B891 /* THAudioItemTableViewCell.m in Sources */,
@@ -1323,6 +1336,7 @@
 				4E73D0A81A88992F00500741 /* THAdvancedCompositionBuilder.m in Sources */,
 				4EAE3FD61ADAA55600B76160 /* CALayer+Geometry.m in Sources */,
 				C4525DE716F92BA90064B891 /* THTimelineLayoutAttributes.m in Sources */,
+				4EFD1FBB1ADE164A00EBFA96 /* BSCustomVideoCompositor.m in Sources */,
 				C4525DE816F92BA90064B891 /* THAudioPickerViewController.m in Sources */,
 				C4525DE916F92BA90064B891 /* THMainViewController.m in Sources */,
 				C4525DEA16F92BA90064B891 /* THPlayerViewController.m in Sources */,

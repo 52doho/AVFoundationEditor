@@ -14,6 +14,7 @@
 
 // Categories
 #import "AVPlayerItem+THAdditions.h"
+#import "AVMutableVideoCompositionLayerInstruction+THAdditions.h"
 #import "NSString+THAdditions.h"
 #import "UIColor+THAdditions.h"
 #import "UIView+THAdditions.h"
@@ -36,5 +37,9 @@
 #import "THTimelineItemViewModel.h"
 #import "THVideoTransitionDurationViewModel.h"
 #import "THVideoTransitionTypeViewModel.h"
+
+// Extension
+#import "BSCoreImageManager.h"
+#import "BSCustomVideoCompositor.h"
 
 #endif

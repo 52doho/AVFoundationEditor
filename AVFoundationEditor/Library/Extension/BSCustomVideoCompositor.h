@@ -3,7 +3,7 @@
 //  AVFoundationEditor
 //
 //  Created by Guichao Huang (Gary) on 4/14/15.
-//  Copyright (c) 2015 TapHarmonic, LLC. All rights reserved.
+//  Copyright (c) 2015 Zepp US Inc. All rights reserved.
 //
 
 #import <AVFoundation/AVFoundation.h>
