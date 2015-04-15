@@ -90,33 +90,37 @@ typedef NSArray * (^BSFilterBlock)(CGSize frameSize);
 	
 	BSFilterBlock composeFilterBlock_TL = ^NSArray * (CGSize frameSize){
 		[self _setBlendFilterWithCorner:BSMultiplyBlendCornerTL size:frameSize];
-		return @[_transformFilter, _grayFilter, _multiplyBlendCornerFilter];
+		return @[/*_transformFilter, */_grayFilter/*, _multiplyBlendCornerFilter*/];
 	};
 	BSFilterBlock composeFilterBlock_TR = ^NSArray * (CGSize frameSize){
 		[self _setBlendFilterWithCorner:BSMultiplyBlendCornerTR size:frameSize];
-		return @[_transformFilter, _grayFilter, _multiplyBlendCornerFilter];
+		return @[/*_transformFilter, */_grayFilter/*, _multiplyBlendCornerFilter*/];
 	};
 	BSFilterBlock composeFilterBlock_BL = ^NSArray * (CGSize frameSize){
 		[self _setBlendFilterWithCorner:BSMultiplyBlendCornerBL size:frameSize];
-		return @[_transformFilter, _grayFilter, _multiplyBlendCornerFilter];
+		return @[/*_transformFilter, */_grayFilter/*, _multiplyBlendCornerFilter*/];
 	};
 	BSFilterBlock composeFilterBlock_BR = ^NSArray * (CGSize frameSize){
 		[self _setBlendFilterWithCorner:BSMultiplyBlendCornerBR size:frameSize];
-		return @[_transformFilter, _grayFilter, _multiplyBlendCornerFilter];
+		return @[/*_transformFilter, */_grayFilter/*, _multiplyBlendCornerFilter*/];
 	};
 	BSFilterBlock composeFilterBlock_TL_BR = ^NSArray * (CGSize frameSize){
 		[self _setBlendFilterWithCorner:BSMultiplyBlendCornerTL | BSMultiplyBlendCornerBR size:frameSize];
-		return @[_transformFilter, _grayFilter, _multiplyBlendCornerFilter];
+		return @[/*_transformFilter, */_grayFilter/*, _multiplyBlendCornerFilter*/];
 	};
 	BSFilterBlock composeFilterBlock_BL_TR = ^NSArray * (CGSize frameSize){
 		[self _setBlendFilterWithCorner:BSMultiplyBlendCornerBL | BSMultiplyBlendCornerTR size:frameSize];
-		return @[_transformFilter, _grayFilter, _multiplyBlendCornerFilter];
+		return @[/*_transformFilter, */_grayFilter/*, _multiplyBlendCornerFilter*/];
 	};
 	
 	_filters[@(0)] = composeFilterBlock_TL;
-	_filters[@(1)] = composeFilterBlock_TR;
-	_filters[@(2)] = composeFilterBlock_BL;
-	_filters[@(3)] = composeFilterBlock_BR;
+	_filters[@(1)] = composeFilterBlock_TL;
+	_filters[@(2)] = composeFilterBlock_TR;
+	_filters[@(3)] = composeFilterBlock_TR;
+	_filters[@(4)] = composeFilterBlock_BL;
+	_filters[@(5)] = composeFilterBlock_BL;
+	_filters[@(6)] = composeFilterBlock_BR;
+	_filters[@(7)] = composeFilterBlock_BR;
 	
 	
 	_filters[@(12)] = pureColorFilterBlock;
